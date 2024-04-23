@@ -1,0 +1,31 @@
+    Classes :
+        MaladieDuManioc
+        Symptôme
+        Cause
+        Traitement
+        PlanteDeManioc
+
+    Propriétés :
+        aPourSymptôme (propriété d'objet entre une maladie du manioc et ses symptômes)
+        aPourCause (propriété d'objet entre une maladie du manioc et ses causes)
+        aPourTraitement (propriété d'objet entre une maladie du manioc et ses traitements)
+        AffectePlante (propriété d'objet entre une maladie du manioc et les plantes de manioc affectées)
+
+    Axiomes :
+        Une maladie du manioc a au moins un symptôme.
+        Une maladie du manioc a au moins une cause.
+        Une maladie du manioc a au moins un traitement.
+        Une maladie du manioc affecte au moins une plante de manioc.
+
+    Instances :
+        MaladieDuManioc : Mosaïque, PourritureDesRacines, CassavaBrownStreak
+        Symptôme : DécolorationDesFeuilles, Nécrose, DéformationDesRacines
+        Cause : Virus, Champignons, Bactéries
+        Traitement : UtilisationDePesticides, ModificationDuSol
+        PlanteDeManioc : Variété1, Variété2, Variété3
+        
+        	Lecture de documents scientifiques
+	Retension de 4 maladies + les plantes en bonne santés
+	Un bon model depend de la taille des images(Madame + 18k images) total 20k images
+	Un model d'entrainemet, ya python, et donc L'ontology dans protege, RDFLib sur la contruction de l'ontology
+	

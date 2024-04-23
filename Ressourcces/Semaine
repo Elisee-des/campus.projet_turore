@@ -1,0 +1,43 @@
+Ce qui  as ete fais : 
+
+Ontologie, Creation, structuration, modelisation
+
+*N'ai pas relié a une DB. Il faut passé par un UML pour le faire.
+
+*Il possbile de stocker de donné ou valeur et l'exporter sous forme : RDF/XML, OWL/XML avec PROTEGE.
+
+*Appris a crée une ontologie pour une scholarité avec protegé.
+*Appris a utilisé SPARQL pour faire des requetes sur l'ontologie.
+
+*Serveur apache-jena-fuseki-5.0.0 pour Stimiluler la  mise en ligne de l'ontologie.
+
+->Recherche sur la Création d’application du web sémantique.
+
+*Traitement d'image
+->Recuperation des images
+
+
+Questions :
+->Comment je fais pour avoir les noms exates des maladies ?
+
+
+Semaine a venir :
+->Mettre en place mon ontologie des maladies du manioc.
+->Bosser sur la Création d’application du web sémantique.
+->Comment exploiter l'ontologie avec python avec la bibliothèque owlready2.
+
+
+Pourquoi du web sementique :
+    1-Recherche d'informations améliorée : Les moteurs de recherche peuvent utiliser les métadonnées sémantiques pour comprendre le contenu des pages Web de manière plus précise, ce qui permet d'obtenir des résultats de recherche plus pertinents.
+
+    2-Agrégation de données : Les agrégateurs de données peuvent utiliser des ontologies pour intégrer des données provenant de différentes sources et les présenter de manière cohérente et interprétable.
+
+    3-Assistance à la décision : Les systèmes d'assistance à la décision peuvent utiliser des ontologies pour représenter des connaissances domaines spécifiques et aider les utilisateurs à prendre des décisions basées sur ces connaissances.
+
+    4-Intelligence artificielle et apprentissage automatique : Les techniques d'intelligence artificielle et d'apprentissage automatique peuvent être appliquées aux données sémantiques pour extraire des connaissances, détecter des modèles et réaliser des tâches telles que la classification et la recommandation.
+
+    5-Représentation des connaissances : Les ontologies et les graphes de connaissances peuvent être utilisés pour représenter des connaissances dans des domaines spécifiques, facilitant ainsi leur partage, leur réutilisation et leur compréhension.
+
+    6-Interopérabilité des données : Le Web sémantique vise à rendre les données interopérables en utilisant des standards et des formats ouverts, ce qui facilite l'échange et la réutilisation des données entre différents systèmes et organisations.
+
+    7-Gestion des données personnelles et de l'identité : Les technologies du Web sémantique peuvent être utilisées pour créer des systèmes de gestion des identités et des données personnelles plus sûrs, privés et contrôlables par les utilisateurs.
