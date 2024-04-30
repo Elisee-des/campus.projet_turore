@@ -170,3 +170,70 @@ PDF statistics:
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+
+
+
+
+
+
+	\subsubsection{Choix, intérêts et avantages}
+		Choisir \textbf{Protege} comme outil de modélisation et de gestion des ontologies présente plusieurs avantages par rapport à d'autres outils similaires :
+		
+	
+	\begin{table}
+		\begin{tabular}{|m{4cm}|m{12cm}|} % Définit deux colonnes de largeur fixe
+			\hline
+			\textbf{Elements} & \textbf{Descriptions} \\
+			\hline
+			Large communauté et support actif & Protege est largement utilisé dans la communauté de la recherche en intelligence artificielle et du Web sémantique, ce qui signifie qu'il bénéficie d'une grande communauté d'utilisateurs et de développeurs. Cela garantit un support actif, des forums de discussion animés et une documentation riche. \\
+			\hline
+			Interface utilisateur conviviale & Protege offre une interface utilisateur conviviale et intuitive qui facilite la modélisation, l'édition et la visualisation des ontologies. Cela le rend accessible même aux utilisateurs débutants dans le domaine de la représentation des connaissances. \\
+			\hline
+			Fonctionnalités avancées & Protege offre un large éventail de fonctionnalités avancées pour la modélisation et la gestion des ontologies, y compris la validation d'ontologie, le raisonnement automatique, la visualisation graphique des ontologies, la gestion des versions et bien plus encore. \\
+			\hline
+			Interopérabilité & Protege prend en charge les standards du Web sémantique tels que RDF, OWL et SWRL, ce qui garantit l'interopérabilité avec d'autres outils et systèmes compatibles avec ces standards. Cela facilite l'intégration de Protege dans des pipelines de traitement des connaissances existants. \\
+			\hline
+			Extensions et plugins & Protege offre un système d'extensions et de plugins qui permet aux utilisateurs d'étendre ses fonctionnalités de base en fonction de leurs besoins spécifiques. Cela permet une personnalisation et une adaptation facile de Protege à divers contextes d'utilisation. \\
+			\hline
+			Évolution continue & Protege est un projet open source actif qui continue à évoluer et à s'améliorer au fil du temps. Les nouvelles versions sont régulièrement publiées, intégrant des fonctionnalités améliorées, des corrections de bugs et des améliorations de performance. \\
+			\hline
+		\end{tabular}
+		\caption{Avantages de Protege}
+		\label{tab:protege_advantages}
+	\end{table} 
+
+
+
+	\begin{enumerate}
+		\item \textbf{\large{Classes}}
+		\begin{itemize}
+			\item MaladieDuManioc
+			\item Symptôme
+			\item Cause
+			\item Traitement
+		\end{itemize}
+		
+		\item \textbf{\large{Propriétés}}
+		\begin{itemize}
+			\item aPourSymptôme (propriété d'objet entre une maladie du manioc et ses symptômes)
+			\item aPourCause (propriété d'objet entre une maladie du manioc et ses causes)
+			\item aPourTraitement (propriété d'objet entre une maladie du manioc et ses traitements)
+			\item aPourImage (propriété de données entre une maladie du manioc et son image représentative)
+		\end{itemize}
+		
+		\item \textbf{\large{Axiomes}}
+		\begin{itemize}
+			\item Une maladie du manioc a au moins un symptôme.
+			\item Une maladie du manioc a au moins une cause.
+			\item Une maladie du manioc a au moins un traitement.
+		\end{itemize}
+		
+		\item \textbf{\large{Instances}}
+		\begin{itemize}
+			\item MaladieDuManioc : Maladie de la mosaïque, Maladie des stries brunes, Marbrure verte, Brûlure bactérienne
+			\item Symptôme : DécolorationDesFeuilles, Nécrose.
+			\item Cause : Virus, Bactéries.
+			\item Traitement : UtilisationDePesticides, ModificationDuSol, UtilisationDeCultivarsResistants, Contrôle des vecteurs
+		\end{itemize}
+
+	\end{enumerate}

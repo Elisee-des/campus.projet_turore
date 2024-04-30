@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.22)  22 APR 2024 08:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.22)  27 APR 2024 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,29 +173,40 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count278
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count279
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen170
+\ttl@minus=\dimen171
+\ttl@toksa=\toks25
+\titlewidth=\dimen172
+\titlewidthlast=\dimen173
+\titlewidthfirst=\dimen174
 )
 (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
-\l__pdf_internal_box=\box55
+\l__pdf_internal_box=\box56
 ) (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -236,16 +247,16 @@ LaTeX Font Info:    ... okay on input line 10.
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count281
-\scratchdimen=\dimen170
-\scratchbox=\box56
+\scratchdimen=\dimen175
+\scratchbox=\box57
 \nofMPsegments=\count282
 \nofMParguments=\count283
-\everyMPshowfont=\toks25
+\everyMPshowfont=\toks26
 \MPscratchCnt=\count284
-\MPscratchDim=\dimen171
+\MPscratchDim=\dimen176
 \MPnumerator=\count285
 \makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks26
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -267,174 +278,215 @@ Package caption Info: End \AtBeginDocument code.
 \openout3 = `rapport.toc'.
 
  [2]
-Overfull \hbox (12.96796pt too wide) in paragraph at lines 37--38
+Overfull \hbox (12.96796pt too wide) in paragraph at lines 45--46
  \OT1/cmr/m/n/10 Au-del^^Ra de la sim-ple d^^Setection d'objets, la seg-men-ta-
 tion s^^Semantique vise ^^Ra at-tribuer des ^^Setiquettes s^^Semantiques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-<img/13.jpeg, id=16, 1708.3825pt x 920.43875pt>
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+<img/13.jpeg, id=17, 1708.3825pt x 920.43875pt>
 File: img/13.jpeg Graphic file (type jpg)
 <use img/13.jpeg>
-Package pdftex.def Info: img/13.jpeg  used on input line 80.
+Package pdftex.def Info: img/13.jpeg  used on input line 88.
 (pdftex.def)             Requested size: 328.82707pt x 177.16043pt.
 [4]
-Overfull \hbox (6.76302pt too wide) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+[5 <./img/13.jpeg>]
+Overfull \hbox (6.34694pt too wide) in paragraph at lines 133--134
+[]\OT1/cmr/bx/n/10 COCO An-no-ta-tor : \OT1/cmr/m/n/10 COCO An-no-ta-tor est un
+ outil open-source con^^Xcu sp^^Secifiquement pour l'annotation
+ []
+
+
+Overfull \hbox (1.16243pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 enti^^Rerement g^^Ser^^Se qui fa-cilite l'annotation d'images ^
+^Ra grande ^^Sechelle gr^ace ^^Ra l'utilisation de l'apprentissage
+ []
+
+[6]
+Overfull \hbox (6.76302pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/10 Les on-tolo-gies OWL sont con-stru-ites ^^Ra l'aide de classe
 s, de pro-pri^^Set^^Ses et d'individus. Les classes repr^^Sesentent
  []
 
 
-Overfull \hbox (4.86952pt too wide) in paragraph at lines 102--103
+Overfull \hbox (4.86952pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/bx/n/10 Recherche d'information avanc^^See : \OT1/cmr/m/n/10 En util
 -isant les on-tolo-gies et les tech-nolo-gies du Web s^^Semantique,
  []
 
-[5 <./img/13.jpeg>]
-Overfull \hbox (4.93947pt too wide) in paragraph at lines 113--114
+[7]
+Overfull \hbox (4.93947pt too wide) in paragraph at lines 179--180
 []\OT1/cmr/bx/n/10 Semantic Me-di-aWiki: \OT1/cmr/m/n/10 Une ex-ten-sion de Me-
 di-aWiki qui per-met d'ajouter des an-no-ta-tions s^^Semantiques
  []
 
 
-Overfull \hbox (17.64124pt too wide) in paragraph at lines 114--115
+Overfull \hbox (17.64124pt too wide) in paragraph at lines 180--181
 []\OT1/cmr/bx/n/10 PoolParty: \OT1/cmr/m/n/10 Une plate-forme de ges-tion des c
 on-nais-sances s^^Semantiques qui per-met la cr^^Seation, l'organisation
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-[]|\OT1/cmr/m/n/10 Large com-mu-naut^^Se et
- []
-
-
-Overfull \hbox (10.68904pt too wide) in paragraph at lines 127--144
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--165
+<img/14.png, id=31, 707.64375pt x 400.49625pt>
+File: img/14.png Graphic file (type png)
+<use img/14.png>
+Package pdftex.def Info: img/14.png  used on input line 207.
+(pdftex.def)             Requested size: 328.82707pt x 186.1005pt.
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--165
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 166--171
+[9 <./img/14.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--171
+Underfull \hbox (badness 10000) in paragraph at lines 261--275
 
  []
 
-<img/1.jpg, id=27, 256.96pt x 256.96pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--285
+
+ []
+
+[10]
+File: img/14.png Graphic file (type png)
+<use img/14.png>
+Package pdftex.def Info: img/14.png  used on input line 291.
+(pdftex.def)             Requested size: 328.82707pt x 186.1005pt.
+File: img/14.png Graphic file (type png)
+<use img/14.png>
+Package pdftex.def Info: img/14.png  used on input line 302.
+(pdftex.def)             Requested size: 328.82707pt x 186.1005pt.
+File: img/14.png Graphic file (type png)
+<use img/14.png>
+Package pdftex.def Info: img/14.png  used on input line 313.
+(pdftex.def)             Requested size: 328.82707pt x 186.1005pt.
+<img/1.jpg, id=44, 256.96pt x 256.96pt>
 File: img/1.jpg Graphic file (type jpg)
 <use img/1.jpg>
-Package pdftex.def Info: img/1.jpg  used on input line 179.
+Package pdftex.def Info: img/1.jpg  used on input line 326.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/2.jpg, id=28, 256.96pt x 256.96pt>
+<img/2.jpg, id=45, 256.96pt x 256.96pt>
 File: img/2.jpg Graphic file (type jpg)
 <use img/2.jpg>
-Package pdftex.def Info: img/2.jpg  used on input line 185.
+Package pdftex.def Info: img/2.jpg  used on input line 332.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/3.jpg, id=29, 256.96pt x 256.96pt>
+<img/3.jpg, id=46, 256.96pt x 256.96pt>
 File: img/3.jpg Graphic file (type jpg)
 <use img/3.jpg>
-Package pdftex.def Info: img/3.jpg  used on input line 191.
+Package pdftex.def Info: img/3.jpg  used on input line 338.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-[7] [8 <./img/1.jpg> <./img/2.jpg> <./img/3.jpg>]
-<img/4.jpg, id=38, 256.96pt x 256.96pt>
+ [11] [12 <./img/1.jpg> <./img/2.jpg> <./img/3.jpg>]
+<img/4.jpg, id=54, 256.96pt x 256.96pt>
 File: img/4.jpg Graphic file (type jpg)
 <use img/4.jpg>
-Package pdftex.def Info: img/4.jpg  used on input line 211.
+Package pdftex.def Info: img/4.jpg  used on input line 356.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/5.jpg, id=39, 256.96pt x 256.96pt>
+<img/5.jpg, id=55, 256.96pt x 256.96pt>
 File: img/5.jpg Graphic file (type jpg)
 <use img/5.jpg>
-Package pdftex.def Info: img/5.jpg  used on input line 217.
+Package pdftex.def Info: img/5.jpg  used on input line 362.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/6.jpg, id=40, 256.96pt x 256.96pt>
+<img/6.jpg, id=56, 256.96pt x 256.96pt>
 File: img/6.jpg Graphic file (type jpg)
 <use img/6.jpg>
-Package pdftex.def Info: img/6.jpg  used on input line 223.
+Package pdftex.def Info: img/6.jpg  used on input line 368.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
- [9 <./img/4.jpg> <./img/5.jpg> <./img/6.jpg>]
-<img/7.jpg, id=44, 256.96pt x 256.96pt>
+ [13 <./img/4.jpg> <./img/5.jpg> <./img/6.jpg>]
+<img/7.jpg, id=61, 256.96pt x 256.96pt>
 File: img/7.jpg Graphic file (type jpg)
 <use img/7.jpg>
-Package pdftex.def Info: img/7.jpg  used on input line 252.
+Package pdftex.def Info: img/7.jpg  used on input line 397.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/8.jpg, id=45, 256.96pt x 256.96pt>
+<img/8.jpg, id=62, 256.96pt x 256.96pt>
 File: img/8.jpg Graphic file (type jpg)
 <use img/8.jpg>
-Package pdftex.def Info: img/8.jpg  used on input line 258.
+Package pdftex.def Info: img/8.jpg  used on input line 403.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/9.jpg, id=46, 256.96pt x 256.96pt>
+<img/9.jpg, id=63, 256.96pt x 256.96pt>
 File: img/9.jpg Graphic file (type jpg)
 <use img/9.jpg>
-Package pdftex.def Info: img/9.jpg  used on input line 264.
+Package pdftex.def Info: img/9.jpg  used on input line 409.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
- [10 <./img/7.jpg> <./img/8.jpg> <./img/9.jpg>]
-<img/10.jpg, id=50, 256.96pt x 256.96pt>
+ [14 <./img/7.jpg> <./img/8.jpg> <./img/9.jpg>]
+<img/10.jpg, id=67, 256.96pt x 256.96pt>
 File: img/10.jpg Graphic file (type jpg)
 <use img/10.jpg>
-Package pdftex.def Info: img/10.jpg  used on input line 293.
+Package pdftex.def Info: img/10.jpg  used on input line 437.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/11.jpg, id=51, 256.96pt x 256.96pt>
+<img/11.jpg, id=68, 256.96pt x 256.96pt>
 File: img/11.jpg Graphic file (type jpg)
 <use img/11.jpg>
-Package pdftex.def Info: img/11.jpg  used on input line 299.
+Package pdftex.def Info: img/11.jpg  used on input line 443.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
-<img/12.jpg, id=52, 256.96pt x 256.96pt>
+<img/12.jpg, id=69, 256.96pt x 256.96pt>
 File: img/12.jpg Graphic file (type jpg)
 <use img/12.jpg>
-Package pdftex.def Info: img/12.jpg  used on input line 305.
+Package pdftex.def Info: img/12.jpg  used on input line 449.
 (pdftex.def)             Requested size: 140.92793pt x 140.9285pt.
- [11 <./img/10.jpg> <./img/11.jpg> <./img/12.jpg>]
-Overfull \hbox (12.19029pt too wide) in paragraph at lines 358--359
-[]\OT1/cmr/m/n/10 Traitement : Util-i-sa-tion-De-Pes-ti-cides, Mod-i-fi-ca-tion
--Du-Sol, Util-i-sa-tion-DeCul-ti-varsRe-sis-tants, Contr^ole
+
+[15 <./img/10.jpg> <./img/11.jpg> <./img/12.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[]|\OT1/cmr/m/n/10 Repr^^Sesente une repr^^Sesentation vi-suelle ou
  []
 
-[12] (rapport.bbl) [13] (rapport.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
+
+ []
+
+[16] (rapport.bbl) [17] (rapport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4230 strings out of 474485
- 71132 string characters out of 5743734
- 1940542 words of memory out of 5000000
- 26503 multiletter control sequences out of 15000+600000
- 564086 words of font info for 57 fonts, out of 8000000 for 9000
+ 4553 strings out of 474485
+ 75562 string characters out of 5743734
+ 1938542 words of memory out of 5000000
+ 26821 multiletter control sequences out of 15000+600000
+ 564426 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,11n,77p,1036b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/esabi/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/esabi/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on rapport.pdf (13 pages, 563823 bytes).
+ 67i,11n,77p,1036b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
+1000.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1000.pk><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/esabi/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/esabi/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/esabi/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on rapport.pdf (17 pages, 607608 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

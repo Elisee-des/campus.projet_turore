@@ -4,6 +4,14 @@
 \usepackage{graphicx}
 \usepackage{array} % Pour utiliser m{}
 \usepackage{subcaption}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 \author{Auteur : SABIDANI YENTEM ELISEE}
 \title{Rapport : Analyse sémantique des images sur les maladies du manioc}
 \date{\today}
@@ -70,7 +78,7 @@
 	
 	\subsection{Annotation de Données}
 	\subsubsection{Definition}
-	L'annotation de données est le processus consistant à ajouter des métadonnées, des balises ou des étiquettes à des données, telles que des images, des vidéos, des textes, etc., afin de les rendre compréhensibles et utilisables par des systèmes informatiques, notamment des modèles d'apprentissage automatique. Ces métadonnées ajoutées fournissent des informations supplémentaires sur les données, telles que la classe d'un objet dans une image, la catégorie d'un texte, la séquence temporelle dans une vidéo, etc.
+	\quad L'annotation de données est le processus consistant à ajouter des métadonnées, des balises ou des étiquettes à des données, telles que des images, des vidéos, des textes, etc., afin de les rendre compréhensibles et utilisables par des systèmes informatiques, notamment des modèles d'apprentissage automatique. Ces métadonnées ajoutées fournissent des informations supplémentaires sur les données, telles que la classe d'un objet dans une image, la catégorie d'un texte, la séquence temporelle dans une vidéo, etc.
 	
 	
 	\begin{figure}[htbp]
@@ -83,6 +91,64 @@
 		\end{center}
 	\end{figure}
 	
+	\subsubsection{Méthode d'annotation}
+	\quad Une méthode d'annotation se réfère à l'approche ou à la technique utilisée pour ajouter des informations ou des métadonnées à une image ou à un ensemble de données d'images. Ces informations peuvent inclure des balises, des étiquettes, des régions d'intérêt, des catégories, des contours, des points clés, etc., en fonction de la tâche spécifique à accomplir.
+	
+	\textemdash \textbf{ Annotation manuelle : }Les annotateurs humains ajoutent manuellement des balises ou dessinent des régions autour des objets d'intérêt dans les images à l'aide d'outils logiciels spécifiques.
+	
+	\textemdash \textbf{ Annotation par points clés :}Les annotateurs marquent des points clés ou des points caractéristiques sur des objets dans les images, ce qui est souvent utilisé pour la détection et la reconnaissance d'objets.
+	
+	\textemdash \textbf{ Annotation par segmentation :}Les annotateurs créent des masques ou des contours autour des objets dans les images pour délimiter les régions d'intérêt, ce qui est couramment utilisé pour la segmentation sémantique.
+	
+	\textemdash \textbf{ Annotation par classification : }Les annotateurs attribuent des étiquettes ou des catégories à des images entières ou à des parties spécifiques des images en fonction de leur contenu ou de leur classe.
+	
+	\textemdash \textbf{ Annotation par localisation : }Les annotateurs définissent des boîtes englobantes autour des objets d'intérêt pour indiquer leur emplacement et leur taille dans l'image, ce qui est utilisé pour la détection d'objets. \\
+	
+	Ces méthodes peuvent être utilisées individuellement ou combinées en fonction des besoins de la tâche d'annotation spécifique.
+	
+	\subsubsection{Outils d'annotation}
+	\quad Les outils d'annotation sont des logiciels ou des plateformes utilisés pour marquer, identifier ou étiqueter des éléments spécifiques dans des données telles que des images, des vidéos ou des documents. Ces annotations comprennent généralement des informations telles que la localisation des objets, les contours, les classes d'objets, etc. L'annotation peut être effectuée manuellement par des opérateurs humains ou automatiquement à l'aide d'algorithmes d'apprentissage automatique. Les données annotées sont essentielles pour entraîner des modèles d'apprentissage automatique supervisés, car elles fournissent des exemples étiquetés sur lesquels le modèle peut apprendre à reconnaître et à interpréter des motifs.
+	Voyons ensemble	10 solutions d'annotation automatique:
+	
+	\begin{itemize}
+		\item \textbf{LabelImg : }LabelImg est un outil open-source qui permet d'annoter des images pour la détection d'objets. Il est simple à utiliser et offre la possibilité de définir des boîtes englobantes autour des objets à annoter. Il supporte plusieurs formats d'exportation, tels que XML pour le format Pascal VOC.
+		
+		Exemple : Un chercheur en vision par ordinateur utilise LabelImg pour annoter des images de voitures afin de créer un ensemble de données pour entraîner un modèle de détection de voitures.
+		\item \textbf{LabelMe : }LabelMe est une plateforme en ligne pour l'annotation d'images qui prend en charge la segmentation sémantique, la détection d'objets et d'autres tâches. Il permet également de générer des ensembles de données annotées pour l'apprentissage en profondeur.
+		
+		Exemple : Une équipe de recherche utilise LabelMe pour annoter des images médicales afin de segmenter les tissus malins dans des scans de tomographie par ordinateur (CT) pour l'analyse de cancer.
+		
+		\item \textbf{CVAT (Computer Vision Annotation Tool) : }CVAT est une plateforme open-source pour l'annotation d'images et de vidéos. Il offre une interface utilisateur conviviale et prend en charge une variété de tâches d'annotation, y compris la détection d'objets, la classification d'images et la segmentation sémantique.
+		
+		Exemple : Une entreprise utilise CVAT pour annoter des vidéos de surveillance afin de détecter et suivre automatiquement les mouvements suspects dans les environnements urbains.
+		
+		\item \textbf{VGG Image Annotator (VIA) : }VIA est un outil open-source d'annotation d'images qui prend en charge divers types d'annotations, y compris les polygones, les boîtes englobantes et les points. Il est léger et facile à utiliser.
+		
+		Exemple : Un chercheur en écologie utilise VIA pour annoter des images de caméras pièges afin de compter et d'identifier automatiquement les espèces animales dans différentes régions forestières. 
+		
+		\item \textbf{Labelbox : }Labelbox : Labelbox est une plateforme d'annotation d'images qui offre des fonctionnalités avancées telles que la collaboration en temps réel, la gestion de projet et l'intégration avec des pipelines d'apprentissage automatique.
+		
+		Exemple : Une start-up utilise Labelbox pour annoter des images satellites afin de cartographier et surveiller les cultures agricoles à grande échelle pour optimiser les rendements.
+		
+		\item \textbf{COCO Annotator : }COCO Annotator est un outil open-source conçu spécifiquement pour l'annotation d'images dans le format COCO (Common Objects in Context). Il est simple à utiliser et prend en charge la détection d'objets, la segmentation sémantique et la clé d'annotation.
+		
+		Exemple : Une équipe de recherche utilise COCO Annotator pour annoter des images de rue afin de détecter automatiquement les panneaux de signalisation pour un projet de conduite autonome.
+		
+		\item \textbf{Amazon SageMaker Ground Truth : }Amazon SageMaker Ground Truth est un service cloud entièrement géré qui facilite l'annotation d'images à grande échelle grâce à l'utilisation de l'apprentissage automatique. Il permet également de valider et de contrôler la qualité des annotations.
+		
+		Exemple : Une entreprise utilise Amazon SageMaker Ground Truth pour annoter des images médicales afin d'entraîner un modèle d'intelligence artificielle pour la détection automatique des anomalies dans les scans d'IRM.
+		
+		\item \textbf{Supervisely : }Supervisely est une plateforme d'annotation d'images qui offre des fonctionnalités avancées telles que la segmentation interactive, l'augmentation de données et l'intégration avec des outils d'apprentissage automatique.
+		
+		Exemple : Une équipe de recherche utilise Supervisely pour annoter des images de drones afin de surveiller et de cartographier les changements environnementaux dans des zones forestières sensibles.
+		\item \textbf{OpenLabeling  : }OpenLabeling est un outil open-source d'annotation d'images qui permet de créer des ensembles de données pour l'apprentissage en profondeur. Il offre une flexibilité en termes de formats d'annotation et de types d'annotations pris en charge.
+		
+		Exemple : Un groupe de passionnés utilise OpenLabeling pour annoter des images de poissons afin de développer un système de reconnaissance automatique des espèces de poissons pour la préservation marine.
+	
+		\item \textbf{Microsoft VoTT (Visual Object Tagging Tool) :  }    VoTT est un outil open-source développé par Microsoft pour l'annotation d'images et de vidéos. Il est extensible et peut être intégré à des pipelines d'apprentissage automatique.
+		
+		Exemple : Une entreprise utilise Microsoft VoTT pour annoter des images de produits dans des catalogues en ligne afin d'automatiser le processus de recherche visuelle pour les clients.
+	\end{itemize}
 	
 	\subsection{Une ontologie}
 	\quad Une ontologie OWL (Web Ontology Language) est une représentation formelle et structurée de connaissances dans un domaine spécifique. OWL est un langage de représentation des connaissances basé sur le Web, utilisé pour décrire les relations entre les concepts dans un domaine donné. Il est principalement utilisé dans le domaine de la gestion des connaissances, de la sémantique web et de l'intelligence artificielle.
@@ -119,246 +185,357 @@
 	\end{itemize}
 
 
-	\subsubsection{Choix, intérêts et avantages}
-		Choisir \textbf{Protege} comme outil de modélisation et de gestion des ontologies présente plusieurs avantages par rapport à d'autres outils similaires :
+	\section{Chapitre 2 : CONCEPTION}
+	\subsection{Introduction}
+	\quad Dans cette section, nous nous pencherons sur la conception de notre outil d'annotation, en accordant une attention particulière au développement de l'ontologie. L'ontologie revêt une importance fondamentale au sein de notre système, car elle fournit une structure conceptuelle qui nous permet de représenter et de modéliser les connaissances spécifiques à notre domaine d'étude. Nous détaillerons le processus de création de l'ontologie en décrivant les différentes classes, propriétés et relations utilisées pour dépeindre les entités et les concepts clés. En outre, nous présenterons un processus d'annotation qui tire parti de l'ontologie pour guider et faciliter l'annotation des données en leur attribuant une signification sémantique.
+	
+	\subsection{Annotation}
+	Le processus d'annotation est segmenté en plusieurs phases :
+	
+	\textemdash \textbf{ Acquisition d'images de maniocs }: Cette étape implique la collecte d'images illustrant les différentes affections et la santé des plants de manioc.
+	
+	\textemdash \textbf{ Prétraitement des images : }Avant d'entamer l'extraction des caractéristiques, il est généralement requis de prétraiter les images afin d'en améliorer la qualité. Cette phase comprend plusieurs opérations visant à optimiser les données visuelles.
+	
+	\textemdash \textbf{ Extraction des caractéristiques :}À ce stade, des algorithmes spécialisés sont employés pour extraire des informations pertinentes des images, en se fondant sur les divers symptômes associés aux maladies affectant le manioc.
+	
+	\textemdash \textbf{ Annotation sémantique : }Cette étape implique l'utilisation d'une ontologie pour annoter les caractéristiques extraites. Elle vise à enrichir le processus de détection des maladies et à appliquer des inférences basées sur l'ontologie pour accroître la précision de la détection.
+	
+	\begin{figure}[htbp]
+		\begin{center}
+			\begin{minipage}[b]{0.7\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{img/14.png}
+				\caption{Illustration d'un processus annotation}
+			\end{minipage}
+		\end{center}
+	\end{figure}
+	
+	\subsection{Mise en place de l'ontologie}
+	Dans le cadre de l'annotation sémantique, la mise en place d'une ontologie vise principalement à fournir une structure conceptuelle formelle pour représenter et organiser les connaissances spécifiques à un domaine donné. Voici quelques objectifs clés de l'utilisation d'une ontologie dans ce contexte :
+	
+	\begin{description}
+		\item[Structurer les connaissances : ]L'ontologie permet de définir des concepts, des classes, des propriétés et des relations qui représentent les entités et les concepts clés du domaine. Cela offre une structure organisée pour les données annotées, facilitant ainsi la recherche, l'analyse et la compréhension des informations.
+		
+		\item[Normalisation et standardisation : ]En établissant des termes normalisés et des relations standardisées, une ontologie favorise la cohérence et l'interopérabilité des données annotées. Cela permet aux différents utilisateurs et systèmes de partager et d'échanger efficacement des informations.
+		
+		\item[Enrichir la sémantique :] L'ontologie attribue une signification explicite aux annotations en définissant des termes et des relations avec précision. Cela permet une compréhension plus approfondie des données et des processus, en offrant un contexte sémantique qui facilite l'interprétation et l'analyse.
+		
+		\item[Guider le processus d'annotation : ]L'ontologie fournit un cadre de référence pour guider le processus d'annotation en spécifiant les concepts à annoter, les relations à établir et les contraintes à respecter. Cela contribue à assurer la cohérence et la qualité des annotations réalisées par les annotateurs.
+		
+		\item[Faciliter l'inférence et l'analyse :]En utilisant une ontologie, il est possible d'effectuer des raisonnements basés sur les relations définies entre les concepts. Cela permet d'inférer de nouvelles informations à partir des données annotées, d'identifier des corrélations et des tendances, et d'effectuer des analyses avancées sur les données.
 		
 	
-	\begin{table}
-		\begin{tabular}{|m{4cm}|m{12cm}|} % Définit deux colonnes de largeur fixe
+	\end{description}
+	
+		En résumé, l'objectif principal de la mise en place d'une ontologie dans le cadre de l'annotation sémantique est de fournir un cadre formel et structuré pour représenter, organiser et interpréter les connaissances, ce qui contribue à améliorer la qualité, la cohérence et la valeur des données annotées. \\
+		
+		Nous nous baserons sur [31] pour la construction de notre ontologie axé sur les images. Elle est repartie en 8 etapes qui sont : 
+		
+		
+		\begin{enumerate}
+			\item  \textbf{ Définition du domaine et des objectifs de l’ontologie :}Nous visons à développer une ontologie dédiée à l'annotation sémantique automatique des images pour la détection des symptômes des maladies du manioc. L'objectif principal est de fournir une structure conceptuelle précise et spécialisée pour faciliter cette annotation automatique, améliorant ainsi la précision et l'efficacité du processus de détection des maladies du manioc.
+			
+			\item  \textbf{ Exploration et analyse des sources pertinentes :}Nous collectons et analysons les informations disponibles pour comprendre le domaine et ses spécificités.
+			
+			\item  \textbf{ Identification des concepts essentiels et de leurs relations :}Nous identifions les principaux concepts et établissons leurs relations pour structurer notre ontologie de manière cohérente.
+			
+			\item  \textbf{ Hiérarchisation des concepts et création de classes : } Nous organisons les concepts en hiérarchies pour mieux représenter les relations entre eux et créons des classes pour chaque catégorie identifiée.
+			
+			\item  \textbf{ Définition des propriétés pour chaque classe :} Nous définissons les caractéristiques et les attributs associés à chaque classe pour enrichir la représentation des concepts dans notre ontologie.
+			
+			\item  \textbf{ Création d'instances pour chaque classe :}Nous créons des exemples concrets ou des instances pour chaque classe afin d'illustrer leur utilisation et leur fonctionnement dans le domaine.
+			
+			\item  \textbf{ Validation de l'ontologie avec des exemples concrets : } Nous validons notre ontologie en l'appliquant à des cas réels pour vérifier sa pertinence et son efficacité dans la détection des symptômes des maladies du manioc.
+			
+			\item  \textbf{ Révision et mise à jour de l'ontologie si nécessaire :}Nous révisons et mettons à jour l'ontologie en fonction des retours d'expérience et des évolutions du domaine pour garantir sa pertinence et sa fiabilité au fil du temps.
+			
+			
+		\end{enumerate}
+		
+		
+		\subsubsection{Collecte d´information (Le Dataset)}
+		Pour obtenir des informations sur les maladies du manioc, nous avons exploité diverses sources pour recueillir des données précises et fiables. Nous avons examiné des articles scientifiques spécialisés dans le domaine de l'agriculture ainsi que des rapports de recherche [*], [*], [*]. Ces ressources nous ont fourni des détails sur les différentes maladies que trouvons sur chez le manioc, ainsi que sur les symptômes, les causes et les traitements associés à chacune d'entre elles.
+		
+		\quad Dans cette étude, nous examinons comment utiliser des techniques spéciales pour comprendre et détecter les maladies du manioc à partir d'images des feuilles, des tiges ou des racines infectées.
+		
+		\quad La culture du manioc est confrontée à diverses menaces, notamment des maladies qui peuvent avoir un impact significatif sur la production et la qualité des récoltes. Parmi les maladies les plus préoccupantes\cite{msikita_lutte_nodate}, on trouve : \\ \\
+		\textemdash \textbf{  Maladie de la Mosaïque du Manioc, } \\
+		\textemdash \textbf{ Maladie de la Tache Brune du Manioc, } \\
+		\textemdash \textbf{ Flétrissement Bactérien du Manioc, } \\
+		\textemdash \textbf{ Acarien Vert du Manioc, } \\
+		\textemdash \textbf{  Pourriture des Racines du Manioc, } \\
+		\textemdash \textbf{ Anthracnose du ManiocAnthracnose du Manioc, } \\
+		\textemdash \textbf{ Flétrissement Bactérien du Manioc, } \\
+		\textemdash \textbf{ Maladie Rose du Manioc, } \\
+		\textemdash \textbf{ Nanisme du Manioc } \\
+		\textemdash \textbf{ Tache Foliaire du Manioc } \\	
+		\textemdash \textbf{ Nématode à Nœuds Radiculaires du Manioc } \\	
+		\textemdash \textbf{ Moucheron Blanc du Manioc } \\	
+		\textemdash \textbf{ Etc } \\	
+		
+		Dans cette étude, nous nous concentrerons sur l'analyse sémantique des images pour détecter et comprendre ces maladies spécifiques du manioc. En s'inspirant des images données par notre enseignant, nous mettrons donc l'accent sur : \\ \\
+		\textemdash \textbf{ Brûlure bactérienne (Bacterial Blight (CBB)), } \\
+		\textemdash \textbf{ Maladie des stries brunes (Brown Streak Disease (CBSD)), } \\
+		\textemdash \textbf{ Marbrure verte (Green Mottle (CGM)), } \\
+		\textemdash \textbf{ Maladie de la mosaïque (Mosaic Disease (CMD)) } \\
+		
+		Grâce aux images de maladies fournies par notre enseignant, soit plus de 4 000 images,
+		ainsi qu'à nos recherches sur [*], nous avons réussi à rassembler plus de 20 000 images.
+		La plus part etant deorganiser, nous les oavions regorganiser en les en differents classes(dossiers) grace a python a travers ce code : \\
+		
+		\textbf{Avant la classification des images}
+		\begin{figure}[htbp]
+			\begin{center}
+				\begin{minipage}[b]{0.7\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/14.png}
+					\caption{Avant la classification}
+				\end{minipage}
+			\end{center}
+		\end{figure}
+		
+		\textbf{ Implementation du code de classification des images}
+		\begin{figure}[htbp]
+			\begin{center}
+				\begin{minipage}[b]{0.7\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/14.png}
+					\caption{Le code de classification}
+				\end{minipage}
+			\end{center}
+		\end{figure}
+		
+		\textbf{ Après la classification des images }
+		\begin{figure}[htbp]
+			\begin{center}
+				\begin{minipage}[b]{0.7\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/14.png}
+					\caption{Après la classification}
+				\end{minipage}
+			\end{center}
+		\end{figure}
+		
+		\paragraph{Brûlure bactérienne (Bacterial Blight (CBB))}
+		\begin{itemize}
+			\item \textbf{Images: }
+			\begin{figure}[htbp]
+				\centering
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/1.jpg}
+					\caption{Bactérienne 1}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/2.jpg}
+					\caption{Bactérienne 2}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/3.jpg}
+					\caption{Bactérienne 3}
+				\end{subfigure}
+				\caption{Images de la brûlure bactérienne}
+			\end{figure}
+			\item \textbf{Définition: } La brûlure bactérienne est caractérisée par l'apparition de taches nécrotiques, humides et brunes sur les feuilles du manioc. 
+			\item \textbf{Cause: } La brûlure bactérienne est une maladie causée par des bactéries qui affectent les plantes, provoquant l'apparition de taches nécrosées sur les feuilles, entraînant souvent le flétrissement, la mort des feuilles et une diminution de la vigueur de la plante.
+			\item \textbf{Symptôme: } La bactériose du manioc se présente d'abord sous forme de petites taches humides sur les feuilles, qui deviennent ensuite de plus en plus grandes et brunissent le limbe. Les feuilles touchées finissent par flétrir, mourir et tomber. Ce problème est plus grave pendant la saison des pluies et affecte principalement les jeunes plants.
+			\item \textbf{Traitement: } Le traitement de la bactériose du manioc peut impliquer l'utilisation de cultivars résistants, des pratiques culturales appropriées et, parfois, l'application de produits chimiques comme des pesticides.
+		\end{itemize}
+		
+		\paragraph{Maladie des stries brunes (Brown Streak Disease (CBSD))}
+		\begin{itemize}
+			\item \textbf{Images: }
+			\begin{figure}[htbp]
+				\centering
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/4.jpg}
+					\caption{Stries brunes 4}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/5.jpg}
+					\caption{Stries brunes 5}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/6.jpg}
+					\caption{Stries brunes 6}
+				\end{subfigure}
+				\caption{Images de la maladie des stries brunes}
+			\end{figure}
+			
+			\item \textbf{Définition: } Elle se caractérise par l'apparition de stries brunes sur les racines et les tubercules du manioc infecté, ce qui entraîne une réduction de la qualité et de la quantité des récoltes.
+			\item \textbf{Cause: } La Maladie des stries brunes, ou Brown Streak Disease (CBSD), est principalement causée par deux virus du groupe des potyvirus : le virus de la maladie des stries brunes de l'est (BSeMV) et le virus de la maladie des stries brunes de l'ouest (BScMV).
+			\item \textbf{Symptôme: } La maladie des stries brunes se manifeste par des symptômes observables sur les feuilles, les tiges et les tubercules du manioc. Sur les feuilles, elle se caractérise par l'apparition de taches jaune-vert, plus prononcées sur les feuilles développées. Contrairement à la mosaïque, les feuilles touchées ne se déforment pas. Sur les tiges, des stries brun foncé ainsi que des lésions nécrotiques peuvent apparaître, principalement sur la partie supérieure verte. Les tubercules peuvent également être déformés, présenter des craquelures et une décoloration.
+			\item \textbf{Traitement: } Le traitement de la maladie des stries brunes du manioc peut être difficile car il n'existe pas de méthode curative complètement efficace une fois que la plante est infectée. Cependant, plusieurs approches de gestion peuvent être utilisées pour réduire la propagation de la maladie et limiter ses effets sur les cultures :
+			
+			\textemdash  Utilisation de cultivars résistants : Sélectionner et cultiver des variétés de manioc qui sont résistantes ou tolérantes à la maladie peut aider à réduire la propagation de la maladie dans les cultures.
+			
+			\textemdash  Contrôle des vecteurs : La gestion des insectes vecteurs, tels que les pucerons, peut réduire la transmission des virus responsables de la maladie.
+			
+			\textemdash  Pratiques culturales appropriées : Adopter des pratiques culturales telles que la rotation des cultures, la gestion de l'irrigation et la suppression des plantes infectées peut contribuer à réduire la propagation de la maladie dans les champs.
+			
+			\textemdash  Utilisation de matériel de plantation sain : Utiliser des boutures de manioc exemptes de maladie pour la plantation peut aider à réduire la propagation de la maladie lors de la multiplication des cultures.
+		\end{itemize}
+		
+		
+		
+		\paragraph{Marbrure verte (Green Mottle (CGM))}
+		\begin{itemize}
+			\item \textbf{Images: }
+			\begin{figure}[htbp]
+				\centering
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/7.jpg}
+					\caption{Marbrure verte 7}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/8.jpg}
+					\caption{Marbrure verte 8}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/9.jpg}
+					\caption{Marbrure verte 9}
+				\end{subfigure}
+				\caption{Images de la marbrure verte}
+			\end{figure}
+			
+			\item \textbf{Définition: } La Marbrure verte (Green Mottle ou CGM) du manioc se caractérise par l'apparition de marbrures vert clair ou jaune-vert sur les feuilles infectées. Ces marbrures peuvent être irrégulières et s'étendre sur toute la surface des feuilles. Les symptômes sont généralement plus visibles sur la face supérieure des feuilles et peuvent varier en intensité selon le degré d'infection et les conditions environnementales.
+			\item \textbf{Cause: } La Marbrure verte (Green Mottle ou CGM) du manioc est principalement causée par une infection virale. Le virus responsable de cette maladie est transmis par des insectes vecteurs, tels que les aleurodes (mouches blanches), qui se nourrissent de la sève des plantes infectées et propagent ainsi le virus à d'autres plantes saines.
+			\item \textbf{Symptôme: } Les symptômes de la Marbrure verte (Green Mottle ou CGM) sur les feuilles du manioc se manifestent généralement par l'apparition de marbrures vert clair ou jaune-vert. Ces marbrures peuvent être irrégulières et se propager sur toute la surface des feuilles. Les feuilles affectées peuvent également présenter des déformations et un rabougrissement. Les symptômes peuvent varier en fonction de la gravité de l'infection et des conditions environnementales.
+			\item \textbf{Traitement: } Le traitement de la Marbrure verte du manioc (Green Mottle ou CGM) est principalement axé sur la gestion des populations d'insectes vecteurs responsables de la transmission du virus. Voici quelques mesures de gestion qui peuvent être adoptées :
+			
+			\textemdash  Contrôle des insectes vecteurs : Utilisation de méthodes de lutte intégrée telles que l'utilisation de pièges, de filets anti-insectes et de produits phytosanitaires pour réduire les populations d'insectes vecteurs, comme les aleurodes.
+			
+			\textemdash  Cultivars résistants : Sélection et plantation de variétés de manioc résistantes ou tolérantes à la maladie, si disponibles.
+			
+			\textemdash  Rotation des cultures : Pratique consistant à alterner les cultures de manioc avec d'autres cultures non sensibles à la maladie pour réduire la pression des vecteurs et la propagation du virus.
+			
+			\textemdash  Élimination des plantes infectées : Enlever et détruire les plantes infectées dès l'apparition des symptômes pour réduire la source de l'inoculum viral dans les champs.
+		\end{itemize}
+		
+		
+		\paragraph{Maladie de la mosaïque (Mosaic Disease (CMD))}
+		\begin{itemize}
+			\item \textbf{Images: }
+			\begin{figure}[htbp]
+				\centering
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/10.jpg}
+					\caption{Mosaïque 10}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/11.jpg}
+					\caption{Mosaïque 11}
+				\end{subfigure}
+				\hfill
+				\begin{subfigure}[b]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{img/12.jpg}
+					\caption{Mosaïque 12}
+				\end{subfigure}
+				\caption{Images de la maladie de la mosaïque}
+			\end{figure}
+			
+			\item \textbf{Définition: } La Maladie de la mosaïque du manioc se caractérise par l'apparition de motifs de mosaïque sur les feuilles des plants infectés. Ces motifs se présentent sous forme de zones de couleur verte et jaune irrégulières et distinctes.
+			\item \textbf{Cause: } La mosaïque du manioc est causée par un virus
+			qui s’introduit dans les feuilles et les tiges du
+			manioc.
+			\item \textbf{Symptôme: } La Maladie de la mosaïque du manioc est principalement causée par des virus, tels que le virus de la mosaïque du manioc (Cassava Mosaic Virus, CMV) et d'autres virus apparentés du groupe des begomovirus. Ces virus sont transmis par des pucerons vecteurs lorsqu'ils se nourrissent de la sève des plantes infectées.
+			\item \textbf{Traitement: } Il n'existe pas de traitement curatif pour la Maladie de la mosaïque du manioc une fois que les plantes sont infectées par le virus. Cependant, plusieurs mesures peuvent être prises pour réduire les risques d'infection et limiter les dommages causés par la maladie :
+			
+			\textemdash  Utilisation de cultivars résistants : Planter des variétés de manioc qui sont génétiquement résistantes ou tolérantes à la Maladie de la mosaïque du manioc peut aider à réduire la propagation de la maladie dans les cultures.
+			
+			\textemdash  Contrôle des vecteurs : Mettre en place des mesures de contrôle des pucerons vecteurs, tels que l'utilisation de pièges, de filets anti-insectes et de produits phytosanitaires, peut aider à réduire la transmission du virus.
+			
+			\textemdash  Pratiques culturales appropriées : Adopter des pratiques culturales telles que la rotation des cultures, la gestion de l'irrigation et l'élimination des mauvaises herbes peut contribuer à réduire la pression des vecteurs et la propagation du virus.
+		\end{itemize}
+		
+		Quand nous examinons une image de manioc affecté par une maladie, nous remarquons que cette image présente les aspects suivants : la forme, la teinte, la texture et des perforations.
+		Explorons de manière approfondie ces caractéristiques :
+		
+		\begin{itemize}
+			\item  \textbf{ Couleur (Color) :} Il s'agit de la teinte ou de la couleur dominante présente dans l'image. La couleur peut fournir des informations sur l'état de santé de la plante, par exemple des taches jaunes ou brunes indiquant une maladie.
+			
+			\item  \textbf{ Forme (Shape) :} Cette caractéristique fait référence à la silhouette ou à la structure globale des éléments dans l'image. Par exemple, la forme des feuilles ou des lésions sur les feuilles peut être analysée pour détecter des signes de maladies.
+			
+			\item  \textbf{ Texture (Texture) :}La texture se réfère aux variations dans la structure de surface de l'image. Cela peut inclure des motifs ou des arrangements de pixels qui indiquent des caractéristiques spécifiques, comme la rugosité ou la douceur des feuilles.
+			
+			\item  \textbf{ Trous (Holes) :}Cette caractéristique pourrait faire référence à la présence de trous ou de lacunes dans les feuilles ou d'autres parties de la plante, ce qui pourrait indiquer des dommages causés par des insectes ou des maladies.
+		\end{itemize}
+		
+		
+	\subsubsection{Conceptualisation (Prés-traitement des images)}
+	Dans cette partie, nous explorerons les éléments fondamentaux de la création de l'ontologie, ce qui inclut la clarification des concepts, la détermination des attributs, et la configuration des relations.
+	\textbf{ Clarification des concepts : } cette phase implique d'établir une liste des concepts identifiés durant la collecte d'informations.
+	
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|} % Définit deux colonnes de largeur 45% de la largeur de la page
 			\hline
-			\textbf{Elements} & \textbf{Descriptions} \\
+			\textbf{Image} & \textbf{Symptom} \\
 			\hline
-			Large communauté et support actif & Protege est largement utilisé dans la communauté de la recherche en intelligence artificielle et du Web sémantique, ce qui signifie qu'il bénéficie d'une grande communauté d'utilisateurs et de développeurs. Cela garantit un support actif, des forums de discussion animés et une documentation riche. \\
-			\hline
-			Interface utilisateur conviviale & Protege offre une interface utilisateur conviviale et intuitive qui facilite la modélisation, l'édition et la visualisation des ontologies. Cela le rend accessible même aux utilisateurs débutants dans le domaine de la représentation des connaissances. \\
-			\hline
-			Fonctionnalités avancées & Protege offre un large éventail de fonctionnalités avancées pour la modélisation et la gestion des ontologies, y compris la validation d'ontologie, le raisonnement automatique, la visualisation graphique des ontologies, la gestion des versions et bien plus encore. \\
-			\hline
-			Interopérabilité & Protege prend en charge les standards du Web sémantique tels que RDF, OWL et SWRL, ce qui garantit l'interopérabilité avec d'autres outils et systèmes compatibles avec ces standards. Cela facilite l'intégration de Protege dans des pipelines de traitement des connaissances existants. \\
-			\hline
-			Extensions et plugins & Protege offre un système d'extensions et de plugins qui permet aux utilisateurs d'étendre ses fonctionnalités de base en fonction de leurs besoins spécifiques. Cela permet une personnalisation et une adaptation facile de Protege à divers contextes d'utilisation. \\
-			\hline
-			Évolution continue & Protege est un projet open source actif qui continue à évoluer et à s'améliorer au fil du temps. Les nouvelles versions sont régulièrement publiées, intégrant des fonctionnalités améliorées, des corrections de bugs et des améliorations de performance. \\
+			Représente une représentation visuelle ou graphique d’un plant de blé ou d’une partie de celui-ci. Il capture les propriétés d'une image. & Représente les manifestations cliniques ou visuelles observées sur les grains de blé qui sont associées à des maladies spécifiques. \\
 			\hline
 		\end{tabular}
-		\caption{Avantages de Protege}
-		\label{tab:protege_advantages}
-	\end{table} 
+		\caption{Liste des concepts identifiés}
 
-	\subsection{Les maladies du manioc}
-	\quad L'analyse sémantique des images des maladies du manioc est une nouvelle approche pour protéger cette culture importante. Le manioc est essentiel pour de nombreuses communautés dans les régions tropicales, mais il est souvent menacé par des maladies. Dans cette étude, nous examinons comment utiliser des techniques spéciales pour comprendre et détecter les maladies du manioc à partir d'images des feuilles, des tiges ou des racines infectées.
+	\end{table}
 	
-	\quad La culture du manioc est confrontée à diverses menaces, notamment des maladies qui peuvent avoir un impact significatif sur la production et la qualité des récoltes. Parmi les maladies les plus préoccupantes\cite{msikita_lutte_nodate}, on trouve : \\ \\
-	\textemdash \textbf{  Maladie de la Mosaïque du Manioc, } \\
-	\textemdash \textbf{ Maladie de la Tache Brune du Manioc, } \\
-	\textemdash \textbf{ Flétrissement Bactérien du Manioc, } \\
-	\textemdash \textbf{ Acarien Vert du Manioc, } \\
-	\textemdash \textbf{  Pourriture des Racines du Manioc, } \\
-	\textemdash \textbf{ Anthracnose du ManiocAnthracnose du Manioc, } \\
-	\textemdash \textbf{ Flétrissement Bactérien du Manioc, } \\
-	\textemdash \textbf{ Maladie Rose du Manioc, } \\
-	\textemdash \textbf{ Nanisme du Manioc } \\
-	\textemdash \textbf{ Tache Foliaire du Manioc } \\	
-	\textemdash \textbf{ Nématode à Nœuds Radiculaires du Manioc } \\	
-	\textemdash \textbf{ Moucheron Blanc du Manioc } \\	
-	\textemdash \textbf{ Etc } \\	
 	
-	Dans cette étude, nous nous concentrerons sur l'analyse sémantique des images pour détecter et comprendre ces maladies spécifiques du manioc.Nous mettrons donc l'accent sur : \\ \\
-	\textemdash \textbf{ Brûlure bactérienne (Bacterial Blight (CBB)), } \\
-	\textemdash \textbf{ Maladie des stries brunes (Brown Streak Disease (CBSD)), } \\
-	\textemdash \textbf{ Marbrure verte (Green Mottle (CGM)), } \\
-	\textemdash \textbf{ Maladie de la mosaïque (Mosaic Disease (CMD)) } \\
 	
-	\subsubsection{Brûlure bactérienne (Bacterial Blight (CBB))}
-	\begin{itemize}
-		\item \textbf{Images: }
-		\begin{figure}[htbp]
-			\centering
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/1.jpg}
-				\caption{Bactérienne 1}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/2.jpg}
-				\caption{Bactérienne 2}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/3.jpg}
-				\caption{Bactérienne 3}
-			\end{subfigure}
-			\caption{Images de la brûlure bactérienne}
-		\end{figure}
-		\item \textbf{Définition: } La brûlure bactérienne est caractérisée par l'apparition de taches nécrotiques, humides et brunes sur les feuilles du manioc. 
-		\item \textbf{Cause: } La brûlure bactérienne est une maladie causée par des bactéries qui affectent les plantes, provoquant l'apparition de taches nécrosées sur les feuilles, entraînant souvent le flétrissement, la mort des feuilles et une diminution de la vigueur de la plante.
-		\item \textbf{Symptôme: } La bactériose du manioc se présente d'abord sous forme de petites taches humides sur les feuilles, qui deviennent ensuite de plus en plus grandes et brunissent le limbe. Les feuilles touchées finissent par flétrir, mourir et tomber. Ce problème est plus grave pendant la saison des pluies et affecte principalement les jeunes plants.
-		\item \textbf{Traitement: } Le traitement de la bactériose du manioc peut impliquer l'utilisation de cultivars résistants, des pratiques culturales appropriées et, parfois, l'application de produits chimiques comme des pesticides.
-	\end{itemize}
-
-	\newpage
-
-	\subsubsection{Maladie des stries brunes (Brown Streak Disease (CBSD))}
-	\begin{itemize}
-		\item \textbf{Images: }
-		\begin{figure}[htbp]
-			\centering
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/4.jpg}
-				\caption{Stries brunes 4}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/5.jpg}
-				\caption{Stries brunes 5}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/6.jpg}
-				\caption{Stries brunes 6}
-			\end{subfigure}
-			\caption{Images de la maladie des stries brunes}
-		\end{figure}
-		
-		\item \textbf{Définition: } Elle se caractérise par l'apparition de stries brunes sur les racines et les tubercules du manioc infecté, ce qui entraîne une réduction de la qualité et de la quantité des récoltes.
-		\item \textbf{Cause: } La Maladie des stries brunes, ou Brown Streak Disease (CBSD), est principalement causée par deux virus du groupe des potyvirus : le virus de la maladie des stries brunes de l'est (BSeMV) et le virus de la maladie des stries brunes de l'ouest (BScMV).
-		\item \textbf{Symptôme: } La maladie des stries brunes se manifeste par des symptômes observables sur les feuilles, les tiges et les tubercules du manioc. Sur les feuilles, elle se caractérise par l'apparition de taches jaune-vert, plus prononcées sur les feuilles développées. Contrairement à la mosaïque, les feuilles touchées ne se déforment pas. Sur les tiges, des stries brun foncé ainsi que des lésions nécrotiques peuvent apparaître, principalement sur la partie supérieure verte. Les tubercules peuvent également être déformés, présenter des craquelures et une décoloration.
-		\item \textbf{Traitement: } Le traitement de la maladie des stries brunes du manioc peut être difficile car il n'existe pas de méthode curative complètement efficace une fois que la plante est infectée. Cependant, plusieurs approches de gestion peuvent être utilisées pour réduire la propagation de la maladie et limiter ses effets sur les cultures :
-		
-		\textemdash  Utilisation de cultivars résistants : Sélectionner et cultiver des variétés de manioc qui sont résistantes ou tolérantes à la maladie peut aider à réduire la propagation de la maladie dans les cultures.
-		
-		\textemdash  Contrôle des vecteurs : La gestion des insectes vecteurs, tels que les pucerons, peut réduire la transmission des virus responsables de la maladie.
-		
-		\textemdash  Pratiques culturales appropriées : Adopter des pratiques culturales telles que la rotation des cultures, la gestion de l'irrigation et la suppression des plantes infectées peut contribuer à réduire la propagation de la maladie dans les champs.
-		
-		\textemdash  Utilisation de matériel de plantation sain : Utiliser des boutures de manioc exemptes de maladie pour la plantation peut aider à réduire la propagation de la maladie lors de la multiplication des cultures.
-	\end{itemize}
-
-	\newpage
-
-	\subsubsection{Marbrure verte (Green Mottle (CGM))}
-	\begin{itemize}
-		\item \textbf{Images: }
-		\begin{figure}[htbp]
-			\centering
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/7.jpg}
-				\caption{Marbrure verte 7}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/8.jpg}
-				\caption{Marbrure verte 8}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/9.jpg}
-				\caption{Marbrure verte 9}
-			\end{subfigure}
-			\caption{Images de la marbrure verte}
-		\end{figure}
-		
-		\item \textbf{Définition: } La Marbrure verte (Green Mottle ou CGM) du manioc se caractérise par l'apparition de marbrures vert clair ou jaune-vert sur les feuilles infectées. Ces marbrures peuvent être irrégulières et s'étendre sur toute la surface des feuilles. Les symptômes sont généralement plus visibles sur la face supérieure des feuilles et peuvent varier en intensité selon le degré d'infection et les conditions environnementales.
-		\item \textbf{Cause: } La Marbrure verte (Green Mottle ou CGM) du manioc est principalement causée par une infection virale. Le virus responsable de cette maladie est transmis par des insectes vecteurs, tels que les aleurodes (mouches blanches), qui se nourrissent de la sève des plantes infectées et propagent ainsi le virus à d'autres plantes saines.
-		\item \textbf{Symptôme: } Les symptômes de la Marbrure verte (Green Mottle ou CGM) sur les feuilles du manioc se manifestent généralement par l'apparition de marbrures vert clair ou jaune-vert. Ces marbrures peuvent être irrégulières et se propager sur toute la surface des feuilles. Les feuilles affectées peuvent également présenter des déformations et un rabougrissement. Les symptômes peuvent varier en fonction de la gravité de l'infection et des conditions environnementales.
-		\item \textbf{Traitement: } Le traitement de la Marbrure verte du manioc (Green Mottle ou CGM) est principalement axé sur la gestion des populations d'insectes vecteurs responsables de la transmission du virus. Voici quelques mesures de gestion qui peuvent être adoptées :
-		
-		\textemdash  Contrôle des insectes vecteurs : Utilisation de méthodes de lutte intégrée telles que l'utilisation de pièges, de filets anti-insectes et de produits phytosanitaires pour réduire les populations d'insectes vecteurs, comme les aleurodes.
-		
-		\textemdash  Cultivars résistants : Sélection et plantation de variétés de manioc résistantes ou tolérantes à la maladie, si disponibles.
-		
-		\textemdash  Rotation des cultures : Pratique consistant à alterner les cultures de manioc avec d'autres cultures non sensibles à la maladie pour réduire la pression des vecteurs et la propagation du virus.
-		
-		\textemdash  Élimination des plantes infectées : Enlever et détruire les plantes infectées dès l'apparition des symptômes pour réduire la source de l'inoculum viral dans les champs.
-	\end{itemize}
-
-	\newpage
-
-	\subsubsection{Maladie de la mosaïque (Mosaic Disease (CMD))}
-	\begin{itemize}
-		\item \textbf{Images: }
-		\begin{figure}[htbp]
-			\centering
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/10.jpg}
-				\caption{Mosaïque 10}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/11.jpg}
-				\caption{Mosaïque 11}
-			\end{subfigure}
-			\hfill
-			\begin{subfigure}[b]{0.3\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{img/12.jpg}
-				\caption{Mosaïque 12}
-			\end{subfigure}
-			\caption{Images de la maladie de la mosaïque}
-		\end{figure}
-
-		\item \textbf{Définition: } La Maladie de la mosaïque du manioc se caractérise par l'apparition de motifs de mosaïque sur les feuilles des plants infectés. Ces motifs se présentent sous forme de zones de couleur verte et jaune irrégulières et distinctes.
-		\item \textbf{Cause: } La mosaïque du manioc est causée par un virus
-		qui s’introduit dans les feuilles et les tiges du
-		manioc.
-		\item \textbf{Symptôme: } La Maladie de la mosaïque du manioc est principalement causée par des virus, tels que le virus de la mosaïque du manioc (Cassava Mosaic Virus, CMV) et d'autres virus apparentés du groupe des begomovirus. Ces virus sont transmis par des pucerons vecteurs lorsqu'ils se nourrissent de la sève des plantes infectées.
-		\item \textbf{Traitement: } Il n'existe pas de traitement curatif pour la Maladie de la mosaïque du manioc une fois que les plantes sont infectées par le virus. Cependant, plusieurs mesures peuvent être prises pour réduire les risques d'infection et limiter les dommages causés par la maladie :
-		
-		\textemdash  Utilisation de cultivars résistants : Planter des variétés de manioc qui sont génétiquement résistantes ou tolérantes à la Maladie de la mosaïque du manioc peut aider à réduire la propagation de la maladie dans les cultures.
-		
-		\textemdash  Contrôle des vecteurs : Mettre en place des mesures de contrôle des pucerons vecteurs, tels que l'utilisation de pièges, de filets anti-insectes et de produits phytosanitaires, peut aider à réduire la transmission du virus.
-		
-		\textemdash  Pratiques culturales appropriées : Adopter des pratiques culturales telles que la rotation des cultures, la gestion de l'irrigation et l'élimination des mauvaises herbes peut contribuer à réduire la pression des vecteurs et la propagation du virus.
-	\end{itemize}
-
-	\section{Chapitre 2 : Mise en place de l'ontologie}
-	\subsection{Conceptualisation}
-	\quad Dans le cadre d'une ontologie sur la maladie du manioc, nous allons modéliser différents aspects de cette maladie : \textbf{la maladie} , \textbf{les symptômes} , \textbf{les causes} , \textbf{les traitements}.
+	\textbf{ Établir les propriétés : }Cette phase implique la définition des propriétés associées à chaque concept, décrivant ainsi leurs caractéristiques spécifiques. \\
 	
-	\begin{enumerate}
-		\item \textbf{\large{Classes}}
-		\begin{itemize}
-			\item MaladieDuManioc
-			\item Symptôme
-			\item Cause
-			\item Traitement
-		\end{itemize}
-		
-		\item \textbf{\large{Propriétés}}
-		\begin{itemize}
-			\item aPourSymptôme (propriété d'objet entre une maladie du manioc et ses symptômes)
-			\item aPourCause (propriété d'objet entre une maladie du manioc et ses causes)
-			\item aPourTraitement (propriété d'objet entre une maladie du manioc et ses traitements)
-			\item aPourImage (propriété de données entre une maladie du manioc et son image représentative)
-		\end{itemize}
-		
-		\item \textbf{\large{Axiomes}}
-		\begin{itemize}
-			\item Une maladie du manioc a au moins un symptôme.
-			\item Une maladie du manioc a au moins une cause.
-			\item Une maladie du manioc a au moins un traitement.
-		\end{itemize}
-		
-		\item \textbf{\large{Instances}}
-		\begin{itemize}
-			\item MaladieDuManioc : Maladie de la mosaïque, Maladie des stries brunes, Marbrure verte, Brûlure bactérienne
-			\item Symptôme : DécolorationDesFeuilles, Nécrose.
-			\item Cause : Virus, Bactéries.
-			\item Traitement : UtilisationDePesticides, ModificationDuSol, UtilisationDeCultivarsResistants, Contrôle des vecteurs
-		\end{itemize}
+	\textbf{ Établir les relations : }Cette étape consiste à établir des liens logiques entre les concepts et les propriétés pour refléter les interrelations entre les différentes entités.
+	
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|} % Définit trois colonnes centrées
+			\hline
+			\textbf{Propriété} & \textbf{Domain} & \textbf{Range} \\
+			\hline
+			hasCouleur & Image & String \\
+			\hline
+			hasTexture & Image & String \\
+			\hline
+			hasForme & Image & String \\
+			\hline
+			hasHols & Image & Boolean \\
+			\hline
+		\end{tabular}
+		\caption{Liste des propriété}
 
-	\end{enumerate}
+	\end{table}
+	
+	
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|} % Définit trois colonnes de largeur 4cm
+			\hline
+			\textbf{Relation} & \textbf{Domain} & \textbf{Range} \\
+			\hline
+			hasImage & Dataset & Image \\
+			\hline
+		\end{tabular}
+		\caption{Liste des relations}
+
+	\end{table}
+	
 
 	\newpage
 	\section{Bibliographies}

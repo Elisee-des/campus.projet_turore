@@ -1,0 +1,28 @@
+Ontologie definition :
+https://www.cnrtl.fr/lexicographie/ontologie
+https://www.linternaute.fr/dictionnaire/fr/definition/ontologie/
+
+
+Web semantique : https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/web-semantique/
+
+
+Annotation des donneés :
+https://fr.shaip.com/blog/the-a-to-z-of-data-annotation/
+https://www.docloop.io/blog-logistique/quest-ce-qu-une-annotation-de-donnees
+
+
+Outils d'annotation des images : 
+https://geekflare.com/fr/best-image-annotation-tools/,
+https://beepeeoo.com/2023/04/07/les-meilleurs-logiciels-de-data-labeling-pour-ameliorer-vos-projets-dintelligence-artificielle/
+
+
+Construction et utilisation de la semantique dans le cadre de l'annotation automatique d'image these-christophe-millet : 
+https://pastel.hal.science/pastel-00003602/document  (PDF)
+
+
+Ontologie base sur les images
+https://www.researchgate.net/publication/225090274_Ontology-Based_Image_Retrieval
+file:///C:/Users/esabi/Downloads/ontology-basedimageretrievalwithSIFTfeatures.pdf
+
+
+Collecte d'information : 

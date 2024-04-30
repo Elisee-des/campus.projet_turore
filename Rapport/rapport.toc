@@ -12,16 +12,20 @@
 \contentsline {subsubsection}{\numberline {1.1.10}Rapport entre L'analyse sémantique des images et le Le Web sémantique}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Annotation de Données}{4}{}%
 \contentsline {subsubsection}{\numberline {1.2.1}Definition}{4}{}%
-\contentsline {subsection}{\numberline {1.3}Une ontologie}{5}{}%
-\contentsline {subsubsection}{\numberline {1.3.1}Rapport entre une ontologie et le web sémantique}{5}{}%
-\contentsline {subsection}{\numberline {1.4}Outils}{6}{}%
-\contentsline {subsubsection}{\numberline {1.4.1}Outils de modélisation ontologique}{6}{}%
-\contentsline {subsubsection}{\numberline {1.4.2}Choix, intérêts et avantages}{6}{}%
-\contentsline {subsection}{\numberline {1.5}Les maladies du manioc}{6}{}%
-\contentsline {subsubsection}{\numberline {1.5.1}Brûlure bactérienne (Bacterial Blight (CBB))}{7}{}%
-\contentsline {subsubsection}{\numberline {1.5.2}Maladie des stries brunes (Brown Streak Disease (CBSD))}{9}{}%
-\contentsline {subsubsection}{\numberline {1.5.3}Marbrure verte (Green Mottle (CGM))}{10}{}%
-\contentsline {subsubsection}{\numberline {1.5.4}Maladie de la mosaïque (Mosaic Disease (CMD))}{11}{}%
-\contentsline {section}{\numberline {2}Chapitre 2 : Mise en place de l'ontologie}{11}{}%
-\contentsline {subsection}{\numberline {2.1}Conceptualisation}{11}{}%
-\contentsline {section}{\numberline {3}Bibliographies}{13}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Méthode d'annotation}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Outils d'annotation}{5}{}%
+\contentsline {subsection}{\numberline {1.3}Une ontologie}{7}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Rapport entre une ontologie et le web sémantique}{7}{}%
+\contentsline {subsection}{\numberline {1.4}Outils}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Outils de modélisation ontologique}{7}{}%
+\contentsline {section}{\numberline {2}Chapitre 2 : CONCEPTION}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Annotation}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Mise en place de l'ontologie}{8}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Collecte d´information (Le Dataset)}{10}{}%
+\contentsline {paragraph}{\numberline {2.3.1.1}Brûlure bactérienne (Bacterial Blight (CBB))}{11}{}%
+\contentsline {paragraph}{\numberline {2.3.1.2}Maladie des stries brunes (Brown Streak Disease (CBSD))}{13}{}%
+\contentsline {paragraph}{\numberline {2.3.1.3}Marbrure verte (Green Mottle (CGM))}{14}{}%
+\contentsline {paragraph}{\numberline {2.3.1.4}Maladie de la mosaïque (Mosaic Disease (CMD))}{15}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Conceptualisation (Prés-traitement des images)}{16}{}%
+\contentsline {section}{\numberline {3}Bibliographies}{17}{}%
