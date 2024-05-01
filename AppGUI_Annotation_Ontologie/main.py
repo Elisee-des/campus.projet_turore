@@ -93,17 +93,8 @@ with onto:
 onto.save(file="ontology.owl")
 
 # Calculer les statistiques de l'image et afficher le résultat
-image_path = "images/"
+image_path = "images/1.jpg"
 image_statistics = compute_image_statistics(image_path)
 if image_statistics is not None:
-    # Définir les propriétés du segment
-    segment1 = Segment()
-    segment1.hue_mean = hue_mean
-    segment1.hue_std = hue_std
-    segment1.saturation_mean = saturation_mean
-    segment1.saturation_std = saturation_std
-    segment1.value_mean = value_mean
-    segment1.value_std = value_std
-    
     print("Statistiques de l'image:")
     print(image_statistics)
