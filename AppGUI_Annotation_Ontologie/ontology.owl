@@ -8,28 +8,17 @@
 
 <owl:Ontology rdf:about="http://www.example.org/ontology.owl"/>
 
-<owl:Class rdf:about="#Image">
+<owl:ObjectProperty rdf:about="#has_for_ingredient">
+  <rdfs:domain rdf:resource="#Drug"/>
+  <rdfs:range rdf:resource="#Ingredient"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Drug">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</rdfs:label>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class representing images.</rdfs:comment>
 </owl:Class>
 
-<owl:Class rdf:about="#Dataset">
+<owl:Class rdf:about="#Ingredient">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dataset</rdfs:label>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class representing datasets.</rdfs:comment>
-</owl:Class>
-
-<owl:Class rdf:about="#Symptom">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Symptom</rdfs:label>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class representing symptoms.</rdfs:comment>
-</owl:Class>
-
-<owl:Class rdf:about="#Segment">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segment</rdfs:label>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class representing segments.</rdfs:comment>
 </owl:Class>
 
 
