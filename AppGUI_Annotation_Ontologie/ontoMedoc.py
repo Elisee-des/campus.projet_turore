@@ -166,7 +166,7 @@ with onto:
     aspirin.has_side_effect.append("stomach pain")
     aspirin.has_dosage.append("Take 1 tablet every 4-6 hours as needed")  
     aspirin.has_brand.append("Bayer") 
-    aspirin.has_form.append("tablet") 
+    aspirin.has_form.append(["tablet", "OK", "KO"]) 
     aspirin.has_therapeutic_class.append("Analgesic") 
     aspirin.has_interaction.append("May interact with blood thinners") 
     aspirin.has_contraindication.append("Do not take if allergic to aspirin") 

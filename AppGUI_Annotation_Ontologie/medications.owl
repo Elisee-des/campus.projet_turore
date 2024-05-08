@@ -71,36 +71,5 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#aspirin">
-  <rdf:type rdf:resource="#Drug"/>
-  <has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</has_quantity>
-  <has_side_effect rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stomach pain</has_side_effect>
-  <has_dosage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take 1 tablet every 4-6 hours as needed</has_dosage>
-  <has_brand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayer</has_brand>
-  <has_form rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tablet</has_form>
-  <has_therapeutic_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analgesic</has_therapeutic_class>
-  <has_interaction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May interact with blood thinners</has_interaction>
-  <has_contraindication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do not take if allergic to aspirin</has_contraindication>
-  <has_indication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pain relief, fever reduction</has_indication>
-  <has_route_of_administration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral</has_route_of_administration>
-  <has_manufacturer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bayer Pharmaceuticals</has_manufacturer>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#ibuprofen">
-  <rdf:type rdf:resource="#Drug"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#water">
-  <rdf:type rdf:resource="#Ingredient"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#acetylsalicylic_acid">
-  <rdf:type rdf:resource="#Ingredient"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#ibuprofen_active">
-  <rdf:type rdf:resource="#Ingredient"/>
-</owl:NamedIndividual>
-
 
 </rdf:RDF>

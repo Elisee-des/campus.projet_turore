@@ -1,0 +1,41 @@
+'couleur': {
+    'teinte_moyenne': teinte_moyenne,
+    'écart_type_teinte': écart_type_teinte,
+    'saturation_moyenne': saturation_moyenne,
+    'écart_type_saturation': écart_type_saturation,
+    'valeur_moyenne': valeur_moyenne,
+    'écart_type_valeur': écart_type_valeur
+},
+'texture': {
+    'contraste': contraste,
+    'dissimilarité': dissimilarité,
+    'énergie': énergie,
+    'homogénéité': homogénéité,
+    'corrélation': corrélation,
+},
+'contour': {
+    'surface': surface_contour,
+    'périmètre': périmètre,
+    'largeur': largeur,
+    'hauteur': hauteur,
+    'surface_normalisée': surface_normalisée,
+    'périmètre_normalisé': périmètre_normalisé,
+    'rapport_aspect': rapport_aspect
+},
+'symptomes_feuilles': {
+    'nombre_taches': nombre_taches,
+    'surface_taches': surface_taches,
+    'couleur_taches': couleur_taches,
+    'texture_taches': texture_taches
+},
+'symptomes_racines': {
+    'déformation_racines': déformation_racines,
+    'décoloration_racines': décoloration_racines,
+    'texture_racines': texture_racines
+},
+'symptomes_tiges': {
+    'présence_lésions': présence_lésions,
+    'longueur_lésions': longueur_lésions,
+    'largeur_lésions': largeur_lésions,
+    'couleur_lésions': couleur_lésions
+}
