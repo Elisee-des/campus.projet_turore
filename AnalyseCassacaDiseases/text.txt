@@ -1,0 +1,51 @@
+#holes detection
+    split the image into indidual color channels
+    b, g, r = cv2.split(image)
+
+    diff_rg = np.abs(g -r)
+    diff_rg2 = np.abs(r - g)
+    add = r + g
+    add2 = r + b
+    diff_gb = np.abs(g - b)
+    diff_gb2 = np.abs(b - g)
+
+    #Create a mask based on the condition (diff_rg < 10)
+    mask = (((diff_rg < 10) | (diff_rg2 < 10)) & ((b > 60) & ((add > 20) | (add2 > 20))))
+
+    #Set new color values (red) for pixels that satisfy the condition
+    r[mask] = 255
+    g[mask] = 0
+    b[mask] = 0
+
+    #Merge the modified color channels back into a single image
+    modified_image = cv2.merge((b, g, r))
+
+    #Initialize a counternfor red pixels
+    red_pixel_count = 0
+
+    #Iterate over each pixel in the image
+    for row in range(image.shape[0]):
+        for col in range(image.shape[1]):
+        #Get,the pixel values for each channel (B, G, R)
+        b, g, r = modified_image[row, col]
+        #Check if the red channel value is above the threshold
+        if (b, g, r) == (0, 0, 255)
+            red_pixel_count += 1
+    if(red_pixel_count > 24)
+        result = True
+    else:
+        result = False
+
+# Afficher toutes les classes dans l'ontologie
+print(list(onto.classes()))
+
+# Afficher toutes les propriétés dans l'ontologie
+print(list(onto.properties()))
+
+# Afficher les propriétés de la classe Segment
+print(list(onto.Segment.is_a))
+
+# Vérifier si les propriétés spécifiques sont incluses dans la classe Segment
+print(onto.Segment.hue_mean)
+print(onto.Segment.hue_std)
+# Continuez ainsi pour toutes les propriétés que vous avez définies pour Segment

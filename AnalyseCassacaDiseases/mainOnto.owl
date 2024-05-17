@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.example.org/maladiesmaniocs.owl"
+         xmlns="http://www.example.org/maladiesmaniocs.owl#">
+
+<owl:Ontology rdf:about="http://www.example.org/maladiesmaniocs.owl"/>
+
+<owl:DatatypeProperty rdf:about="#has_creation_date">
+  <rdfs:domain rdf:resource="#Dataset"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_url">
+  <rdfs:domain rdf:resource="#Dataset"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_size">
+  <rdfs:domain rdf:resource="#Dataset"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#Image"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_author">
+  <rdfs:domain rdf:resource="#Dataset"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_area">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_perimeter">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_width">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_height">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_normalized_area">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_normalized_perimeter">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_aspect_ratio">
+  <rdfs:domain rdf:resource="#Contour"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_hue_mean">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_hue_std">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_saturation_mean">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_saturation_std">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_value_mean">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_value_std">
+  <rdfs:domain rdf:resource="#Color"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_contrast">
+  <rdfs:domain rdf:resource="#Texture"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_dissimilarity">
+  <rdfs:domain rdf:resource="#Texture"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_energy">
+  <rdfs:domain rdf:resource="#Texture"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_homogeneity">
+  <rdfs:domain rdf:resource="#Texture"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_correlation">
+  <rdfs:domain rdf:resource="#Texture"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_root_deformation">
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_root_discoloration">
+  <rdfs:domain rdf:resource="#RootSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_spot_count">
+  <rdfs:domain rdf:resource="#LeafSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_spot_area">
+  <rdfs:domain rdf:resource="#LeafSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_spot_color">
+  <rdfs:domain rdf:resource="#LeafSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_spot_texture">
+  <rdfs:domain rdf:resource="#LeafSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_lesion_presence">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_lesion_length">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_lesion_width">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_mean_hue">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_mean_saturation">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_mean_value">
+  <rdfs:domain rdf:resource="#StemSymptoms"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Dataset">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dataset</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of associated data.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#Image">
+  <rdfs:subClassOf rdf:resource="#Dataset"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class representing images.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#Contour">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contour</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The contour characteristics of an image, such as area, perimeter, etc.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#Color">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The color characteristics of an image, such as hue, saturation, and value.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#Texture">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Texture</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The texture characteristics of an image, such as contrast, dissimilarity, etc.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#RootSymptoms">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Root Symptoms</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The symptoms observed on the roots of a plant, such as deformations, discoloration, etc.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#LeafSymptoms">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leaf Symptoms</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The symptoms observed on the leaves of a plant, such as spots, discoloration, etc.</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#StemSymptoms">
+  <rdfs:subClassOf rdf:resource="#Image"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem Symptoms</rdfs:label>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The symptoms observed on the stems of a plant, such as lesions, deformation, etc.</rdfs:comment>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#dataset_cassava_diseases">
+  <rdf:type rdf:resource="#Dataset"/>
+  <has_creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-05-10</has_creation_date>
+  <has_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.example.com/dataset</has_url>
+  <has_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1024.5</has_size>
+  <has_author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sabidani Yentem Elisée</has_author>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1-bacteria-disease.jpg">
+  <rdf:type rdf:resource="#Image"/>
+  <has_hue_mean rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120.0</has_hue_mean>
+  <has_hue_std rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</has_hue_std>
+  <has_saturation_mean rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</has_saturation_mean>
+  <has_saturation_std rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</has_saturation_std>
+  <has_value_mean rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</has_value_mean>
+  <has_value_std rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</has_value_std>
+  <has_contrast rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</has_contrast>
+  <has_dissimilarity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</has_dissimilarity>
+  <has_energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</has_energy>
+  <has_homogeneity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</has_homogeneity>
+  <has_correlation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</has_correlation>
+  <has_spot_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</has_spot_count>
+  <has_spot_area rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</has_spot_area>
+  <has_spot_color rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.0</has_spot_color>
+  <has_spot_texture rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</has_spot_texture>
+  <has_root_deformation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</has_root_deformation>
+  <has_root_discoloration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</has_root_discoloration>
+  <has_lesion_presence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</has_lesion_presence>
+  <has_lesion_length rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</has_lesion_length>
+  <has_lesion_width rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</has_lesion_width>
+  <has_mean_hue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110.0</has_mean_hue>
+  <has_mean_saturation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</has_mean_saturation>
+  <has_mean_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</has_mean_value>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
