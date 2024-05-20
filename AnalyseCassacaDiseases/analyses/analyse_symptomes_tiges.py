@@ -73,7 +73,7 @@ def calculer_caracteristiques_symptomes_tiges(image_path):
     return caracteristiques_symptomes_tiges
 
 # Exemple d'utilisation
-image_path = '1.jpg'
+image_path = 'images/1.jpg'
 resultats_symptomes_tiges = calculer_caracteristiques_symptomes_tiges(image_path)
 print("Caractéristiques des symptômes sur les tiges :")
 print(resultats_symptomes_tiges)

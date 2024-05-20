@@ -20,7 +20,7 @@ class OntologieController extends Controller
      */
     public function create()
     {
-        //
+        return view('private.ontologie.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class OntologieController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('private.ontologie.show');
     }
 
     /**

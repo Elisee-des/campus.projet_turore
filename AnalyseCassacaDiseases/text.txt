@@ -1,51 +1,52 @@
-#holes detection
-    split the image into indidual color channels
-    b, g, r = cv2.split(image)
+Types d'Annotations d'Image
 
-    diff_rg = np.abs(g -r)
-    diff_rg2 = np.abs(r - g)
-    add = r + g
-    add2 = r + b
-    diff_gb = np.abs(g - b)
-    diff_gb2 = np.abs(b - g)
+    Boîtes Englobantes (Bounding Boxes) :
+        Description : Ce sont des rectangles dessinés autour des objets d'intérêt dans une image.
+        Utilisation : Utilisées principalement pour la détection d'objets. Elles aident les modèles à localiser les objets dans une image.
+        Exemple : Annoter une boîte autour de chaque voiture dans une image de rue.
 
-    #Create a mask based on the condition (diff_rg < 10)
-    mask = (((diff_rg < 10) | (diff_rg2 < 10)) & ((b > 60) & ((add > 20) | (add2 > 20))))
+    Segmentation Sémantique :
+        Description : Chaque pixel de l'image est classé en une catégorie spécifique.
+        Utilisation : Utile pour les tâches nécessitant une compréhension détaillée de la scène, comme la conduite autonome.
+        Exemple : Annoter tous les pixels appartenant à la route, aux piétons, et aux véhicules dans une image de rue.
 
-    #Set new color values (red) for pixels that satisfy the condition
-    r[mask] = 255
-    g[mask] = 0
-    b[mask] = 0
+    Segmentation d'Instance :
+        Description : Similaire à la segmentation sémantique, mais chaque instance d'un objet est annotée séparément.
+        Utilisation : Utilisée pour des tâches nécessitant une distinction entre différents objets de la même classe.
+        Exemple : Annoter chaque voiture séparément dans une image de rue, même si elles se chevauchent.
 
-    #Merge the modified color channels back into a single image
-    modified_image = cv2.merge((b, g, r))
+    Points Clés (Keypoints) :
+        Description : Des points spécifiques sur l'objet sont annotés.
+        Utilisation : Utilisés pour des tâches comme la reconnaissance faciale ou la pose estimation.
+        Exemple : Annoter les yeux, le nez et la bouche sur des visages humains.
 
-    #Initialize a counternfor red pixels
-    red_pixel_count = 0
+    Polygones :
+        Description : Des formes plus complexes que les boîtes englobantes pour entourer précisément les objets.
+        Utilisation : Utilisés lorsque les objets ont des formes irrégulières.
+        Exemple : Annoter la forme exacte des voitures dans une image de rue.
 
-    #Iterate over each pixel in the image
-    for row in range(image.shape[0]):
-        for col in range(image.shape[1]):
-        #Get,the pixel values for each channel (B, G, R)
-        b, g, r = modified_image[row, col]
-        #Check if the red channel value is above the threshold
-        if (b, g, r) == (0, 0, 255)
-            red_pixel_count += 1
-    if(red_pixel_count > 24)
-        result = True
-    else:
-        result = False
+    Annotations de Texte :
+        Description : Ajouter des descriptions textuelles ou des étiquettes aux images.
+        Utilisation : Utilisées pour des tâches comme la reconnaissance optique de caractères (OCR).
+        Exemple : Annoter le texte visible sur les panneaux de signalisation.
 
-# Afficher toutes les classes dans l'ontologie
-print(list(onto.classes()))
+Processus d'Annotation d'Image
 
-# Afficher toutes les propriétés dans l'ontologie
-print(list(onto.properties()))
+    Préparation des Images : Recueillir et organiser les images à annoter.
+    Choix des Outils : Utiliser des outils d'annotation comme LabelImg, CVAT, ou VGG Image Annotator.
+    Annotation : Utiliser l'outil choisi pour ajouter des annotations appropriées à chaque image.
+    Vérification : Valider les annotations pour assurer leur précision.
+    Exportation : Exporter les annotations dans un format utilisable par les modèles d'apprentissage automatique (par exemple, XML, JSON, COCO format).
 
-# Afficher les propriétés de la classe Segment
-print(list(onto.Segment.is_a))
+Importance de l'Annotation d'Image
 
-# Vérifier si les propriétés spécifiques sont incluses dans la classe Segment
-print(onto.Segment.hue_mean)
-print(onto.Segment.hue_std)
-# Continuez ainsi pour toutes les propriétés que vous avez définies pour Segment
+    Entraînement des Modèles : Les annotations fournissent les données labellisées nécessaires pour entraîner des modèles d'apprentissage automatique.
+    Précision et Performance : Des annotations précises améliorent la performance et la précision des modèles.
+    Applications Pratiques : Utilisées dans des applications variées telles que la reconnaissance faciale, les véhicules autonomes, la surveillance, et plus encore.
+
+Outils Populaires pour l'Annotation d'Image
+
+    LabelImg : Un outil d'annotation de boîtes englobantes simple à utiliser.
+    CVAT (Computer Vision Annotation Tool) : Un outil puissant pour annoter des vidéos et des images avec des fonctionnalités avancées.
+    VGG Image Annotator (VIA) : Un outil léger pour annoter des images avec divers types d'annotations.
+    Supervisely : Une plateforme de collaboration pour l'annotation d'image et la gestion de projet.

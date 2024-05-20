@@ -100,7 +100,7 @@ def calculer_caracteristiques_symptomes_racines(image_path):
     return caracteristiques_symptomes_racines
 
 # Exemple d'utilisation
-image_path = '1.jpg'
+image_path = 'images/1.jpg'
 resultats_symptomes_racines = calculer_caracteristiques_symptomes_racines(image_path)
 print("Caractéristiques des symptômes sur les racines :")
 print(json.dumps(resultats_symptomes_racines, indent=4))

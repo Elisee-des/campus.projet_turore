@@ -22,10 +22,21 @@
 \contentsline {subsection}{\numberline {2.1}Introduction}{8}{}%
 \contentsline {subsection}{\numberline {2.2}Annotation}{8}{}%
 \contentsline {subsection}{\numberline {2.3}Mise en place de l'ontologie}{8}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Collecte d´information (Le Dataset)}{10}{}%
-\contentsline {paragraph}{\numberline {2.3.1.1}Brûlure bactérienne (Bacterial Blight (CBB))}{11}{}%
-\contentsline {paragraph}{\numberline {2.3.1.2}Maladie des stries brunes (Brown Streak Disease (CBSD))}{13}{}%
-\contentsline {paragraph}{\numberline {2.3.1.3}Marbrure verte (Green Mottle (CGM))}{14}{}%
-\contentsline {paragraph}{\numberline {2.3.1.4}Maladie de la mosaïque (Mosaic Disease (CMD))}{15}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Conceptualisation (Prés-traitement des images)}{16}{}%
-\contentsline {section}{\numberline {3}Bibliographies}{17}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Collecte d´information (Le Dataset)}{9}{}%
+\contentsline {paragraph}{\numberline {2.3.1.1}Brûlure bactérienne (Bacterial Blight (CBB))}{10}{}%
+\contentsline {paragraph}{\numberline {2.3.1.2}Maladie des stries brunes (Brown Streak Disease (CBSD))}{11}{}%
+\contentsline {paragraph}{\numberline {2.3.1.3}Marbrure verte (Green Mottle (CGM))}{12}{}%
+\contentsline {paragraph}{\numberline {2.3.1.4}Maladie de la mosaïque (Mosaic Disease (CMD))}{13}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Conceptualisation}{14}{}%
+\contentsline {paragraph}{\numberline {2.3.2.1}Les propriétés}{14}{}%
+\contentsline {paragraph}{\numberline {2.3.2.2}Les propriétés}{16}{}%
+\contentsline {subsection}{\numberline {2.4}Extraction des caractéristiques}{16}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Les descripteurs de couleur}{16}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Descripteur de Contour}{17}{}%
+\contentsline {subsubsection}{\numberline {2.4.3}Descripteur de Texture}{17}{}%
+\contentsline {subsubsection}{\numberline {2.4.4}Descripteurs des Symptômes des Feuilles}{19}{}%
+\contentsline {subsubsection}{\numberline {2.4.5}Analyse des Symptômes des Racines de Manioc}{20}{}%
+\contentsline {subsubsection}{\numberline {2.4.6}Analyse des Symptômes des Tiges de Manioc}{21}{}%
+\contentsline {subsection}{\numberline {2.5}Extension de l´Ontologie}{22}{}%
+\contentsline {section}{\numberline {3}Chapitre 3 : Implementation}{24}{}%
+\contentsline {section}{\numberline {4}Bibliographies}{25}{}%

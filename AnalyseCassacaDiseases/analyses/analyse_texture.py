@@ -33,7 +33,7 @@ def calculer_caracteristiques_texture(image_path):
 
 
 # Exemple d'utilisation
-image_path = '1.jpg'
+image_path = 'images/1.jpg'
 resultats_texture = calculer_caracteristiques_texture(image_path)
 print("Caractéristiques de texture :")
 print(json.dumps(resultats_texture, indent=4))

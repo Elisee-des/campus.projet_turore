@@ -50,7 +50,7 @@ def calculer_caracteristiques_symptomes_feuilles(image_path):
     return caracteristiques_symptomes_feuilles
 
 # Exemple d'utilisation
-image_path = '1.jpg'
+image_path = 'images/1.jpg'
 resultats_symptomes_feuilles = calculer_caracteristiques_symptomes_feuilles(image_path)
 print("Caractéristiques des symptômes sur les feuilles :")
 print(json.dumps(resultats_symptomes_feuilles, indent=4))

@@ -43,7 +43,7 @@ def calculer_caracteristiques_contour(image_path):
     return caracteristiques_contour
 
 # Exemple d'utilisation
-image_path = '1.jpg'
+image_path = 'images/1.jpg'
 resultats_contour = calculer_caracteristiques_contour(image_path)
 if resultats_contour:
     print("Caractéristiques de contour :")
