@@ -1,0 +1,2343 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.24)  24 MAY 2024 18:16
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-04-11>
+(enetcom-pfe-report.cls
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/silence\silence.sty
+Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
+sages
+\sl@Save=\count189
+\sl@StateNumber=\count190
+\sl@MessageCount=\count191
+\sl@Casualties=\count192
+\sl@Filter=\toks17
+\sl@Message=\toks18
+\sl@UnexpandedMessage=\toks19
+\sl@Mess@ge=\toks20
+\sl@WarningCount=\count193
+\sl@WarningNumber=\count194
+\sl@WarningCasualties=\count195
+\sl@TempBOW=\toks21
+\sl@BankOfWarnings=\toks22
+LaTeX Info: Redefining \GenericWarning on input line 433.
+\sl@ErrorCount=\count196
+\sl@ErrorNumber=\count197
+\sl@ErrorCasualties=\count198
+\sl@TempBOE=\toks23
+\sl@BankOfErrors=\toks24
+LaTeX Info: Redefining \GenericError on input line 601.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count199
+\c@chapter=\count266
+\c@section=\count267
+\c@subsection=\count268
+\c@subsubsection=\count269
+\c@paragraph=\count270
+\c@subparagraph=\count271
+\c@figure=\count272
+\c@table=\count273
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks26
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks27
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/verse\verse.sty
+Package: verse 2014/05/10 v2.4b verse typesetting
+\c@vslineno=\count277
+\c@poemline=\count278
+\c@fvsline=\count279
+\c@modulo@vs=\count280
+\c@verse@envctr=\count281
+\versewidth=\skip50
+\vgap=\skip51
+\vindent=\skip52
+\stanzaskip=\skip53
+\vleftskip=\skip54
+\vrightskip=\skip55
+\c@chrsinstr=\count282
+\beforepoemtitleskip=\skip56
+\afterpoemtitleskip=\skip57
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box51
+\extrarowheight=\dimen150
+\NC@list=\toks28
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box52
+)
+\everycr=\toks29
+\minrowclearance=\skip60
+\rownum=\count283
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen151
+\ttl@minus=\dimen152
+\ttl@toksa=\toks30
+\titlewidth=\dimen153
+\titlewidthlast=\dimen154
+\titlewidthfirst=\dimen155
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2024/04/23 v4.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen156
+\captionmargin=\dimen157
+\caption@leftmargin=\dimen158
+\caption@rightmargin=\dimen159
+\caption@width=\dimen160
+\caption@indent=\dimen161
+\caption@parindent=\dimen162
+\caption@hangindent=\dimen163
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count286
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count287
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count288
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count290
+\Hy@pagecounter=\count291
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count292
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count293
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen165
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count294
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip72
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count300
+\calc@Bcount=\count301
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count302
+\calc@Cskip=\skip75
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen170
+\ESO@tempdimb=\dimen171
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+\AM@pagewidth=\dimen174
+\AM@pageheight=\dimen175
+\AM@fboxrule=\dimen176
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count303
+\AM@pagebox=\box54
+\AM@global@opts=\toks31
+\AM@pagecnt=\count304
+\AM@toc@title=\toks32
+\AM@lof@heading=\toks33
+\c@AM@survey=\count305
+\AM@templatesizebox=\box55
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen177
+\enit@toks=\toks34
+\enit@inbox=\box56
+\enit@count@id=\count306
+\enitdp@description=\count307
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks35
+\footnotemargin=\dimen178
+\@outputbox@depth=\dimen179
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/04/20 v24.4 The Babel package
+\babel@savecnt=\count308
+\U@D=\dimen180
+\l@unhyphenated=\language79
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count309
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
+df
+Language: french 2024-02-29 v3.5s French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language22). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language22). Reported on input line 92.
+\FB@stdchar=\count310
+Package babel Info: Making : an active character on input line 420.
+Package babel Info: Making ; an active character on input line 421.
+Package babel Info: Making ! an active character on input line 422.
+Package babel Info: Making ? an active character on input line 423.
+\FBguill@level=\count311
+\FBold@everypar=\toks36
+\FB@Mht=\dimen181
+\mc@charclass=\count312
+\mc@charfam=\count313
+\mc@charslot=\count314
+\std@mcc=\count315
+\dec@mcc=\count316
+\FB@parskip=\dimen182
+\listindentFB=\dimen183
+\descindentFB=\dimen184
+\labelindentFB=\dimen185
+\labelwidthFB=\dimen186
+\leftmarginFB=\dimen187
+\parindentFFN=\dimen188
+\FBfnindent=\dimen189
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr\babel
+-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\varioref.sty
+Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
+\c@vrcnt=\count317
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count318
+\xs_countb=\count319
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+\AC@clearlist=\toks37
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write3
+\mtcindent=\skip77
+\mtcskipamount=\skip78
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks38
+\mtc@strutbox=\box57
+\mtc@hstrutbox=\box58
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `main.mtc0'.
+
+\openout3 = `main.mtc'.
+
+
+(main.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `main.mtc'.
+
+\openout3 = `main.mtc0'.
+
+\c@mtc=\count320
+\c@minitocdepth=\count321
+\c@ptc=\count322
+\c@parttocdepth=\count323
+\ptcindent=\skip79
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
+File: english.mld 2006/01/13
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\english.mld
+File: english.mld 2006/01/13
+)
+Package minitoc Info: I0010
+(minitoc)             The french language is selected.
+(minitoc)              on input line 4911.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\french.mld
+File: french.mld 2006/03/21
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip80
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen190
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen191
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count324
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count325
+\leftroot@=\count326
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count327
+\DOTSCASE@=\count328
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen192
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count329
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count330
+\dotsspace@=\muskip17
+\c@parentequation=\count331
+\dspbrk@lvl=\count332
+\tag@help=\toks40
+\row@=\count333
+\column@=\count334
+\maxfields@=\count335
+\andhelp@=\toks41
+\eqnshift@=\dimen193
+\alignsep@=\dimen194
+\tagshift@=\dimen195
+\tagwidth@=\dimen196
+\totwidth@=\dimen197
+\lineht@=\dimen198
+\@envbody=\toks42
+\multlinegap=\skip81
+\multlinetaggap=\skip82
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count336
+\float@exts=\toks44
+\float@box=\box61
+\@float@everytoks=\toks45
+\@floatcapt=\box62
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\semantic.sty
+Package: semantic 2003/10/28 v2.0(epsilon) 
+
+Semantic Package v2.0(epsilon) [2003/10/28]
+CVSId: $Id: semantic.dtx,v 1.11 2003/10/28 13:45:57 turtle Exp $
+\c@@@conflict=\count337
+Loading features: 
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\ligature.sty
+\@pushedtoks=\toks46
+\@seentoks=\toks47
+)
+ math mode ligatures,
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\infernce.sty
+\@@tempa=\toks48
+\@@tempb=\toks49
+\@@pSpace=\skip83
+\@@pEnd=\skip84
+\@@nSpace=\skip85
+\@@aLineBox=\box63
+)
+ inference rules,
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\tdiagram.sty
+\@@xShift=\count338
+\@@yShift=\count339
+\@@symbol=\toks50
+\@@tempSymbol=\toks51
+)
+ T diagrams,
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\reserved.sty
+\@@spacing=\toks52
+\@@formating=\toks53
+)
+ reserved words,
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/semantic\shrthand.sty)
+ short hands,
+and general definitions.
+
+\@@maxwidth=\dimen199
+\@@pLineBox=\box64
+\@@cBox=\box65
+\@@pBox=\box66
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks54
+\inpenc@posthook=\toks55
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks56
+\pgfutil@tempdima=\dimen256
+\pgfutil@tempdimb=\dimen257
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box67
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks57
+\pgfkeys@temptoks=\toks58
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks59
+))
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
+\pgf@xd=\dimen266
+\pgf@yd=\dimen267
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count340
+\c@pgf@countb=\count341
+\c@pgf@countc=\count342
+\c@pgf@countd=\count343
+\t@pgf@toka=\toks60
+\t@pgf@tokb=\toks61
+\t@pgf@tokc=\toks62
+\pgf@sys@id@count=\count344
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count345
+\pgfsyssoftpath@bigbuffer@items=\count346
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen268
+\pgfmath@count=\count347
+\pgfmath@box=\box68
+\pgfmath@toks=\toks63
+\pgfmath@stack@operand=\toks64
+\pgfmath@stack@operation=\toks65
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count348
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen269
+\pgf@picmaxx=\dimen270
+\pgf@picminy=\dimen271
+\pgf@picmaxy=\dimen272
+\pgf@pathminx=\dimen273
+\pgf@pathmaxx=\dimen274
+\pgf@pathminy=\dimen275
+\pgf@pathmaxy=\dimen276
+\pgf@xx=\dimen277
+\pgf@xy=\dimen278
+\pgf@yx=\dimen279
+\pgf@yy=\dimen280
+\pgf@zx=\dimen281
+\pgf@zy=\dimen282
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen283
+\pgf@path@lasty=\dimen284
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen285
+\pgf@shorten@start@additional=\dimen286
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box69
+\pgf@hbox=\box70
+\pgf@layerbox@main=\box71
+\pgf@picture@serial@count=\count349
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen287
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen288
+\pgf@pt@y=\dimen289
+\pgf@pt@temp=\dimen290
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen291
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen292
+\pgf@sys@shading@range@num=\count350
+\pgf@shadingcount=\count351
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box72
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box73
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen293
+\pgf@nodesepend=\dimen294
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks66
+\verbatim@line=\toks67
+\verbatim@in@stream=\read4
+)
+\tcb@titlebox=\box74
+\tcb@upperbox=\box75
+\tcb@lowerbox=\box76
+\tcb@phantombox=\box77
+\c@tcbbreakpart=\count352
+\c@tcblayer=\count353
+\c@tcolorbox@number=\count354
+\l__tcobox_tmpa_box=\box78
+\l__tcobox_tmpa_dim=\dimen295
+\tcb@temp=\box79
+\tcb@temp=\box80
+\tcb@temp=\box81
+\tcb@temp=\box82
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
+\pgffor@stack=\toks68
+\pgffor@toks=\toks69
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count355
+\pgfplotmarksize=\dimen298
+)
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box83
+\tikz@figbox@bg=\box84
+\tikz@tempbox=\box85
+\tikz@tempbox@bg=\box86
+\tikztreelevel=\count356
+\tikznumberofchildren=\count357
+\tikznumberofcurrentchild=\count358
+\tikz@fig@count=\count359
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count360
+\pgfmatrixcurrentcolumn=\count361
+\pgf@matrix@numberofcolumns=\count362
+)
+\tikz@expandcount=\count363
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-commo
+n.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box87
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks70
+\XKV@tempa@toks=\toks71
+)
+\XKV@depth=\count364
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box88
+)
+\tc@llx=\dimen307
+\tc@lly=\dimen308
+\tc@urx=\dimen309
+\tc@ury=\dimen310
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen311
+\adjbox@Height=\dimen312
+\adjbox@Depth=\dimen313
+\adjbox@Totalheight=\dimen314
+\adjbox@pwidth=\dimen315
+\adjbox@pheight=\dimen316
+\adjbox@pdepth=\dimen317
+\adjbox@ptotalheight=\dimen318
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count365
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box89
+\sift@deathcycles=\count366
+\@vwid@loff=\dimen319
+\@vwid@roff=\dimen320
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2024/05/16 v1.7.0 fvextra - extensions and patches for fancyvr
+b
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count367
+\FV@InFile=\read5
+\FV@TabBox=\box90
+\c@FancyVerbLine=\count368
+\FV@StepNumber=\count369
+\FV@OutFile=\write5
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count370
+\output=\toks72
+\linenoprevgraf=\count371
+\linenumbersep=\dimen321
+\linenumberwidth=\dimen322
+\c@linenumber=\count372
+\c@pagewiselinenumber=\count373
+\c@LN@truepage=\count374
+\c@internallinenumber=\count375
+\c@internallinenumbers=\count376
+\quotelinenumbersep=\dimen323
+\bframerule=\dimen324
+\bframesep=\dimen325
+\bframebox=\box91
+\linenoamsmath@ams@eqpen=\count377
+LaTeX Info: Redefining \\ on input line 3180.
+)
+\c@FancyVerbWriteLine=\count378
+\c@FancyVerbBufferIndex=\count379
+\c@FancyVerbBufferLength=\count380
+\c@FancyVerbBufferLine=\count381
+\c@FV@oldbufferlength=\count382
+\c@FV@TrueTabGroupLevel=\count383
+\c@FV@TrueTabCounter=\count384
+\FV@TabBox@Group=\box92
+\FV@TmpLength=\skip86
+\c@FV@HighlightLinesStart=\count385
+\c@FV@HighlightLinesStop=\count386
+\FV@LoopCount=\count387
+\FV@NCharsBox=\box93
+\FV@BreakIndent=\dimen326
+\FV@BreakIndentNChars=\count388
+\FV@BreakSymbolSepLeft=\dimen327
+\FV@BreakSymbolSepLeftNChars=\count389
+\FV@BreakSymbolSepRight=\dimen328
+\FV@BreakSymbolSepRightNChars=\count390
+\FV@BreakSymbolIndentLeft=\dimen329
+\FV@BreakSymbolIndentLeftNChars=\count391
+\FV@BreakSymbolIndentRight=\dimen330
+\FV@BreakSymbolIndentRightNChars=\count392
+\c@FancyVerbLineBreakLast=\count393
+\FV@LineBox=\box94
+\FV@LineIndentBox=\box95
+\c@FV@BreakBufferDepth=\count394
+\FV@LineWidth=\dimen331
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
+ty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip87
+\fb@frw=\dimen332
+\fb@frh=\dimen333
+\FrameRule=\dimen334
+\FrameSep=\dimen335
+)
+\minted@appexistsfile=\read6
+\minted@bgbox=\box96
+\minted@code=\write6
+\c@minted@FancyVerbLineTemp=\count395
+\c@minted@pygmentizecounter=\count396
+\@float@every@listing=\toks73
+\c@listing=\count397
+)
+runsystem(if not exist _minted-main mkdir _minted-main)...executed.
+
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen336
+\TX@old@table=\dimen337
+\TX@old@col=\dimen338
+\TX@target=\dimen339
+\TX@delta=\dimen340
+\TX@cols=\count398
+\TX@ftn=\toks74
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/ctable\ctable.sty
+Package: ctable 2015/10/17 v1.31 ctable package for flexible typesetting of tab
+le and figure floats using key/value directives
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen341
+\lightrulewidth=\dimen342
+\cmidrulewidth=\dimen343
+\belowrulesep=\dimen344
+\belowbottomsep=\dimen345
+\aboverulesep=\dimen346
+\abovetopsep=\dimen347
+\cmidrulesep=\dimen348
+\cmidrulekern=\dimen349
+\defaultaddspace=\dimen350
+\@cmidla=\count399
+\@cmidlb=\count400
+\@aboverulesep=\dimen351
+\@belowrulesep=\dimen352
+\@thisruleclass=\count401
+\@lastruleclass=\count402
+\@thisrulewidth=\dimen353
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count403
+\rotFPtop=\skip88
+\rotFPbot=\skip89
+\rot@float@box=\box97
+\rot@mess@toks=\toks75
+)
+\@CTframesep=\dimen354
+\@dfltCTframesep=\dimen355
+\@CTframerule=\dimen356
+\@dfltCTframerule=\dimen357
+\@CTwidth=\dimen358
+\@dfltCTwidth=\dimen359
+\@CTcaptionskip=\dimen360
+\@dfltCTcaptionskip=\dimen361
+\@CTmaxwidth=\dimen362
+\@dfltCTmaxwidth=\dimen363
+\@CTmincapwidth=\dimen364
+\@dfltCTmincapwidth=\dimen365
+\@CTfooterwidth=\dimen366
+\@dfltCTfooterwidth=\dimen367
+\@CTw=\dimen368
+\@CTfloatwidth=\dimen369
+\@CToldsep=\dimen370
+\@CToldrule=\dimen371
+\CT@t=\box98
+\@CTcurftwidth=\dimen372
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip90
+\multirow@cntb=\count404
+\multirow@dima=\skip91
+\bigstrutjot=\dimen373
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/seqsplit\seqsplit.sty
+Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins,
+ etc.) 
+) (C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen374
+\WF@size=\dimen375
+\c@WF@wrappedlines=\count405
+\WF@box=\box99
+\WF@everypar=\toks76
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/nowidow\nowidow.sty
+Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
+Package: nowidow 
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip92
+\RaggedLeftLeftskip=\skip93
+\RaggedRightLeftskip=\skip94
+\CenteringRightskip=\skip95
+\RaggedLeftRightskip=\skip96
+\RaggedRightRightskip=\skip97
+\CenteringParfillskip=\skip98
+\RaggedLeftParfillskip=\skip99
+\RaggedRightParfillskip=\skip100
+\JustifyingParfillskip=\skip101
+\CenteringParindent=\skip102
+\RaggedLeftParindent=\skip103
+\RaggedRightParindent=\skip104
+\JustifyingParindent=\skip105
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pgf-blur\tikzlibrarysha
+dows.blur.code.tex  v1.02, 2012/12/09
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfbs@fading@count=\count406
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count407
+\c@@ppsavesec=\count408
+\c@@ppsaveapp=\count409
+)
+\BoxWd=\skip106
+\Aux=\skip107
+) (Commands.tex)
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 25.
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc1.
+\openout3 = `main.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout3 = `main.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout3 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout3 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout3 = `main.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc6.
+\openout3 = `main.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc7.
+\openout3 = `main.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc8.
+\openout3 = `main.mtc8'.
+
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ma
+in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
+
+runsystem(del main.aex)...executed.
+
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 25
+.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-04-11 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count410
+\l__pdf_internal_box=\box100
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count411
+\scratchdimen=\dimen376
+\scratchbox=\box101
+\nofMPsegments=\count412
+\nofMParguments=\count413
+\everyMPshowfont=\toks77
+\MPscratchCnt=\count414
+\MPscratchDim=\dimen377
+\MPnumerator=\count415
+\makeMPintoPDFobject=\count416
+\everyMPtoPDFconversion=\toks78
+)
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: french babel package is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 25.
+ (main.out) (main.out)
+\@outlinefile=\write7
+\openout7 = `main.out'.
+
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\esabi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+LaTeX Info: Redefining \degres on input line 25.
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 25.
+Package french.ldf Info: Setting StandardEnumerateEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 25.
+LaTeX Info: Redefining \up on input line 25.
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0042
+(minitoc(hints))             --- The appendix package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+(chapitre/00-PageDeGarde.tex
+Overfull \vbox (98.5084pt too high) detected at line 85
+ []
+
+
+Overfull \vbox (98.5084pt too high) detected at line 85
+ []
+
+File: images/universite-norbert-zongo-removebg-preview.png Graphic file (type p
+ng)
+<use images/universite-norbert-zongo-removebg-preview.png>
+Package pdftex.def Info: images/universite-norbert-zongo-removebg-preview.png  
+used on input line 85.
+(pdftex.def)             Requested size: 142.26508pt x 113.80838pt.
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 85--85
+ []|[]| 
+ []
+
+
+Overfull \vbox (98.5084pt too high) detected at line 85
+ []
+
+
+Overfull \hbox (18.22058pt too wide) in alignment at lines 85--85
+[][][][][] 
+ []
+
+
+Overfull \hbox (14.75885pt too wide) in paragraph at lines 146--148
+[]\T1/ptm/b/n/14 Dr Mous-ta-pha BI-KIENGA\T1/ptm/m/n/14 , Enseignant-chercheur 
+à l'Uni-ver-sité Nor-bert Zongo 
+ []
+
+[1
+
+{C:/Users/esabi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/esab
+i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/universi
+te-norbert-zongo-removebg-preview.png>]
+! Missing } inserted.
+<inserted text> 
+                }
+l.155 \end{titlepage}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) (chapitre/01-Dedication.tex
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+) (chapitre/02-Remerciement.tex [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+
+Overfull \hbox (12.13512pt too wide) in paragraph at lines 11--11
+[]\T1/ptm/m/n/12 Je sou-haite ex-pri-mer mes sin-cères re-mer-cie-ments à tout 
+le per-son-nel en-sei-gnant et ad-mi-nis-tra-tif
+ []
+
+) [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+
+ []
+
+(main.toc
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 25.
+ [3
+
+]
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 40.
+)
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+
+ []
+
+(main.lof)
+\tf@lof=\write9
+\openout9 = `main.lof'.
+
+ (chapitre/03-ListeDesAbr.tex [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+) (chapitre/04-IntroductionGeneral.tex [6
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+
+Overfull \hbox (18.48448pt too wide) in paragraph at lines 9--9
+[]\T1/ptm/m/n/12 L'analyse sé-man-tique des images est un do-maine en pleine ex
+-pan-sion qui trouve des ap-pli-ca-tions
+ []
+
+
+Overfull \hbox (2.9723pt too wide) in paragraph at lines 9--9
+\T1/ptm/m/n/12 pour la sé-cu-rité ali-men-taire en Afrique sub-sa-ha-rienne, le
+ ma-nioc oc-cupe une place pré-pon-dé-rante
+ []
+
+
+Overfull \hbox (10.20718pt too wide) in paragraph at lines 11--11
+\T1/ptm/m/n/12 des ra-cines et les dé-for-ma-tions des feuilles, cette ana-lyse
+ per-met aux agri-cul-teurs et aux cher-cheurs
+ []
+
+
+Overfull \hbox (17.42833pt too wide) in paragraph at lines 13--13
+[]\T1/ptm/m/n/12 Cette in-tro-duc-tion gé-né-rale ex-plo-rera les dé-fis po-sés
+ par les ma-la-dies du ma-nioc, les ap-pli-ca-tions
+ []
+
+
+Overfull \hbox (1.41132pt too wide) in paragraph at lines 13--13
+\T1/ptm/m/n/12 po-ten-tielles de l'ana-lyse sé-man-tique des images dans ce do-
+maine, ainsi que les avan-cées ré-centes
+ []
+
+) (chapitre/05-Chapitre1.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {ETAT DE L'ART} [1
+
+]
+Chapitre 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+\openout3 = `main.mtc'.
+
+\openout3 = `main.mtc'.
+
+(main.mtc4) [2
+
+]
+Overfull \hbox (5.18007pt too wide) in paragraph at lines 9--10
+\T1/ptm/m/n/12 clas-si-fi-ca-tion, de seg-men-ta-tion sé-man-tique et de re-con
+-nais-sance de scènes, ainsi que les mé-thodes
+ []
+
+
+Overfull \hbox (2.57503pt too wide) in paragraph at lines 17--18
+\T1/ptm/m/n/12 Web plus in-tel-li-gibles et ex-ploi-tables par les ma-chines, l
+e Web sé-man-tique re-pose sur l'uti-li-sa-tion
+ []
+
+[3]
+Overfull \hbox (26.1002pt too wide) in paragraph at lines 19--19
+|[]\T1/ptm/b/n/14.4 Rapport entre L'ana-lyse sé-man-tique des images et le Le W
+eb sé-man-tique| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Overfull \hbox (30.89256pt too wide) in paragraph at lines 24--25
+[]\T1/ptm/m/n/12 Le Web sé-man-tique uti-lise des lan-gages comme RDF et OWL po
+ur re-pré-sen-ter les connais-sances
+ []
+
+
+Overfull \hbox (29.2546pt too wide) in paragraph at lines 42--43
+\T1/ptm/m/n/12 d'ap-pren-tis-sage au-to-ma-tique. Ces mé-ta-don-nées ajou-tées 
+four-nissent des in-for-ma-tions sup-plé-men-taires
+ []
+
+[4]
+<images/13.jpeg, id=314, 1708.3825pt x 920.43875pt>
+File: images/13.jpeg Graphic file (type jpg)
+<use images/13.jpeg>
+Package pdftex.def Info: images/13.jpeg  used on input line 49.
+(pdftex.def)             Requested size: 318.66948pt x 171.68297pt.
+ [5 <./images/13.jpeg>]
+Overfull \hbox (4.12216pt too wide) in paragraph at lines 64--65
+[]\T1/ptm/m/n/12 ^^V \T1/ptm/b/n/12 An-no-ta-tion par clas-si-fi-ca-tion : \T1/
+ptm/m/n/12 Les an-no-ta-teurs at-tri-buent des éti-quettes ou des ca-té-go-ries
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Overfull \hbox (19.68025pt too wide) in paragraph at lines 71--72
+\T1/ptm/m/n/12 spé-ci-fiques dans des don-nées comme des images, vi-déos ou do-
+cu-ments. Ils ajoutent des in-for-ma-tions
+ []
+
+
+Overfull \hbox (18.05653pt too wide) in paragraph at lines 78--79
+[]\T1/ptm/m/it/12 Accessibilité en ligne : \T1/ptm/m/n/12 Pla-te-forme en ligne
+ fa-ci-li-tant l'ac-cès et l'uti-li-sa-tion col-la-bo-ra-tive. 
+ []
+
+[6]
+Overfull \hbox (0.2619pt too wide) in paragraph at lines 96--97
+[]\T1/ptm/m/it/12 Fonctionnalités li-mi-tées : \T1/ptm/m/n/12 Moins de fonc-tio
+n-na-li-tés avan-cées com-paré à des so-lu-tions
+ []
+
+
+Overfull \hbox (9.572pt too wide) in paragraph at lines 108--109
+\T1/ptm/m/n/12 peut pré-sen-ter des bugs ou des fonc-tion-na-li-tés in-com-plèt
+es lors des pre-mières ver-sions. 
+ []
+
+[7]
+Overfull \hbox (3.8622pt too wide) in paragraph at lines 109--110
+[]\T1/ptm/m/it/12 Documentation ini-tiale li-mi-tée : \T1/ptm/m/n/12 Les res-so
+urces d'aide peuvent être moins abon-dantes
+ []
+
+
+Overfull \hbox (19.84358pt too wide) in paragraph at lines 117--118
+\T1/ptm/m/n/12 connais-sances de ma-nière in-ter-pré-table par les ma-chines, f
+a-ci-li-tant ainsi la re-cherche, la ré-cu-pé-ra-tion
+ []
+
+
+Overfull \hbox (3.72598pt too wide) in paragraph at lines 120--121
+\T1/ptm/m/n/12 ainsi aux ma-chines de com-prendre et d'in-ter-pré-ter les don-n
+ées de ma-nière plus in-tel-li-gente. 
+ []
+
+[8]
+Overfull \hbox (7.2907pt too wide) in paragraph at lines 124--125
+\T1/ptm/m/n/12 on-to-lo-gies, per-met-tant ainsi de dé-duire de nou-velles conn
+ais-sances à par-tir des in-for-ma-tions
+ []
+
+[9]
+Overfull \hbox (27.51347pt too wide) in paragraph at lines 155--156
+[]\T1/ptm/m/it/12 Complexité : \T1/ptm/m/n/12 L'écri-ture de règles SWRL peut ê
+tre com-plexe et né-ces-si-ter une connais-sance
+ []
+
+
+Overfull \hbox (1.54457pt too wide) in paragraph at lines 158--159
+[]\T1/ptm/b/n/12 Protege : \T1/ptm/m/n/12 Un ou-til de mo-dé-li-sa-tion des on-
+to-lo-gies avec une in-ter-face uti-li-sa-teur convi-viale,
+ []
+
+
+Overfull \hbox (20.87799pt too wide) in paragraph at lines 162--163
+[]\T1/ptm/m/it/12 Interface convi-viale : \T1/ptm/m/n/12 In-ter-face gra-phique
+ in-tui-tive pour créer et vi-sua-li-ser des on-to-lo-gies. 
+ []
+
+
+Overfull \hbox (27.44218pt too wide) in paragraph at lines 163--164
+[]\T1/ptm/m/it/12 Large gamme de fonc-tion-na-li-tés : \T1/ptm/m/n/12 Offre une
+ va-riété de fonc-tion-na-li-tés pour la mo-dé-li-sa-tion
+ []
+
+
+Overfull \hbox (17.26567pt too wide) in paragraph at lines 170--171
+[]\T1/ptm/m/it/12 Complexité pour les nou-veaux uti-li-sa-teurs : \T1/ptm/m/n/1
+2 L'ap-pren-tis-sage de toutes les fonc-tion-na-li-tés
+ []
+
+)
+Overfull \hbox (3.83981pt too wide) in paragraph at lines 178--57
+\T1/ptm/m/n/12 des connais-sances. La conver-gence de ces do-maines ouvre la vo
+ie à des ap-pli-ca-tions in-tel-li-gentes,
+ []
+
+[10] (chapitre/06-Chapitre2.tex [11]
+Chapitre 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+\openout3 = `main.mtc'.
+
+\openout3 = `main.mtc'.
+
+(main.mtc5) [12
+
+]
+Overfull \hbox (1.28307pt too wide) in paragraph at lines 16--17
+\T1/ptm/m/n/12 gé-né-ra-le-ment re-quis de pré-trai-ter les images afin d'en am
+é-lio-rer la qua-lité. Cette phase com-prend
+ []
+
+<images/14.png, id=358, 707.64375pt x 400.49625pt>
+File: images/14.png Graphic file (type png)
+<use images/14.png>
+Package pdftex.def Info: images/14.png  used on input line 26.
+(pdftex.def)             Requested size: 318.66948pt x 180.35608pt.
+
+Overfull \hbox (10.26476pt too wide) in paragraph at lines 33--34
+[]\T1/ptm/m/n/12 Dans le cadre de l'an-no-ta-tion sé-man-tique, la mise en plac
+e d'une on-to-lo-gie vise prin-ci-pa-le-ment
+ []
+
+[13]
+Overfull \hbox (44.48459pt too wide) in paragraph at lines 38--39
+[]\T1/ptm/m/n/12 En éta-blis-sant des termes nor-ma-li-sés et des re-la-tions s
+tan-dar-di-sées,
+ []
+
+
+Overfull \hbox (2.17052pt too wide) in paragraph at lines 38--39
+\T1/ptm/m/n/12 une on-to-lo-gie fa-vo-rise la co-hé-rence et l'in-ter-opé-ra-bi
+-lité des don-nées an-no-tées. Cela per-met
+ []
+
+
+Overfull \hbox (20.82529pt too wide) in paragraph at lines 38--39
+\T1/ptm/m/n/12 aux dif-fé-rents uti-li-sa-teurs et sys-tèmes de par-ta-ger et d
+'échan-ger ef-fi-ca-ce-ment des in-for-ma-tions. 
+ []
+
+[14 <./images/14.png>]
+Overfull \hbox (12.14903pt too wide) in paragraph at lines 49--50
+[]\T1/ptm/m/n/12 En ré-sumé, l'ob-jec-tif prin-ci-pal de la mise en place d'une
+ on-to-lo-gie dans le cadre de l'an-no-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 52.
+
+Overfull \hbox (16.64305pt too wide) in paragraph at lines 53--54
+\T1/ptm/m/n/12 sources pour re-cueillir des don-nées pré-cises et fiables. Nous
+ avons exa-miné des ar-ticles scien-ti-fiques
+ []
+
+
+Overfull \hbox (18.19696pt too wide) in paragraph at lines 55--56
+[] \T1/ptm/m/n/12 Dans cette étude, nous exa-mi-nons com-ment uti-li-ser des te
+ch-niques spé-ciales pour com-prendre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--71
+
+ []
+
+[15]
+Overfull \hbox (1.30109pt too wide) in paragraph at lines 72--78
+[]\T1/ptm/m/n/12 Dans cette étude, nous nous concen-tre-rons sur l'ana-lyse sé-
+man-tique des images pour dé-tec-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
+
+ []
+
+<images/1.jpg, id=373, 256.96pt x 256.96pt>
+File: images/1.jpg Graphic file (type jpg)
+<use images/1.jpg>
+Package pdftex.def Info: images/1.jpg  used on input line 91.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/2.jpg, id=374, 256.96pt x 256.96pt>
+File: images/2.jpg Graphic file (type jpg)
+<use images/2.jpg>
+Package pdftex.def Info: images/2.jpg  used on input line 97.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/3.jpg, id=375, 256.96pt x 256.96pt>
+File: images/3.jpg Graphic file (type jpg)
+<use images/3.jpg>
+Package pdftex.def Info: images/3.jpg  used on input line 103.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+[16]
+Overfull \hbox (7.25542pt too wide) in paragraph at lines 111--112
+\T1/ptm/m/n/12 culti-vars ré-sis-tants, des pra-tiques cultu-rales ap-pro-priée
+s et, par-fois, l'ap-pli-ca-tion de pro-duits
+ []
+
+<images/4.jpg, id=381, 256.96pt x 256.96pt>
+File: images/4.jpg Graphic file (type jpg)
+<use images/4.jpg>
+Package pdftex.def Info: images/4.jpg  used on input line 121.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/5.jpg, id=382, 256.96pt x 256.96pt>
+File: images/5.jpg Graphic file (type jpg)
+<use images/5.jpg>
+Package pdftex.def Info: images/5.jpg  used on input line 127.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/6.jpg, id=383, 256.96pt x 256.96pt>
+File: images/6.jpg Graphic file (type jpg)
+<use images/6.jpg>
+Package pdftex.def Info: images/6.jpg  used on input line 133.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+
+Overfull \hbox (9.68309pt too wide) in paragraph at lines 140--141
+[]\T1/ptm/b/n/12 Cause :  \T1/ptm/m/n/12 La Ma-la-die des stries brunes, ou Bro
+wn Streak Di-sease (CBSD), est prin-ci-pa-le-ment
+ []
+
+[17 <./images/1.jpg> <./images/2.jpg> <./images/3.jpg>]
+Overfull \hbox (15.14308pt too wide) in paragraph at lines 141--142
+\T1/ptm/m/n/12 l'ap-pa-ri-tion de taches jaune-vert, plus pro-non-cées sur les 
+feuilles dé-ve-lop-pées. Contrai-re-ment
+ []
+
+
+Overfull \hbox (8.3634pt too wide) in paragraph at lines 141--142
+\T1/ptm/m/n/12 su-pé-rieure verte. Les tu-ber-cules peuvent éga-le-ment être dé
+-for-més, pré-sen-ter des cra-que-lures
+ []
+
+
+Overfull \hbox (3.72644pt too wide) in paragraph at lines 148--149
+\T1/ptm/m/n/12 des cultures, la ges-tion de l'ir-ri-ga-tion et la sup-pres-sion
+ des plantes in-fec-tées peut contri-buer
+ []
+
+[18 <./images/4.jpg> <./images/5.jpg> <./images/6.jpg>]
+<images/7.jpg, id=394, 256.96pt x 256.96pt>
+File: images/7.jpg Graphic file (type jpg)
+<use images/7.jpg>
+Package pdftex.def Info: images/7.jpg  used on input line 162.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/8.jpg, id=395, 256.96pt x 256.96pt>
+File: images/8.jpg Graphic file (type jpg)
+<use images/8.jpg>
+Package pdftex.def Info: images/8.jpg  used on input line 168.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/9.jpg, id=396, 256.96pt x 256.96pt>
+File: images/9.jpg Graphic file (type jpg)
+<use images/9.jpg>
+Package pdftex.def Info: images/9.jpg  used on input line 174.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+ [19 <./images/7.jpg> <./images/8.jpg> <./images/9.jpg>]
+Overfull \hbox (9.8709pt too wide) in paragraph at lines 187--188
+[]\T1/ptm/m/n/12 ^^VCultivars ré-sis-tants : Sé-lec-tion et plan-ta-tion de va-
+rié-tés de ma-nioc ré-sis-tantes ou to-lé-rantes
+ []
+
+
+Overfull \hbox (2.59993pt too wide) in paragraph at lines 189--190
+[]\T1/ptm/m/n/12 ^^VRotation des cultures : Pra-tique consis-tant à al-ter-ner 
+les cultures de ma-nioc avec d'autres
+ []
+
+
+Overfull \hbox (10.92737pt too wide) in paragraph at lines 191--192
+[]\T1/ptm/m/n/12 ^^VÉlimination des plantes in-fec-tées : En-le-ver et dé-truir
+e les plantes in-fec-tées dès l'ap-pa-ri-tion
+ []
+
+<images/10.jpg, id=402, 256.96pt x 256.96pt>
+File: images/10.jpg Graphic file (type jpg)
+<use images/10.jpg>
+Package pdftex.def Info: images/10.jpg  used on input line 202.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/11.jpg, id=403, 256.96pt x 256.96pt>
+File: images/11.jpg Graphic file (type jpg)
+<use images/11.jpg>
+Package pdftex.def Info: images/11.jpg  used on input line 208.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+<images/12.jpg, id=404, 256.96pt x 256.96pt>
+File: images/12.jpg Graphic file (type jpg)
+<use images/12.jpg>
+Package pdftex.def Info: images/12.jpg  used on input line 214.
+(pdftex.def)             Requested size: 136.57462pt x 136.57631pt.
+[20 <./images/10.jpg> <./images/11.jpg> <./images/12.jpg>]
+Overfull \hbox (3.88333pt too wide) in paragraph at lines 227--228
+[]\T1/ptm/m/n/12 ^^VUtilisation de culti-vars ré-sis-tants : Plan-ter des va-ri
+é-tés de ma-nioc qui sont gé-né-ti-que-ment
+ []
+
+
+Overfull \hbox (2.49036pt too wide) in paragraph at lines 231--232
+\T1/ptm/m/n/12 des cultures, la ges-tion de l'ir-ri-ga-tion et l'éli-mi-na-tion
+ des mau-vaises herbes peut contri-buer
+ []
+
+[21]
+Overfull \hbox (20.86655pt too wide) in paragraph at lines 244--245
+\T1/ptm/m/n/12 ou de stress sur les tiges des plantes. Cela peut in-clure la pr
+é-sence de lé-sions, des dé-for-ma-tions,
+ []
+
+
+Overfull \hbox (2.11952pt too wide) in paragraph at lines 246--247
+[] \T1/ptm/b/n/12 Symp-tômes des feuilles : \T1/ptm/m/n/12 Les symp-tômes des f
+euilles com-prennent les ano-ma-lies vi-sibles
+ []
+
+
+Overfull \hbox (15.43102pt too wide) in paragraph at lines 246--247
+\T1/ptm/m/n/12 tex-ture. Ces symp-tômes peuvent in-di-quer la pré-sence de ma-l
+a-dies, de ca-rences nu-tri-tion-nelles
+ []
+
+
+Overfull \hbox (2.36012pt too wide) in paragraph at lines 248--249
+[] \T1/ptm/b/n/12 Symp-tômes des ra-cines : \T1/ptm/m/n/12 Les symp-tômes des r
+a-cines se ma-ni-festent par des chan-ge-ments
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 266--279
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 287--296
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 304--323
+ [][] 
+ []
+
+[23]
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 331--348
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 356--371
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 379--398
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 406--419
+ [][] 
+ []
+
+[24]
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 427--444
+ [][] 
+ []
+
+
+Overfull \hbox (9.1472pt too wide) in paragraph at lines 453--470
+ [][] 
+ []
+
+[25]
+Overfull \hbox (3.06683pt too wide) in paragraph at lines 481--482
+\T1/ptm/m/n/12 si-gni-fi-ca-tive des in-for-ma-tions co-lo-ri-mé-triques, per-m
+et-tant la réa-li-sa-tion d'opé-ra-tions de seuillage
+ []
+
+[26]
+Overfull \hbox (19.69969pt too wide) in paragraph at lines 511--512
+[]\T1/ptm/b/n/12 Détection de Contours \T1/ptm/m/n/12 : Les contours des ob-jet
+s bi-na-ri-sés sont dé-tec-tés à l'aide d'al-go-rithmes
+ []
+
+
+Overfull \hbox (12.84727pt too wide) in paragraph at lines 513--514
+[]\T1/ptm/b/n/12 Calcul des Ca-rac-té-ris-tiques \T1/ptm/m/n/12 : Les ca-rac-té
+-ris-tiques géo-mé-triques des contours sont cal-cu-lées
+ []
+
+
+Overfull \hbox (4.70306pt too wide) in paragraph at lines 517--518
+\T1/ptm/m/n/12 ana-ly-sant les va-ria-tions de la sur-face des grains. Les ma-l
+a-dies peuvent en-traî-ner des mo-di-fi-ca-tions
+ []
+
+[27]
+<images/constrate.png, id=460, 219.82124pt x 56.46094pt>
+File: images/constrate.png Graphic file (type png)
+<use images/constrate.png>
+Package pdftex.def Info: images/constrate.png  used on input line 531.
+(pdftex.def)             Requested size: 227.62206pt x 58.4664pt.
+<images/dissimilarity.png, id=461, 238.64156pt x 46.67438pt>
+File: images/dissimilarity.png Graphic file (type png)
+<use images/dissimilarity.png>
+Package pdftex.def Info: images/dissimilarity.png  used on input line 543.
+(pdftex.def)             Requested size: 227.62206pt x 44.51913pt.
+<images/energy.png, id=462, 180.675pt x 58.71938pt>
+File: images/energy.png Graphic file (type png)
+<use images/energy.png>
+Package pdftex.def Info: images/energy.png  used on input line 555.
+(pdftex.def)             Requested size: 182.09486pt x 59.18153pt.
+<images/homogenety.png, id=463, 262.73157pt x 49.68562pt>
+File: images/homogenety.png Graphic file (type png)
+<use images/homogenety.png>
+Package pdftex.def Info: images/homogenety.png  used on input line 567.
+(pdftex.def)             Requested size: 227.62206pt x 43.04797pt.
+ [28 <./images/constrate.png> <./images/dissimilarity.png> <./images/energy.png
+>]
+<images/correlation.png, id=477, 243.91125pt x 45.16875pt>
+File: images/correlation.png Graphic file (type png)
+<use images/correlation.png>
+Package pdftex.def Info: images/correlation.png  used on input line 579.
+(pdftex.def)             Requested size: 227.62206pt x 42.1526pt.
+
+Overfull \hbox (1.54735pt too wide) in paragraph at lines 584--586
+\T1/ptm/m/n/12 l'image. Une en-tro-pie éle-vée in-dique une tex-ture com-plexe 
+avec de nom-breuses va-ria-tions,
+ []
+
+<images/entropy.png, id=478, 204.765pt x 58.71938pt>
+File: images/entropy.png Graphic file (type png)
+<use images/entropy.png>
+Package pdftex.def Info: images/entropy.png  used on input line 591.
+(pdftex.def)             Requested size: 227.62206pt x 65.2778pt.
+
+Overfull \hbox (13.63591pt too wide) in paragraph at lines 601--607
+[]\T1/ptm/m/n/12 Pour ex-traire les ca-rac-té-ris-tiques des symp-tômes des feu
+illes, nous sui-vons les étapes sui-vantes :
+ []
+
+
+Overfull \hbox (2.53796pt too wide) in paragraph at lines 601--607
+\T1/ptm/m/n/12 1. Char-ger l'image en cou-leurs. 2. Conver-tir l'image en ni-ve
+aux de gris. 3. Ap-pli-quer un seuillage
+ []
+
+[29 <./images/homogenety.png> <./images/correlation.png> <./images/entropy.png>
+] [30]
+Overfull \hbox (0.61528pt too wide) in paragraph at lines 659--660
+[]\T1/ptm/m/n/12 La dé-tec-tion des symp-tômes des ra-cines de ma-nioc est es-s
+en-tielle pour iden-ti-fier les ma-la-dies
+ []
+
+
+Overfull \hbox (38.24808pt too wide) in paragraph at lines 663--665
+[]\T1/ptm/m/n/12 Les dé-for-ma-tions des ra-cines peuvent in-di-quer la pré-sen
+ce de ma-la-dies ou de stress en-vi-ron-ne-men-tal.
+ []
+
+[31]
+Overfull \hbox (19.08842pt too wide) in paragraph at lines 679--681
+[]\T1/ptm/m/n/12 Les dé-co-lo-ra-tions des ra-cines sont sou-vent un signe de m
+a-la-dies. Pour dé-tec-ter ces dé-co-lo-ra-tions,
+ []
+
+[32]
+Overfull \hbox (0.80226pt too wide) in paragraph at lines 705--706
+\T1/ptm/m/n/12 iden-ti-fier les ma-la-dies af-fec-tant cette culture. Les mé-th
+odes sui-vantes sont uti-li-sées pour ana-ly-ser
+ []
+
+
+Overfull \hbox (11.22404pt too wide) in paragraph at lines 709--711
+[]\T1/ptm/m/n/12 Les lé-sions sur les tiges peuvent in-di-quer la pré-sence de 
+ma-la-dies ou de stress en-vi-ron-ne-men-tal.
+ []
+
+[33] [34]
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 765.
+
+Overfull \hbox (14.88394pt too wide) in paragraph at lines 771--772
+[]\T1/ptm/m/n/12 Ce concept de \T1/ptm/m/it/12 da-ta-set \T1/ptm/m/n/12 peut êt
+re as-so-cié à des pro-prié-tés on-to-lo-giques dé-cri-vant des in-for-ma-tions
+
+ []
+
+
+Overfull \hbox (32.83005pt too wide) in paragraph at lines 773--774
+\T1/ptm/m/n/12 dans l'on-to-lo-gie. Ces concepts per-mettent de mo-dé-li-ser sé
+-man-ti-que-ment les dif-fé-rentes ca-rac-té-ris-tiques
+ []
+
+[35]
+Overfull \hbox (14.46332pt too wide) in paragraph at lines 799--800
+[]\T1/ptm/m/n/12 Ces concepts en-ri-chissent l'on-to-lo-gie en four-nis-sant un
+e mo-dé-li-sa-tion sé-man-tique plus dé-taillée
+ []
+
+<images/Diagramme.png, id=540, 680.5425pt x 459.21562pt>
+File: images/Diagramme.png Graphic file (type png)
+<use images/Diagramme.png>
+Package pdftex.def Info: images/Diagramme.png  used on input line 807.
+(pdftex.def)             Requested size: 455.24411pt x 307.18938pt.
+[36]
+File: images/Diagramme.png Graphic file (type png)
+<use images/Diagramme.png>
+Package pdftex.def Info: images/Diagramme.png  used on input line 819.
+(pdftex.def)             Requested size: 455.24411pt x 307.18938pt.
+ [37 <./images/Diagramme.png>]) (chapitre/07-ConclusionGenerale.tex
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+) (chapitre/08-Bibliographie.tex [39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+
+ []
+
+) (chapitre/09-Annexes.tex [40
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+<images/your_image.png, id=568, 501.875pt x 786.94pt>
+File: images/your_image.png Graphic file (type png)
+<use images/your_image.png>
+Package pdftex.def Info: images/your_image.png  used on input line 24.
+(pdftex.def)             Requested size: 184.94801pt x 256.06467pt.
+[41
+
+ <./images/your_image.png>]
+File: images/your_image.png Graphic file (type png)
+<use images/your_image.png>
+Package pdftex.def Info: images/your_image.png  used on input line 36.
+(pdftex.def)             Requested size: 184.94801pt x 256.06467pt.
+) (chapitre/10-DosDuRapport.tex [42]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+<images/arabic.jpg, id=579, 918.43124pt x 309.155pt>
+File: images/arabic.jpg Graphic file (type jpg)
+<use images/arabic.jpg>
+Package pdftex.def Info: images/arabic.jpg  used on input line 40.
+(pdftex.def)             Requested size: 455.2485pt x 153.93556pt.
+)
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the main.maf file.
+\openout3 = `main.maf'.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+ [43 <./images/arabic.jpg>] (main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-04-11>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 455B8E75C051397E5B23B43506C6D449;6727.
+ ) 
+Here is how much of TeX's memory you used:
+ 37655 strings out of 474369
+ 735314 string characters out of 5740514
+ 1954754 words of memory out of 5000000
+ 59137 multiletter control sequences out of 15000+600000
+ 647390 words of font info for 122 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 100i,14n,104p,1066b,922s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrb
+1440.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1095.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm1095.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1095.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\esabi\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/esabi/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/esabi/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/esabi/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/esabi
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Users/esabi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on main.pdf (50 pages, 2311903 bytes).
+PDF statistics:
+ 771 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
+

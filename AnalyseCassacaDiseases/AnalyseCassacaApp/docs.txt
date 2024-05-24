@@ -1,0 +1,65 @@
+    Nom: Maladie du Manioc
+        Description: Analyse des symptômes des différentes maladies affectant le manioc.
+        Catégorie: Diverses
+        Photo: manioc_disease.jpg
+        Status: complet
+        Fichier OWL: manioc_disease.owl
+        Auteur Nom Prénom: Dr. Jane Doe
+        Auteur Email: janedoe@example.com
+        Auteur Téléphone: +1234567890
+        Auteur Photo: jane_doe.jpg
+
+    Nom: Maladie de la Tomate
+        Description: Étude des maladies communes de la tomate telles que le mildiou et la tache bactérienne.
+        Catégorie: Diverses
+        Photo: tomato_disease.jpg
+        Status: en_cours
+        Fichier OWL: tomato_disease.owl
+        Auteur Nom Prénom: Dr. John Smith
+        Auteur Email: johnsmith@example.com
+        Auteur Téléphone: +0987654321
+        Auteur Photo: john_smith.jpg
+
+    Nom: Maladie du Riz
+        Description: Identification des maladies affectant le riz, comme la pyriculariose et la fusariose.
+        Catégorie: Diverses
+        Photo: rice_disease.jpg
+        Status: complet
+        Fichier OWL: rice_disease.owl
+        Auteur Nom Prénom: Dr. Alice Johnson
+        Auteur Email: alicejohnson@example.com
+        Auteur Téléphone: +1122334455
+        Auteur Photo: alice_johnson.jpg
+
+    Nom: Maladie de la Banane
+        Description: Analyse des maladies de la banane comme la fusariose et la maladie de Panama.
+        Catégorie: Diverses
+        Photo: banana_disease.jpg
+        Status: complet
+        Fichier OWL: banana_disease.owl
+        Auteur Nom Prénom: Dr. Bob Brown
+        Auteur Email: bobbrown@example.com
+        Auteur Téléphone: +1223344556
+        Auteur Photo: bob_brown.jpg
+
+    Nom: Maladie de l'Ananas
+        Description: Étude des maladies de l'ananas, telles que la fusariose et la maladie de la pourriture noire.
+        Catégorie: Diverses
+        Photo: pineapple_disease.jpg
+        Status: en_cours
+        Fichier OWL: pineapple_disease.owl
+        Auteur Nom Prénom: Dr. Carol White
+        Auteur Email: carolwhite@example.com
+        Auteur Téléphone: +1334455667
+        Auteur Photo: carol_white.jpg
+
+    Nom: Maladie de la Mangue
+        Description: Identification des maladies de la mangue, comme l'anthracnose et la maladie de la tache noire.
+        Catégorie: Diverses
+        Photo: mango_disease.jpg
+        Status: complet
+        Fichier OWL: mango_disease.owl
+        Auteur Nom Prénom: Dr. David Green
+        Auteur Email: davidgreen@example.com
+        Auteur Téléphone: +1445566778
+        Auteur Photo: david_green.jpg

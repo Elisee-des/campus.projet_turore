@@ -1,0 +1,46 @@
+\babel@toc {french}{}\relax 
+\thispagestyle {MyStyle}
+\contentsline {chapter}{LISTE DES FIGURES}{v}{chapter*.4}%
+\contentsline {chapter}{LISTE DES ABRÉVIATIONS}{vi}{chapter*.5}%
+\contentsline {chapter}{INTRODUCTION GÉNÉRALE}{1}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}ETAT DE L'ART}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}L'analyse sémantique des images}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Definition}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Le Web sémantique}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Rapport entre L'analyse sémantique des images et le Le Web sémantique}{4}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Annotation de Données}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Definition}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Méthode d'annotation}{5}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Outils d'annotation}{6}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Gestion d'ontologie}{8}{subsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.4.1}Definition}{8}{subsubsection.1.3.4.1}%
+\contentsline {subsection}{\numberline {1.3.5}Rapport entre une ontologie et le web sémantique}{8}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Outils de modélisation ontologique}{9}{subsection.1.3.6}%
+\contentsline {section}{\numberline {1.4}CONCLUSION}{11}{section.1.4}%
+\contentsline {chapter}{\numberline {2}CONCEPTION}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}INTRODUCTION}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Annotation}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Mise en place de l'ontologie}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Collecte d´information (Le Dataset)}{15}{subsection.2.2.2}%
+\contentsline {paragraph}{\numberline {a)}Brûlure bactérienne (Bacterial Blight (CBB))}{16}{paragraph.2.2.2.0.1}%
+\contentsline {paragraph}{\numberline {b)}Maladie des stries brunes (Brown Streak Disease (CBSD))}{17}{paragraph.2.2.2.0.2}%
+\contentsline {paragraph}{\numberline {c)}Marbrure verte (Green Mottle (CGM))}{19}{paragraph.2.2.2.0.3}%
+\contentsline {paragraph}{\numberline {d)}Maladie de la mosaïque (Mosaic Disease (CMD))}{20}{paragraph.2.2.2.0.4}%
+\contentsline {subsection}{\numberline {2.2.3}Conceptualisation}{23}{subsection.2.2.3}%
+\contentsline {paragraph}{\numberline {a)}Les propriétés}{23}{paragraph.2.2.3.0.1}%
+\contentsline {paragraph}{\numberline {b)}Les propriétés}{25}{paragraph.2.2.3.0.2}%
+\contentsline {subsection}{\numberline {2.2.4}Extraction des caractéristiques}{25}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Les descripteurs de couleur}{26}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Descripteur de Contour}{27}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Descripteur de Texture}{27}{subsubsection.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.4.4}Descripteurs des Symptômes des Feuilles}{29}{subsubsection.2.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.5}Analyse des Symptômes des Racines de Manioc}{31}{subsubsection.2.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.2.4.6}Analyse des Symptômes des Tiges de Manioc}{33}{subsubsection.2.2.4.6}%
+\contentsline {subsection}{\numberline {2.2.5}Extension de l´Ontologie}{35}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}CONCLUSION}{38}{section.2.3}%
+\contentsline {chapter}{CONCLUSION GÉNÉRALE}{39}{chapter*.30}%
+\contentsline {chapter}{BIBLIOGRAPHIE}{39}{chapter*.30}%
+\contentsline {chapter}{ANNEXES}{41}{chapter*.32}%
+\contentsline {section}{\numberline {A.1}TITRE ANNEXE 1}{41}{section.Alph0.1}%
+\contentsline {section}{\numberline {A.2}TITRE ANNEXE 2}{42}{section.Alph0.2}%

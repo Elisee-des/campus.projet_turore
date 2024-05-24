@@ -500,52 +500,15 @@
                                                 <div class="col-xl-6">
                                                     <div class="card card-height-100">
                                                         <div class="card-header align-items-center d-flex">
-                                                            <h4 class="card-title mb-0 flex-grow-1">Live Users By Country</h4>
-                                                            <div class="flex-shrink-0">
-                                                                <button type="button" class="btn btn-soft-primary btn-sm">
-                                                                    Export Report
-                                                                </button>
-                                                            </div>
+                                                            <h4 class="card-title mb-0 flex-grow-1">Pie Charts</h4>
+                                                            
                                                         </div>
 
                                                         
                                                         <div class="card-body">
                 
-                                                            <div id="users-by-country" data-colors='["--vz-light"]' class="text-center" style="height: 252px"></div>
+                                                            <div id="myPlot" style="width:100%;max-width:700px"></div>
                 
-                                                            <div class="table-responsive table-card mt-3">
-                                                                <table class="table table-borderless table-sm table-centered align-middle table-nowrap mb-1">
-                                                                    <thead class="text-muted border-dashed border border-start-0 border-end-0 bg-soft-light">
-                                                                        <tr>
-                                                                            <th>Duration (Secs)</th>
-                                                                            <th style="width: 30%;">Sessions</th>
-                                                                            <th style="width: 30%;">Views</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody class="border-0">
-                                                                        <tr>
-                                                                            <td>0-30</td>
-                                                                            <td>2,250</td>
-                                                                            <td>4,250</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>31-60</td>
-                                                                            <td>1,501</td>
-                                                                            <td>2,050</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>61-120</td>
-                                                                            <td>750</td>
-                                                                            <td>1,600</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>121-240</td>
-                                                                            <td>540</td>
-                                                                            <td>1,040</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
                                                         </div>
                                                         <!-- end card body -->
                                                     </div><!-- end card -->
@@ -554,7 +517,7 @@
                                                 <div class="col-xl-6">
                                                     <div class="card card-height-100">
                                                         <div class="card-header align-items-center d-flex">
-                                                            <h4 class="card-title mb-0 flex-grow-1">Sessions by Countries</h4>
+                                                            <h4 class="card-title mb-0 flex-grow-1">Donut Charts</h4>
                                                             <div>
                                                                 <button type="button" class="btn btn-soft-secondary btn-sm">
                                                                     ALL
@@ -568,9 +531,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <div>
+                                                            {{-- <div>
                                                                 <div id="countries_charts" data-colors='["--vz-info", "--vz-info", "--vz-info", "--vz-info", "--vz-danger", "--vz-info", "--vz-info", "--vz-info", "--vz-info", "--vz-info"]' class="apex-charts" dir="ltr"></div>
-                                                            </div>
+                                                            </div> --}}
                                                         </div><!-- end card body -->
                                                     </div><!-- end card -->
                                                 </div> <!-- end col-->
@@ -583,7 +546,7 @@
                                         <div class="col-xl-6">
                                             <div class="card">
                                                 <div class="card-header border-0 align-items-center d-flex">
-                                                    <h4 class="card-title mb-0 flex-grow-1">Audiences Metrics</h4>
+                                                    <h4 class="card-title mb-0 flex-grow-1">Bar Charts</h4>
                                                     <div>
                                                         <button type="button" class="btn btn-soft-secondary btn-sm">
                                                             ALL
@@ -601,7 +564,7 @@
                                                 </div><!-- end card header -->
                                                 <div class="card-header p-0 border-0 bg-soft-light">
                                                     <div class="row g-0 text-center">
-                                                        <div class="col-6 col-sm-4">
+                                                        {{-- <div class="col-6 col-sm-4">
                                                             <div class="p-3 border border-dashed border-start-0">
                                                                 <h5 class="mb-1"><span class="counter-value" data-target="854">0</span>
                                                                     <span class="text-success ms-1 fs-12">49%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
@@ -627,22 +590,22 @@
                                                                 </h5>
                                                                 <p class="text-muted mb-0">Avg. Session Duration</p>
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
                                                         <!--end col-->
                                                     </div>
                                                 </div><!-- end card header -->
                                                 <div class="card-body p-0 pb-2">
-                                                    <div>
+                                                    {{-- <div>
                                                         <div id="audiences_metrics_charts" data-colors='["--vz-success", "--vz-gray-300"]' class="apex-charts" dir="ltr"></div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div><!-- end card body -->
                                             </div><!-- end card -->
                                         </div><!-- end col -->
                 
                                         <div class="col-xl-6">
                                             <div class="card card-height-100">
-                                                <div class="card-header align-items-center d-flex">
-                                                    <h4 class="card-title mb-0 flex-grow-1">Audiences Sessions by Country</h4>
+                                                {{-- <div class="card-header align-items-center d-flex">
+                                                    <h4 class="card-title mb-0 flex-grow-1">Horizontal Bar Charts</h4>
                                                     <div class="flex-shrink-0">
                                                         <div class="dropdown card-header-dropdown">
                                                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -661,7 +624,7 @@
                                                     <div>
                                                         <div id="audiences-sessions-country-charts" data-colors='["--vz-success", "--vz-info"]' class="apex-charts" dir="ltr"> </div>
                                                     </div>
-                                                </div><!-- end cardbody -->
+                                                </div><!-- end cardbody --> --}}
                                             </div><!-- end card -->
                                         </div><!-- end col -->
                                     </div><!-- end row -->

@@ -26,6 +26,13 @@
             </div>
             <!-- end page title -->
 
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
             <div class="row g-4 mb-3">
                 <div class="col-sm-auto">
                     <div>

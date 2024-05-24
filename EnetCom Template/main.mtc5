@@ -1,0 +1,20 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}INTRODUCTION}{\reset@font\mtcSfont 13}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Annotation}{\reset@font\mtcSfont 13}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Mise en place de l'ontologie}{\reset@font\mtcSSfont 14}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Collecte d´information (Le Dataset)}{\reset@font\mtcSSfont 15}{subsection.2.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {a)}Brûlure bactérienne (Bacterial Blight (CBB))}{\reset@font\mtcPfont 16}{paragraph.2.2.2.0.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {b)}Maladie des stries brunes (Brown Streak Disease (CBSD))}{\reset@font\mtcPfont 17}{paragraph.2.2.2.0.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {c)}Marbrure verte (Green Mottle (CGM))}{\reset@font\mtcPfont 19}{paragraph.2.2.2.0.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {d)}Maladie de la mosaïque (Mosaic Disease (CMD))}{\reset@font\mtcPfont 20}{paragraph.2.2.2.0.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Conceptualisation}{\reset@font\mtcSSfont 23}{subsection.2.2.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {a)}Les propriétés}{\reset@font\mtcPfont 23}{paragraph.2.2.3.0.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {b)}Les propriétés}{\reset@font\mtcPfont 26}{paragraph.2.2.3.0.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Extraction des caractéristiques}{\reset@font\mtcSSfont 26}{subsection.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.1}Les descripteurs de couleur}{\reset@font\mtcSSSfont 26}{subsubsection.2.2.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.2}Descripteur de Contour}{\reset@font\mtcSSSfont 27}{subsubsection.2.2.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.3}Descripteur de Texture}{\reset@font\mtcSSSfont 28}{subsubsection.2.2.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.4}Descripteurs des Symptômes des Feuilles}{\reset@font\mtcSSSfont 30}{subsubsection.2.2.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.5}Analyse des Symptômes des Racines de Manioc}{\reset@font\mtcSSSfont 32}{subsubsection.2.2.4.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.6}Analyse des Symptômes des Tiges de Manioc}{\reset@font\mtcSSSfont 33}{subsubsection.2.2.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.5}Extension de l´Ontologie}{\reset@font\mtcSSfont 35}{subsection.2.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}CONCLUSION}{\reset@font\mtcSfont 38}{section.2.3}}
