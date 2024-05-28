@@ -4,6 +4,7 @@ use App\Http\Controllers\private\AnalyseController;
 use App\Http\Controllers\private\OntologieController;
 use App\Http\Controllers\private\TableaudebordController;
 use App\Http\Controllers\private\BankImageController;
+use App\Http\Controllers\private\DetectionController;
 use App\Http\Controllers\private\UserController;
 use App\Http\Controllers\private\ParametreController;
 use App\Http\Controllers\public\AuthController;
@@ -23,5 +24,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('bankimages', BankImageController::class);
     Route::resource('users', UserController::class);
     Route::get('/parametre', [ParametreController::class, 'parametreAccueil'])->name('parametre-index');
+    Route::get('/detection', [DetectionController::class, 'index'])->name('detection.index');
+    Route::get('/detection-1', [DetectionController::class, 'index1'])->name('detection.index1');
+    Route::get('/detection-2', [DetectionController::class, 'index2'])->name('detection.index2');
     Route::post('/deconnecion', [Logout::class, 'logout'])->name('logout');
 });
