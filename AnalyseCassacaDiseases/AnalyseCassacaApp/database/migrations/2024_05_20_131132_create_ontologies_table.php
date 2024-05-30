@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('categorie')->nullable();
             $table->string('photo')->nullable();
+            $table->string('color')->default('bg-soft-danger');
             $table->enum('status', ['en_cours', 'complet'])->default('en_cours');
             $table->string('fichier_owl');
             $table->string('auteur_nom_prenom')->nullable();

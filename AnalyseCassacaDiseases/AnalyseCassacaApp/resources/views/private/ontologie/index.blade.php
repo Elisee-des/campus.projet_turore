@@ -33,6 +33,14 @@
                 </div>
             @endif
 
+
+            @if ($errors->has('password'))
+            <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
+                {{ $errors->first('password') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            @endif
+
             <div class="row g-4 mb-3">
                 <div class="col-sm-auto">
                     <div>
@@ -60,13 +68,14 @@
             </div>
 
             <div class="row">
+                @foreach ($ontologies as $ontologie)
                 <div class="col-xxl-3 col-sm-6 project-card">
                     <div class="card">
                         <div class="card-body">
-                            <div class="p-3 mt-n3 mx-n3 bg-soft-danger rounded-top">
+                            <div class="p-3 mt-n3 mx-n3 {{ $ontologie->color }} rounded-top">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-grow-1">
-                                        <h5 class="mb-0 fs-14"><a href="{{ route('ontologies.show', 1) }}" class="text-dark">Maladie du Manioc</a></h5>
+                                        <h5 class="mb-0 fs-14"><a href="{{ route('ontologies.show', $ontologie->id) }}" class="text-dark">{{ $ontologie->nom }}</a></h5>
                                     </div>
                                     <div class="flex-shrink-0">
                                         <div class="d-flex gap-1 align-items-center my-n2">
@@ -79,45 +88,78 @@
                                                 <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                                     <i data-feather="more-horizontal" class="icon-sm"></i>
                                                 </button>
-
                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> Ouvrir</a>
-                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Modifier</a>
+                                                    <a class="dropdown-item" href="{{ route('ontologies.show', $ontologie->id) }}"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> Ouvrir</a>
+                                                    <a class="dropdown-item" href="{{ route('ontologies.edit', $ontologie->id) }}"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Modifier</a>
                                                     <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Supprimer</a>
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal_{{ $ontologie->id }}"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Supprimer</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div id="myModal_{{ $ontologie->id }}" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="myModalLabel">Suppression d'ontologie</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 class="fs-15">
+                                                Cette action supprimera définitivement l'ontologie et toutes les images qui y sont rattachées.
+                                            </h5>
+                                            <p class="text-muted">Pour terminer cette action, veuillez remplir ce formulaire</p>
+                                            <form action="{{ route('ontologies.destroy', $ontologie->id) }}" method="POST" autocomplete="off">
+                                                @csrf
+                                                @method('DELETE')
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="password-input">Mot de passe actuel</label>
+                                                    <div class="position-relative auth-pass-inputgroup mb-3">
+                                                        <input type="password"  name="password" class="form-control pe-5 password-input" placeholder="Veuillez entrer votre mot de passe actuel svp" id="password-input">
+                                                        <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                    </div>
+                                                    @error('password') <span class="text-danger">{{ $message }}</span> @enderror
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Fermer</button>
+                                                    <button type="submit" class="btn btn-danger">Supprimer</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
-
+                            </div>
                             <div class="py-3">
                                 <div class="d-flex mb-2">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar-sm">
                                             <span class="avatar-title bg-soft-warning rounded p-2">
-                                                <img src="assets/images/brands/slack.png" alt="" class="img-fluid p-1">
+                                                @if($ontologie->photo)
+                                                    <img src="{{ asset('storage/' . $ontologie->photo) }}" alt="Votre image" class="img-fluid p-1">
+                                                @else
+                                                 <img src="assets/images/brands/slack.png" alt="" class="img-fluid p-1">
+                                                @endif
                                             </span>
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        {{-- <h5 class="mb-1 fs-15"><a href="apps-projects-overview.html" class="text-dark"></a></h5> --}}
-                                        <p class="text-muted text-truncate-two-lines mb-3">Pathologie affectant le manioc, pouvant être causée par divers agents pathogènes tels que des virus, des bactéries, des champignons ou des nématodes. Les symptômes incluent des motifs de mosaïque, des taches foliaires et le flétrissement..</p>
+                                        <p class="text-muted text-truncate-two-lines mb-3">{{ $ontologie->description }}</p>
                                     </div>
                                 </div>
                                 <div class="row gy-3">
                                     <div class="col-6">
                                         <div>
                                             <p class="text-muted mb-1">Status</p>
-                                            <div class="badge badge-soft-warning fs-12">En cours</div>
+                                            <div class="badge badge-soft-warning fs-12">{{ $ontologie->status }}</div>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div>
                                             <p class="text-muted mb-1">Date d'ajout</p>
-                                            <h5 class="fs-14">18 Sep, 2021</h5>
+                                            <h5 class="fs-14">{{ $ontologie->created_at->format('d M, Y') }}</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -127,210 +169,10 @@
                     </div>
                     <!-- end card -->
                 </div>
+
+                
                 <!-- end col -->
-
-                <div class="col-xxl-3 col-sm-6 project-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-3 mt-n3 mx-n3 bg-soft-warning rounded-top">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h5 class="mb-0 fs-14"><a href="{{ route('ontologies.show', 1) }}" class="text-dark">Maladie du Blé</a></h5>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <div class="d-flex gap-1 align-items-center my-n2">
-                                            <button type="button" class="btn avatar-xs p-0 favourite-btn active">
-                                                <span class="avatar-title bg-transparent fs-15">
-                                                    <i class="ri-star-fill"></i>
-                                                </span>
-                                            </button>
-                                            <div class="dropdown">
-                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i data-feather="more-horizontal" class="icon-sm"></i>
-                                                </button>
-
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> Ouvrir</a>
-                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Modifier</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Supprimer</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="py-3">
-                                <div class="d-flex mb-2">
-                                    <div class="flex-shrink-0 me-3">
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-soft-warning rounded p-2">
-                                                <img src="assets/images/brands/slack.png" alt="" class="img-fluid p-1">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        {{-- <h5 class="mb-1 fs-15"><a href="apps-projects-overview.html" class="text-dark">Maladie du Blé</a></h5> --}}
-                                        <p class="text-muted text-truncate-two-lines mb-3">Infection qui touche le blé, résultant de l'action de pathogènes comme les champignons, les bactéries ou les virus. Les symptômes typiques comprennent des pustules, des taches et des décolorations sur les feuilles.</p>
-                                    </div>
-                                </div>
-                                <div class="row gy-3">
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Status</p>
-                                            <div class="badge badge-soft-success fs-12">Complet</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Date d'ajout</p>
-                                            <h5 class="fs-14"> 10 Jun, 2021</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end card body -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end col -->
-                <div class="col-xxl-3 col-sm-6 project-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-3 mt-n3 mx-n3 bg-soft-info rounded-top">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h5 class="mb-0 fs-14"><a href="{{ route('ontologies.show', 1) }}" class="text-dark">Maladie de la Tomate</a></h5>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <div class="d-flex gap-1 align-items-center my-n2">
-                                            <button type="button" class="btn avatar-xs p-0 favourite-btn">
-                                                <span class="avatar-title bg-transparent fs-15">
-                                                    <i class="ri-star-fill"></i>
-                                                </span>
-                                            </button>
-                                            <div class="dropdown">
-                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i data-feather="more-horizontal" class="icon-sm"></i>
-                                                </button>
-
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> Ouvrir</a>
-                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Modifier</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Supprimer</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="py-3">
-                                <div class="d-flex mb-2">
-                                    <div class="flex-shrink-0 me-3">
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-soft-warning rounded p-2">
-                                                <img src="assets/images/brands/slack.png" alt="" class="img-fluid p-1">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        {{-- <h5 class="mb-1 fs-15"><a href="apps-projects-overview.html" class="text-dark">Maladie du Blé</a></h5> --}}
-                                        <p class="text-muted text-truncate-two-lines mb-3">Affection de la tomate due à divers agents pathogènes, notamment des bactéries, des champignons et des virus. Les symptômes incluent le flétrissement, la déformation des feuilles et des taches nécrotiques.</p>
-                                    </div>
-                                </div>
-                                <div class="row gy-3">
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Status</p>
-                                            <div class="badge badge-soft-warning fs-12">En cours</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Date d'ajout</p>
-                                            <h5 class="fs-14">08 Apr, 2021</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end card body -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-xxl-3 col-sm-6 project-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-3 mt-n3 mx-n3 bg-soft-success rounded-top">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-1">
-                                        <h5 class="mb-0 fs-14"><a href="{{ route('ontologies.show', 1) }}" class="text-dark">Maladie de l'Ananas</a></h5>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <div class="d-flex gap-1 align-items-center my-n2">
-                                            <button type="button" class="btn avatar-xs p-0 favourite-btn active">
-                                                <span class="avatar-title bg-transparent fs-15">
-                                                    <i class="ri-star-fill"></i>
-                                                </span>
-                                            </button>
-                                            <div class="dropdown">
-                                                <button class="btn btn-link text-muted p-1 mt-n1 py-0 text-decoration-none fs-15" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                    <i data-feather="more-horizontal" class="icon-sm"></i>
-                                                </button>
-
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="apps-projects-overview.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> Ouvrir</a>
-                                                    <a class="dropdown-item" href="apps-projects-create.html"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Modifier</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Supprimer</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="py-3">
-                                <div class="d-flex mb-2">
-                                    <div class="flex-shrink-0 me-3">
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-soft-warning rounded p-2">
-                                                <img src="assets/images/brands/slack.png" alt="" class="img-fluid p-1">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        {{-- <h5 class="mb-1 fs-15"><a href="apps-projects-overview.html" class="text-dark"></a></h5> --}}
-                                        <p class="text-muted text-truncate-two-lines mb-3"> Pathologie affectant l'ananas, causée par des agents pathogènes comme les champignons et les bactéries. Les symptômes peuvent inclure la pourriture des fruits, le flétrissement des feuilles et des décolorations internes.</p>
-                                    </div>
-                                </div>
-                                <div class="row gy-3">
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Status</p>
-                                            <div class="badge badge-soft-warning fs-12">En cours</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div>
-                                            <p class="text-muted mb-1">Date d'ajout</p>
-                                            <h5 class="fs-14">22 Nov, 2021</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end card body -->
-                    </div>
-                    <!-- end card -->
-                </div>
-                <!-- end col -->
+                @endforeach
             </div>
             <!-- end row -->
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titre', "Nouvelle ontologie")
+@section('titre', "Edition de l'ontologie $ontologie->nom")
 
 @section('content')
 <div class="main-content">
@@ -13,12 +13,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Nouvelle Ontologie</h4>
+                        <h4 class="mb-sm-0">Edition de l'ontologie </h4>
         
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="{{route('ontologies.index')}}">Ontologies</a></li>
-                                <li class="breadcrumb-item active">Nouvelle ontologie</li>
+                                <li class="breadcrumb-item active">Edition de {{ $ontologie->nom }}</li>
                             </ol>
                         </div>
         
@@ -27,22 +27,23 @@
             </div>
             <!-- end page title -->
         
-            <form action="{{ route('ontologies.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('ontologies.update', $ontologie->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="card">
                             <div class="card-body">
                                 <div class="mb-3">
                                     <label class="form-label" for="project-title-input">Nom de l'ontologie</label>
-                                    <input type="text" name="nom" class="form-control" id="project-title-input" placeholder="Veuillez definir le nom de l'ontologie">
+                                    <input type="text" name="nom" value="{{ $ontologie->nom }}" class="form-control" id="project-title-input" placeholder="Veuillez definir le nom de l'ontologie">
                                     @error('nom') <span class="text-danger">{{ $message }}</span> @enderror
         
                                 </div>
         
                                 <div class="mb-3">
                                     <label class="form-label" for="project-thumbnail-img">Assosier un image</label>
-                                    <input class="form-control" name="image" id="project-thumbnail-img" type="file" accept="image/png, image/gif, image/jpeg, image/jpg">
+                                    <input class="form-control" name="image" value="" id="project-thumbnail-img" type="file" accept="image/png, image/gif, image/jpeg, image/jpg">
                                     @error('image') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
         
@@ -51,8 +52,8 @@
                                         <div class="mb-3 mb-lg-0">
                                             <label for="choices-status-input" class="form-label">Status</label>
                                             <select class="form-select" name="status" data-choices data-choices-search-false id="choices-status-input">
-                                                <option value="en_cours" selected>En cours</option>
-                                                <option value="complet">Complet</option>
+                                                <option value="en_cours" {{ $ontologie->status == 'en_cours' ? 'selected' : '' }}>En cours</option>
+                                                <option value="complet" {{ $ontologie->status == 'complet' ? 'selected' : '' }}>Complet</option>
                                             </select>
                                             @error('status') <span class="text-danger">{{ $message }}</span> @enderror
                                         </div>
@@ -74,8 +75,6 @@
                                     @error('fichier_owl') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            
-                            
                         </div>
                         
         
@@ -84,15 +83,13 @@
                                 <h5 class="card-title mb-0">Description de l'ontologie</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted mb-2">Definir une description qui caracterise l'ontologie</p>
-                                <textarea class="form-control" name="description" placeholder="Maximun 200 caractèeres" rows="3"></textarea>
+                                <p class="text-muted mb-2">Définir une description qui caractérise l'ontologie</p>
+                                <textarea class="form-control" name="description" placeholder="Maximum 200 caractères" rows="3">{{ $ontologie->description }}</textarea>
                                 @error('description') <span class="text-danger">{{ $message }}</span> @enderror
                             </div>
-                            <!-- end card body -->
                         </div>
                     </div>
         
-                    <!-- end col -->
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-header">
@@ -102,8 +99,8 @@
                                 <div class="mb-3">
                                     <label for="choices-categories-input" class="form-label">Catégories</label>
                                     <select class="form-select" name="categorie" data-choices data-choices-search-false id="choices-categories-input">
-                                        <option value="Maladies" selected>Maladies</option>
-                                        <option value="Development">Development</option>
+                                        <option value="Maladies" {{ $ontologie->categorie == 'Maladies' ? 'selected' : '' }}>Maladies</option>
+                                        <option value="Development" {{ $ontologie->categorie == 'Development' ? 'selected' : '' }}>Développement</option>
                                     </select>
                                     @error('categorie') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
@@ -120,17 +117,17 @@
                             <div class="card-body">
                                 <div class="mb-3">
                                     <label for="choices-text-input" class="form-label">Nom prénom</label>
-                                    <input class="form-control" name="auteur_nom_prenom" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer le nom de l'auteur" type="text" value="" />
+                                    <input class="form-control" name="auteur_nom_prenom" value="{{ $ontologie->auteur_nom_prenom }}" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer le nom de l'auteur" type="text" value="" />
                                     @error('auteur_nom_prenom') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
                                 <div class="mb-3">
                                     <label for="choices-text-input" class="form-label">Email</label>
-                                    <input class="form-control" name="auteur_email" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer l'email de l'auteur" type="email" value="" />
+                                    <input class="form-control" name="auteur_email" value="{{ $ontologie->auteur_email }}" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer l'email de l'auteur" type="email" value="" />
                                     @error('auteur_email') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
                                 <div class="mb-3">
                                     <label for="choices-text-input" class="form-label">Telephone</label>
-                                    <input class="form-control" name="auteur_telephone" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer le numéro de l'auteur" type="number" value="" />
+                                    <input class="form-control" name="auteur_telephone" value="{{ $ontologie->auteur_telephone }}" id="choices-text-input" data-choices data-choices-limit="Required Limit" placeholder="Entrer le numéro de l'auteur" type="number" value="" />
                                     @error('auteur_telephone') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>
                                 <div class="mb-3">
@@ -145,7 +142,7 @@
                     </div>
                     <div class="text-end mb-3">
                         <button class="btn btn-success w-sm">
-                            <span>Enregistrer l'ontologie</span>
+                            <span>Sauvegarder l'ontologie</span>
                         </button>
                     </div>
                     <!-- end col -->
@@ -153,24 +150,6 @@
             </form>
         </div>
         
-    </div>
-
-    <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <lord-icon src="https://cdn.lordicon.com/hrqwmuhr.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:120px;height:120px"></lord-icon>
-                    <div class="mt-4">
-                        <h4 class="mb-3">Oops something went wrong!</h4>
-                        <p class="text-muted mb-4"> The transfer was not successfully received by us. the email of the recipient wasn't correct.</p>
-                        <div class="hstack gap-2 justify-content-center">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                            <a href="javascript:void(0);" class="btn btn-danger">Try Again</a>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
     </div>
 
 

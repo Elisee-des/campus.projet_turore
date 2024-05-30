@@ -22,7 +22,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/ontologies-store', [AjoutOntologie::class]);
     Route::resource('analyses', AnalyseController::class);
     Route::resource('bankimages', BankImageController::class);
-    Route::resource('users', UserController::class);
+    Route::resource('users', UserController::class); 
     Route::get('/parametre', [ParametreController::class, 'parametreAccueil'])->name('parametre-index');
     Route::get('/detection', [DetectionController::class, 'index'])->name('detection.index');
     Route::get('/detection-1', [DetectionController::class, 'index1'])->name('detection.index1');

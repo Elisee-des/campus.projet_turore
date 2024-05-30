@@ -12,26 +12,26 @@ class AjoutOntologie extends Component
 
     protected $rules = [
         'nom' => 'required',
-        // 'image' => 'image|max:1024',
-        // 'fichier_owl' => 'required|file|mimes:owl,application/rdf+xml,application/owl+xml|max:1024',
+        'image' => 'image|max:1024',
+        'fichier_owl' => 'required|file|mimes:owl,application/rdf+xml,application/owl+xml|max:1024',
         'status' => 'required|in:Inprogress,Completed',
         'description' => 'required|max:100',
         'categorie' => 'required|in:Maladies,Development',
         'auteur_nom_prenom' => 'required',
         'auteur_email' => 'required|email',
         'auteur_telephone' => 'required',
-        // 'auteur_photo' => 'image|max:1024',
+        'auteur_photo' => 'image|max:1024',
     ];
     
 
     protected $messages = [
         'nom.required' => 'Le champ nom est requis.',
-        // 'image.image' => 'L\'image doit être une image.',
-        // 'image.max' => 'L\'image ne doit pas dépasser 1 Mo.',
-        // 'fichier_owl.required' => 'Le champ fichier OWL est requis.',
-        // 'fichier_owl.file' => 'Le champ fichier OWL doit être un fichier.',
-        // 'fichier_owl.mimes' => 'Le champ fichier OWL doit être de type OWL.',
-        // 'fichier_owl.max' => 'Le fichier OWL ne doit pas dépasser 1 Mo.',
+        'image.image' => 'L\'image doit être une image.',
+        'image.max' => 'L\'image ne doit pas dépasser 1 Mo.',
+        'fichier_owl.required' => 'Le champ fichier OWL est requis.',
+        'fichier_owl.file' => 'Le champ fichier OWL doit être un fichier.',
+        'fichier_owl.mimes' => 'Le champ fichier OWL doit être de type OWL.',
+        'fichier_owl.max' => 'Le fichier OWL ne doit pas dépasser 1 Mo.',
         'status.required' => 'Le champ status est requis.',
         'status.in' => 'Le champ status doit être Inprogress ou Completed.',
         'description.required' => 'Le champ description est requis.',
@@ -42,8 +42,8 @@ class AjoutOntologie extends Component
         'auteur_email.required' => 'Le champ email de l\'auteur est requis.',
         'auteur_email.email' => 'Veuillez entrer une adresse email valide pour l\'auteur.',
         'auteur_telephone.required' => 'Le champ téléphone de l\'auteur est requis.',
-        // 'auteur_photo.image' => 'La photo de l\'auteur doit être une image.',
-        // 'auteur_photo.max' => 'La photo de l\'auteur ne doit pas dépasser 1 Mo.',
+        'auteur_photo.image' => 'La photo de l\'auteur doit être une image.',
+        'auteur_photo.max' => 'La photo de l\'auteur ne doit pas dépasser 1 Mo.',
     ];
 
     public function sauvegarderOntologie()
