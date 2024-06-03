@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titre', "Detail de l'ontologie")
+@section('titre', "Detail de l'ontologie $ontologie->nom")
 
 @section('content')
     <div class="main-content">
@@ -26,20 +26,19 @@
                                                 </div>
                                                 <div class="col-md">
                                                     <div>
-                                                        <h4 class="fw-bold">Gestion de l'ontologie : <strong>Cassacas's
-                                                                Diseases</strong></h4>
+                                                        <h4 class="fw-bold">Gestion de l'ontologie : <strong>{{ $ontologie->nom }}</strong></h4>
                                                         <div class="hstack gap-3 flex-wrap">
                                                             <div><i class="ri-building-line align-bottom me-1"></i>
                                                                 Themesbrand</div>
                                                             <div class="vr"></div>
-                                                            <div>Date d'ajout : <span class="fw-medium">15 Sep, 2021</span>
+                                                            <div>Date d'ajout : <span class="fw-medium">{{ $ontologie->created_at }}</span>
                                                             </div>
                                                             <div class="vr"></div>
                                                             <div>Date de creation : <span class="fw-medium">29 Dec,
                                                                     2021</span></div>
                                                             <div class="vr"></div>
                                                             <div class="badge rounded-pill bg-info fs-12">Nouveau</div>
-                                                            <div class="badge rounded-pill bg-danger fs-12">High</div>
+                                                            <div class="badge rounded-pill bg-danger fs-12">Top</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -63,7 +62,13 @@
                                     <ul class="nav nav-tabs-custom border-bottom-0" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active fw-semibold" data-bs-toggle="tab"
-                                                href="#accueil-overview" role="tab">
+                                                href="#ontology-accueil" role="tab">
+                                                Accueil
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-semibold" data-bs-toggle="tab"
+                                                href="#ontology-annotation" role="tab">
                                                 Annotations
                                             </a>
                                         </li>
@@ -98,7 +103,107 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tab-content text-muted">
-                            <div class="tab-pane fade show active" id="accueil-overview" role="tabpanel">
+
+                            <div class="tab-pane fade show active" id="ontology-accueil" role="tabpanel">
+                                <div class="container-fluid">
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title mb-0">Arborescence de l'ontologie</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="sitemap-content">
+                                                <figure class="sitemap-horizontal">
+                                                    <ul class="administration">
+                                                        <li>
+                                                            <ul class="director">
+                                                                <li>
+                                                                    <a href="javascript:void(0);" class="fw-semibold"><span>Velzon Admin</span></a>
+                                                                    <ul class="subdirector">
+                                                                        <li><a href="javascript:void(0);" class="fw-semibold"><span>Contact Us</span></a></li>
+                                                                    </ul>
+                                                                    <ul class="departments">
+                                                                        <li><a href="javascript:void(0);" class="fw-semibold"><span>Main Pages</span></a></li>
+        
+                                                                        <li class="department">
+                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Account Management</span></a>
+                                                                            <ul>
+                                                                                <li><a href="javascript:void(0);"><span>Sign Up</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Login</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Profile Settings</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Modify Reservation</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Cancel Reservation</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Write Reviews</span></a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="department">
+                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>About Us</span></a>
+                                                                            <ul>
+                                                                                <li><a href="javascript:void(0);"><span>Overview</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Connect Via Social Media</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Careers</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Team Members</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Policies</span></a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="department">
+                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Book a Trip</span></a>
+                                                                            <ul>
+                                                                                <li><a href="javascript:void(0);"><span>Travel Details</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Reservation Process</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Payment Option</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Comfirmation</span></a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="department">
+                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Destination</span></a>
+                                                                            <ul>
+                                                                                <li><a href="javascript:void(0);"><span>Architecture</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Art</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Entertainment</span></a></li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><span>History</span></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><span>Science</span></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><span>Sports</span></a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><span>Music</span></a>
+                                                                                </li>
+                                                                                <li><a href="javascript:void(0);"><span>Tracking Camp</span></a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="department">
+                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Travel Tips</span></a>
+                                                                            <ul>
+                                                                                <li><a href="javascript:void(0);"><span>General Travel</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Helpth Concerns</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Safety Measures</span></a></li>
+                                                                                <li>
+                                                                                    <a href="javascript:void(0);"><span>FAQ's</span></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </figure>
+                                            </div>
+                                            <!--end sitemap-content-->
+                                        </div>
+                                        <!--end card-body-->
+                                    </div>
+                                    
+                
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade " id="ontology-annotation" role="tabpanel">
                                 <div class="row">
                                     <div class="card p-2">
                                         <div class="file-manager-content w-100 p-3 py-0">
@@ -780,21 +885,24 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="fw-medium">Nom du projet</td>
-                                                                        <td>#Maladie de manioc</td>
+                                                                        <td>#{{ $ontologie->nom }}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Categories</td>
-                                                                        <td>Maladies</td>
+                                                                        <td>{{ $ontologie->categorie }}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Status</td>
-                                                                        <td><span class="badge badge-soft-secondary">En
-                                                                                cours</span>
+                                                                        <td><span class="badge badge-soft-secondary">{{ $ontologie->status }}</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Date de création</td>
                                                                         <td>05 Jan, 2022</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="fw-medium">Date d'ajout</td>
+                                                                        <td>{{ $ontologie->created_at }}</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -817,15 +925,15 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="fw-medium">Nom Prénom</td>
-                                                                        <td>#SABIDANI YENTEM ELISEE</td>
+                                                                        <td>#{{ $ontologie->auteur_nom_prenom }}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Email</td>
-                                                                        <td>esabidani@gmail.com</td>
+                                                                        <td>{{ $ontologie->auteur_email }}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Numéro</td>
-                                                                        <td>56885237</td>
+                                                                        <td>{{ $ontologie->auteur_telephone }}</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -855,7 +963,7 @@
                                                             <div class="flex-grow-1 overflow-hidden">
                                                                 <h5 class="fs-13 mb-1"><a href="javascript:void(0);"
                                                                         class="text-body text-truncate d-block">
-                                                                        cassaca's diseases.owl</a>
+                                                                        {{ $ontologie->nom }}.owl</a>
                                                                 </h5>
                                                                 <div>1.2MB</div>
                                                             </div>
@@ -882,8 +990,7 @@
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
                                                                 <h5 class="fs-13 mb-1"><a href="javascript:void(0);"
-                                                                        class="text-body text-truncate d-block">cassaca's
-                                                                        diseases dataset.zip</a></h5>
+                                                                        class="text-body text-truncate d-block">{{$ontologie->nom}}_datasets.zip</a></h5>
                                                                 <div>150.4MB</div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
@@ -907,12 +1014,7 @@
                                             <div class="card-body">
                                                 <div class="text-muted">
                                                     <h6 class="mb-3 fw-semibold text-uppercase">Description</h6>
-                                                    <p>Ontologie de gestion des maladies du manioc. 4 types de maladie sont
-                                                        etudier :
-                                                        Brûlure bactérienne (Bacterial Blight (CBB)) , Maladie des stries
-                                                        brunes (Brown Streak Disease (CBSD)),
-                                                        Marbrure verte (Green Mottle (CGM)), Maladie de la mosaîque (Mosaic
-                                                        Disease (CMD)) </p>
+                                                    <p>{{$ontologie->description}} </p>
                                                 </div>
                                             </div>
                                         </div>

@@ -27,7 +27,7 @@
             </div>
             <!-- end page title -->
         
-            <form action="{{ route('ontologies.store') }}" method="POST" enctype="multipart/form-data">
+            {{-- <form action="{{ route('ontologies.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-8">
@@ -150,27 +150,122 @@
                     </div>
                     <!-- end col -->
                 </div>
-            </form>
-        </div>
-        
-    </div>
+            </form> --}}
 
-    <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <lord-icon src="https://cdn.lordicon.com/hrqwmuhr.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:120px;height:120px"></lord-icon>
-                    <div class="mt-4">
-                        <h4 class="mb-3">Oops something went wrong!</h4>
-                        <p class="text-muted mb-4"> The transfer was not successfully received by us. the email of the recipient wasn't correct.</p>
-                        <div class="hstack gap-2 justify-content-center">
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                            <a href="javascript:void(0);" class="btn btn-danger">Try Again</a>
+            <form action="{{ route('ontologies.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label" for="project-title-input">Nom de l'ontologie</label>
+                                    <input type="text" name="nom" class="form-control" id="project-title-input" placeholder="Veuillez définir le nom de l'ontologie">
+                                    @error('nom') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+            
+                                <div class="mb-3">
+                                    <label class="form-label" for="project-thumbnail-img">Associer une image</label>
+                                    <input class="form-control" name="image" id="project-thumbnail-img" type="file" accept="image/png, image/gif, image/jpeg, image/jpg">
+                                    @error('image') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+            
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="mb-3 mb-lg-0">
+                                            <label for="choices-status-input" class="form-label">Statut</label>
+                                            <select class="form-select" name="status" id="choices-status-input">
+                                                <option value="en_cours" selected>En cours</option>
+                                                <option value="complet">Complet</option>
+                                            </select>
+                                            @error('status') <span class="text-danger">{{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Fichier de l'ontologie</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label" for="project-thumbnail-img">Charger le fichier <span class="text-primary">.OWL</span></label>
+                                    <input class="form-control" name="fichier_owl" id="project-thumbnail-img" type="file" accept=".owl">
+                                    @error('fichier_owl') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Description de l'ontologie</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted mb-2">Définir une description qui caractérise l'ontologie</p>
+                                <textarea class="form-control" name="description" placeholder="Maximum 200 caractères" rows="3"></textarea>
+                                @error('description') <span class="text-danger">{{ $message }}</span> @enderror
+                            </div>
                         </div>
                     </div>
+            
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Tags</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="choices-categories-input" class="form-label">Catégories</label>
+                                    <select class="form-select" name="categorie" id="choices-categories-input">
+                                        <option value="Maladies" selected>Maladies</option>
+                                        <option value="Development">Development</option>
+                                    </select>
+                                    @error('categorie') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">Auteur de l'ontologie</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="choices-text-input" class="form-label">Nom prénom</label>
+                                    <input class="form-control" name="auteur_nom_prenom" id="choices-text-input" placeholder="Entrer le nom de l'auteur" type="text" value="" />
+                                    @error('auteur_nom_prenom') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="choices-text-input" class="form-label">Email</label>
+                                    <input class="form-control" name="auteur_email" id="choices-text-input" placeholder="Entrer l'email de l'auteur" type="email" value="" />
+                                    @error('auteur_email') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="choices-text-input" class="form-label">Téléphone</label>
+                                    <input class="form-control" name="auteur_telephone" id="choices-text-input" placeholder="Entrer le numéro de l'auteur" type="number" value="" />
+                                    @error('auteur_telephone') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                                <div class="mb-3">
+                                    <label for="choices-text-inputf" class="form-label">Photo</label>
+                                    <input class="form-control" name="auteur_photo" id="choices-text-inputf" type="file" />
+                                    @error('auteur_photo') <span class="text-danger">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-end mb-3">
+                        <button class="btn btn-success w-sm">
+                            <span>Enregistrer l'ontologie</span>
+                        </button>
+                    </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
+            </form>
+            
+        </div>
+        
     </div>
 
 

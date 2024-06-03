@@ -31,7 +31,11 @@ with onto:
         label = "Image"
         comment = "Class representing images."
         
-    class has_size(DatatypeProperty):
+    class has_img_size(DatatypeProperty):
+        domain = [Image]
+        range = [float]
+    
+    class has_name(DatatypeProperty):
         domain = [Image]
         range = [float]
 

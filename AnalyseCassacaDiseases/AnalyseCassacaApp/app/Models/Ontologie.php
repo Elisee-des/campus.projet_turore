@@ -15,6 +15,7 @@ class Ontologie extends Model
         'description',
         'categorie',
         'photo',
+        'color',
         'status',
         'fichier_owl',
         'auteur_nom_prenom',
@@ -22,4 +23,9 @@ class Ontologie extends Model
         'auteur_telephone',
         'auteur_photo',
     ];
+
+    public function dataset()
+    {
+        return $this->hasOne(Dataset::class);
+    }
 }
