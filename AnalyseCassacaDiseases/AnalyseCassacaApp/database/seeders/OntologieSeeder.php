@@ -25,18 +25,23 @@ class OntologieSeeder extends Seeder
             //     'created_at' => now(),
             //     'updated_at' => now(),
             // ],
-            [
-                'nom' => 'Maladie de la tomate',
-                'description' => 'Ensemble des maladies affectant la tomate.',
-                'categorie' => 'Plante',
-                'status' => 'en_cours',
-                'fichier_owl' => 'owl.file',
-                'auteur_nom_prenom' => 'Dr. John Smith',
-                'auteur_email' => 'johnsmith@example.com',
-                'auteur_telephone' => '+0987654321',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
+            // Cassava Bacterial Blight (CBB)
+            // Cassava Brown Streak Disease (CBSD)
+            // Cassava Green Mottle (CGM)
+            // Cassava Mosaic Disease (CMD)
+            // Healthy
+            // [
+            //     'nom' => 'Maladie de la tomate',
+            //     'description' => 'Ensemble des maladies affectant la tomate.',
+            //     'categorie' => 'Plante',
+            //     'status' => 'en_cours',
+            //     'fichier_owl' => 'owl.file',
+            //     'auteur_nom_prenom' => 'Dr. John Smith',
+            //     'auteur_email' => 'johnsmith@example.com',
+            //     'auteur_telephone' => '+0987654321',
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
             // [
             //     'nom' => 'Maladie du riz',
             //     'description' => 'Ensemble des maladies affectant le riz.',

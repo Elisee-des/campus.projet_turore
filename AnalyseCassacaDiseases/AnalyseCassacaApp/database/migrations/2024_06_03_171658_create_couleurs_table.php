@@ -21,7 +21,7 @@ return new class extends Migration
             $table->decimal('has_saturation_std', 8, 2)->nullable();
             $table->decimal('has_value_mean', 8, 2)->nullable();
             $table->decimal('has_value_std', 8, 2)->nullable();
-            $table->foreignUuid('couleur_id')->unique()->references('id')->on('couleurs')->onDelete('cascade');
+            $table->foreignUuid('image_id')->unique()->references('id')->on('images')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -1,0 +1,54 @@
+Hermann
+Montage integrale du bras. 
+Remise de la liste des materiels essentiel pour la fin du travail a materiels.
+Pas pu recuperé l'ISP avec Mr
+Travail sur le rapport
+
+Semaine prochaine : 
+*Fin du rapport
+*Amélioré l'application de controlle du bras
+
+##########################################
+
+Landry
+OK pour la possibilité de personnaliser l'anomysation
+Travail du rapport
+
+Semaine prochaine
+Revu du code
+Retouche du rapport
+
+##########################################
+
+Elisee
+Suite des travaux sur les interfaces web et mobile
+
+Semaine prochaine
+Finition du rapport
+
+###########################################
+
+Fassia
+Test pratique, difficulté rencontré sur le terrain
+
+Semaine prochaine
+Revision des erreurs de calcul
+Creation d'interface pour la gestion de l'apk
+
+
+###########################################
+
+Daouda
+Succès pour le remplissage d'un formulaire avec la voix.
+
+Semaine prochaine
+Finition du rapport
+
+###########################################
+
+Christophe
+Gestion des fichiers PDF
+Fin du rapport
+
+Semaine prochaine
+Gestion automatique des programmes

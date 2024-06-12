@@ -299,6 +299,7 @@
     <script src="{{ asset('assets/js/app.js') }}"></script>
     <script src="{{ asset('assets/libs/echarts/echarts.min.js') }}"></script>
     <script src="{{ asset('assets/js/pages/echarts.init.js') }}"></script>
+    @yield('scripts')
     @livewireScripts
 
   </body>

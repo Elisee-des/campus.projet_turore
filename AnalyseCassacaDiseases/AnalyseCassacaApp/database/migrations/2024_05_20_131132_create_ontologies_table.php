@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('auteur_email')->nullable();
             $table->string('auteur_telephone')->nullable();
             $table->string('auteur_photo')->nullable();
+            $table->json('data')->nullable();
             $table->timestamps();
         });
     }

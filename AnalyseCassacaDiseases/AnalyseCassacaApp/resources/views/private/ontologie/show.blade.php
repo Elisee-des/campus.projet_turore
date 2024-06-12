@@ -19,19 +19,26 @@
                                                 <div class="col-md-auto">
                                                     <div class="avatar-md">
                                                         <div class="avatar-title bg-white rounded-circle">
-                                                            <img src="assets/images/brands/slack.png" alt=""
-                                                                class="avatar-xs">
+                                                            @if ($ontologie->photo)
+                                                                <img src="{{ asset('storage/' . $ontologie->photo) }}"
+                                                                    alt="Votre image" class="avatar-xs">
+                                                            @else
+                                                                <img src="assets/images/brands/slack.png" alt=""
+                                                                    class="avatar-xs">
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md">
                                                     <div>
-                                                        <h4 class="fw-bold">Gestion de l'ontologie : <strong>{{ $ontologie->nom }}</strong></h4>
+                                                        <h4 class="fw-bold">Gestion de l'ontologie :
+                                                            <strong>{{ $ontologie->nom }}</strong></h4>
                                                         <div class="hstack gap-3 flex-wrap">
                                                             <div><i class="ri-building-line align-bottom me-1"></i>
                                                                 Themesbrand</div>
                                                             <div class="vr"></div>
-                                                            <div>Date d'ajout : <span class="fw-medium">{{ $ontologie->created_at }}</span>
+                                                            <div>Date d'ajout : <span
+                                                                    class="fw-medium">{{ $ontologie->created_at }}</span>
                                                             </div>
                                                             <div class="vr"></div>
                                                             <div>Date de creation : <span class="fw-medium">29 Dec,
@@ -67,8 +74,8 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link fw-semibold" data-bs-toggle="tab"
-                                                href="#ontology-annotation" role="tab">
+                                            <a class="nav-link fw-semibold" data-bs-toggle="tab" href="#ontology-annotation"
+                                                role="tab">
                                                 Annotations
                                             </a>
                                         </li>
@@ -99,6 +106,21 @@
                     </div>
                     <!-- end col -->
                 </div>
+
+                <div class="row p-4">
+                    @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                    @if (session('error'))
+                        <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                </div>
                 <!-- end row -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -118,72 +140,121 @@
                                                         <li>
                                                             <ul class="director">
                                                                 <li>
-                                                                    <a href="javascript:void(0);" class="fw-semibold"><span>Velzon Admin</span></a>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="fw-semibold"><span>Ontologie({{ $ontologie->nom }})</span></a>
                                                                     <ul class="subdirector">
-                                                                        <li><a href="javascript:void(0);" class="fw-semibold"><span>Contact Us</span></a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Contact
+                                                                                    Us</span></a></li>
                                                                     </ul>
                                                                     <ul class="departments">
-                                                                        <li><a href="javascript:void(0);" class="fw-semibold"><span>Main Pages</span></a></li>
-        
+                                                                        <li><a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Main
+                                                                                    Pages</span></a></li>
+
                                                                         <li class="department">
-                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Account Management</span></a>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Account
+                                                                                    Management</span></a>
                                                                             <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Sign Up</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Login</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Profile Settings</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Modify Reservation</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Cancel Reservation</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Write Reviews</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Sign
+                                                                                            Up</span></a></li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Login</span></a>
+                                                                                </li>
+                                                                                <li><a href="javascript:void(0);"><span>Profile
+                                                                                            Settings</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Modify
+                                                                                            Reservation</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Cancel
+                                                                                            Reservation</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Write
+                                                                                            Reviews</span></a></li>
                                                                             </ul>
                                                                         </li>
                                                                         <li class="department">
-                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>About Us</span></a>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>About
+                                                                                    Us</span></a>
                                                                             <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Overview</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Connect Via Social Media</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Careers</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Team Members</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Policies</span></a></li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Overview</span></a>
+                                                                                </li>
+                                                                                <li><a href="javascript:void(0);"><span>Connect
+                                                                                            Via Social Media</span></a></li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Careers</span></a>
+                                                                                </li>
+                                                                                <li><a href="javascript:void(0);"><span>Team
+                                                                                            Members</span></a></li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Policies</span></a>
+                                                                                </li>
                                                                             </ul>
                                                                         </li>
                                                                         <li class="department">
-                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Book a Trip</span></a>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Book a
+                                                                                    Trip</span></a>
                                                                             <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Travel Details</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Reservation Process</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Payment Option</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Comfirmation</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Travel
+                                                                                            Details</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Reservation
+                                                                                            Process</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Payment
+                                                                                            Option</span></a></li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Comfirmation</span></a>
+                                                                                </li>
                                                                             </ul>
                                                                         </li>
                                                                         <li class="department">
-                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Destination</span></a>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Destination</span></a>
                                                                             <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Architecture</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Art</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Entertainment</span></a></li>
-                                                                                <li>
-                                                                                    <a href="javascript:void(0);"><span>History</span></a>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Architecture</span></a>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Art</span></a>
+                                                                                </li>
+                                                                                <li><a
+                                                                                        href="javascript:void(0);"><span>Entertainment</span></a>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="javascript:void(0);"><span>Science</span></a>
+                                                                                    <a
+                                                                                        href="javascript:void(0);"><span>History</span></a>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="javascript:void(0);"><span>Sports</span></a>
+                                                                                    <a
+                                                                                        href="javascript:void(0);"><span>Science</span></a>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <a href="javascript:void(0);"><span>Music</span></a>
+                                                                                    <a
+                                                                                        href="javascript:void(0);"><span>Sports</span></a>
                                                                                 </li>
-                                                                                <li><a href="javascript:void(0);"><span>Tracking Camp</span></a></li>
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="javascript:void(0);"><span>Music</span></a>
+                                                                                </li>
+                                                                                <li><a href="javascript:void(0);"><span>Tracking
+                                                                                            Camp</span></a></li>
                                                                             </ul>
                                                                         </li>
                                                                         <li class="department">
-                                                                            <a href="javascript:void(0);" class="fw-semibold"><span>Travel Tips</span></a>
+                                                                            <a href="javascript:void(0);"
+                                                                                class="fw-semibold"><span>Travel
+                                                                                    Tips</span></a>
                                                                             <ul>
-                                                                                <li><a href="javascript:void(0);"><span>General Travel</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Helpth Concerns</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Safety Measures</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>General
+                                                                                            Travel</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Helpth
+                                                                                            Concerns</span></a></li>
+                                                                                <li><a href="javascript:void(0);"><span>Safety
+                                                                                            Measures</span></a></li>
                                                                                 <li>
-                                                                                    <a href="javascript:void(0);"><span>FAQ's</span></a>
+                                                                                    <a
+                                                                                        href="javascript:void(0);"><span>FAQ's</span></a>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -198,12 +269,12 @@
                                         </div>
                                         <!--end card-body-->
                                     </div>
-                                    
-                
+
+
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade " id="ontology-annotation" role="tabpanel">
+                            <div class="tab-pane fade p-4" id="ontology-annotation" role="tabpanel">
                                 <div class="row">
                                     <div class="card p-2">
                                         <div class="file-manager-content w-100 p-3 py-0">
@@ -230,233 +301,89 @@
                                                                 {{-- <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="file-type">
                                                                     <option value="All" selected>Tous</option>
                                                                 </select> --}}
-                                                                <a href="" class="btn btn-success w-sm create-folder-modal">
-                                                                <i class="ri-add-line align-bottom me-1"></i> Annoter</a>
+                                                                <a href="{{ route('annotation-index', $ontologie->id) }}"
+                                                                    class="btn btn-success w-sm create-folder-modal">
+                                                                    <i class="ri-add-line align-bottom me-1"></i>
+                                                                    Annoter</a>
 
                                                                 <button class="btn btn-success w-sm create-folder-modal"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#createFolderModal"><i
-                                                                        class="ri-add-line align-bottom me-1"></i> Nouvelle Classe</button>
+                                                                        class="ri-add-line align-bottom me-1"></i> Nouvelle
+                                                                    Classe</button>
                                                             </div>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
                                                     <!--end row-->
                                                     <div class="row" id="folderlist-data">
-                                                        <div class="col-xxl-3 col-6 folder-card">
-                                                            <div class="card bg-light shadow-none" id="folder-1">
-                                                                <div class="card-body">
-                                                                    <div class="d-flex mb-1">
-                                                                        <div
-                                                                            class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
-                                                                            <input class="form-check-input" type="checkbox"
-                                                                                value="" id="folderlistCheckbox_1"
-                                                                                checked>
-                                                                            <label class="form-check-label"
-                                                                                for="folderlistCheckbox_1"></label>
-                                                                        </div>
-                                                                        <div class="dropdown">
-                                                                            <button
-                                                                                class="btn btn-ghost-primary btn-icon btn-sm dropdown"
-                                                                                type="button" data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                                <i
-                                                                                    class="ri-more-2-fill fs-16 align-bottom"></i>
-                                                                            </button>
-                                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                                <li><a class="dropdown-item view-item-btn"
-                                                                                        href="javascript:void(0);">Ouvrir</a>
-                                                                                </li>
-                                                                                <li><a class="dropdown-item edit-folder-list"
-                                                                                        href="#createFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Renommer</a></li>
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="#removeFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Supprimer</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
 
-                                                                    <div class="text-center">
-                                                                        <div class="mb-2">
-                                                                            <i
-                                                                                class="ri-folder-2-fill align-bottom text-warning display-5"></i>
+                                                        @foreach ($classes as $classe)
+                                                            <div class="col-xxl-3 col-6 folder-card">
+                                                                <div class="card bg-light shadow-none"
+                                                                    id="folder-{{ $loop->index + 1 }}">
+                                                                    <div class="card-body">
+                                                                        <div class="d-flex mb-1">
+                                                                            <div
+                                                                                class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" value=""
+                                                                                    id="folderlistCheckbox_{{ $loop->index + 1 }}"
+                                                                                    checked>
+                                                                                <label class="form-check-label"
+                                                                                    for="folderlistCheckbox_{{ $loop->index + 1 }}"></label>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button
+                                                                                    class="btn btn-ghost-primary btn-icon btn-sm dropdown"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="dropdown"
+                                                                                    aria-expanded="false">
+                                                                                    <i
+                                                                                        class="ri-more-2-fill fs-16 align-bottom"></i>
+                                                                                </button>
+                                                                                <ul
+                                                                                    class="dropdown-menu dropdown-menu-end">
+                                                                                    <li><a class="dropdown-item view-item-btn"
+                                                                                            href="javascript:void(0);">Ouvrir</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item edit-folder-list"
+                                                                                            href="#createFolderModal"
+                                                                                            data-bs-toggle="modal"
+                                                                                            role="button">Renommer</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#removeFolderModal"
+                                                                                            data-bs-toggle="modal"
+                                                                                            role="button">Supprimer</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
                                                                         </div>
-                                                                        <h6
-                                                                            class="fs-15 folder-nam text-truncate-two-line">
-                                                                            Brûlure bactérienne (Bacterial Blight (CBB))
-                                                                        </h6>
-                                                                    </div>
-                                                                    <div class="hstack mt-4 text-muted">
-                                                                        <span class="me-auto"><b>349</b> Images</span>
-                                                                        <span><b>4.10</b>GB</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end col-->
-                                                        <div class="col-xxl-3 col-6 folder-card">
-                                                            <div class="card bg-light shadow-none" id="folder-2">
-                                                                <div class="card-body">
-                                                                    <div class="d-flex mb-1">
-                                                                        <div
-                                                                            class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
-                                                                            <input class="form-check-input"
-                                                                                type="checkbox" value=""
-                                                                                id="folderlistCheckbox_2">
-                                                                            <label class="form-check-label"
-                                                                                for="folderlistCheckbox_2"></label>
-                                                                        </div>
-                                                                        <div class="dropdown">
-                                                                            <button
-                                                                                class="btn btn-ghost-primary btn-icon btn-sm dropdown"
-                                                                                type="button" data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                                <i
-                                                                                    class="ri-more-2-fill fs-16 align-bottom"></i>
-                                                                            </button>
-                                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                                <li><a class="dropdown-item view-item-btn"
-                                                                                        href="javascript:void(0);">Open</a>
-                                                                                </li>
-                                                                                <li><a class="dropdown-item edit-folder-list"
-                                                                                        href="#createFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Rename</a></li>
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="#removeFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Delete</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
 
-                                                                    <div class="text-center">
-                                                                        <div class="mb-2">
-                                                                            <i
-                                                                                class="ri-folder-2-fill align-bottom text-warning display-5"></i>
+                                                                        <div class="text-center">
+                                                                            <div class="mb-2">
+                                                                                <i
+                                                                                    class="ri-folder-2-fill align-bottom text-warning display-5"></i>
+                                                                            </div>
+                                                                            <h6
+                                                                                class="fs-15 folder-nam text-truncate-two-line">
+                                                                                {{ $classe->has_name }}
+                                                                            </h6>
                                                                         </div>
-                                                                        <h6
-                                                                            class="fs-15 folder-name text-truncate-two-line">
-                                                                            Maladie des stries brunes (Brown Streak Disease
-                                                                            (CBSD))</h6>
-                                                                    </div>
-                                                                    <div class="hstack mt-4 text-muted">
-                                                                        <span class="me-auto"><b>238</b> Images</span>
-                                                                        <span><b>27.01</b>GB</span>
+                                                                        <div class="hstack mt-4 text-muted">
+                                                                            <span
+                                                                                class="me-auto"><b>{{ $classe->images_count }}</b>
+                                                                                Images</span>
+                                                                            <!-- Assuming you have an 'images_count' attribute -->
+                                                                            <span><b>{{ $classe->size_in_mo }}</b>Mo</span>
+                                                                            <!-- Assuming you have a 'size_in_gb' attribute -->
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <!--end col-->
-                                                        <div class="col-xxl-3 col-6 folder-card">
-                                                            <div class="card bg-light shadow-none" id="folder-3">
-                                                                <div class="card-body">
-                                                                    <div class="d-flex mb-1">
-                                                                        <div
-                                                                            class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
-                                                                            <input class="form-check-input"
-                                                                                type="checkbox" value=""
-                                                                                id="folderlistCheckbox_3">
-                                                                            <label class="form-check-label"
-                                                                                for="folderlistCheckbox_3"></label>
-                                                                        </div>
-                                                                        <div class="dropdown">
-                                                                            <button
-                                                                                class="btn btn-ghost-primary btn-icon btn-sm dropdown"
-                                                                                type="button" data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                                <i
-                                                                                    class="ri-more-2-fill fs-16 align-bottom"></i>
-                                                                            </button>
-                                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                                <li><a class="dropdown-item view-item-btn"
-                                                                                        href="javascript:void(0);">Open</a>
-                                                                                </li>
-                                                                                <li><a class="dropdown-item edit-folder-list"
-                                                                                        href="#createFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Rename</a></li>
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="#removeFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Delete</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
+                                                        @endforeach
 
-                                                                    <div class="text-center">
-                                                                        <div class="mb-2">
-                                                                            <i
-                                                                                class="ri-folder-2-fill align-bottom text-warning display-5"></i>
-                                                                        </div>
-                                                                        <h6
-                                                                            class="fs-15 folder-name text-truncate-two-line">
-                                                                            Marbrure verte (Green Mottle (CGM))</h6>
-                                                                    </div>
-                                                                    <div class="hstack mt-4 text-muted">
-                                                                        <span class="me-auto"><b>1280</b> Images</span>
-                                                                        <span><b>20.87</b>GB</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end col-->
-                                                        <div class="col-xxl-3 col-6 folder-card">
-                                                            <div class="card bg-light shadow-none" id="folder-4">
-                                                                <div class="card-body">
-                                                                    <div class="d-flex mb-1">
-                                                                        <div
-                                                                            class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
-                                                                            <input class="form-check-input"
-                                                                                type="checkbox" value=""
-                                                                                id="folderlistCheckbox_4" checked>
-                                                                            <label class="form-check-label"
-                                                                                for="folderlistCheckbox_4"></label>
-                                                                        </div>
-                                                                        <div class="dropdown">
-                                                                            <button
-                                                                                class="btn btn-ghost-primary btn-icon btn-sm dropdown"
-                                                                                type="button" data-bs-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                                <i
-                                                                                    class="ri-more-2-fill fs-16 align-bottom"></i>
-                                                                            </button>
-                                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                                                <li><a class="dropdown-item view-item-btn"
-                                                                                        href="javascript:void(0);">Open</a>
-                                                                                </li>
-                                                                                <li><a class="dropdown-item edit-folder-list"
-                                                                                        href="#createFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Rename</a></li>
-                                                                                <li><a class="dropdown-item"
-                                                                                        href="#removeFolderModal"
-                                                                                        data-bs-toggle="modal"
-                                                                                        role="button">Delete</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="text-center">
-                                                                        <div class="mb-2">
-                                                                            <i
-                                                                                class="ri-folder-2-fill align-bottom text-warning display-5"></i>
-                                                                        </div>
-                                                                        <h6
-                                                                            class="fs-15 folder-name text-truncate-two-line">
-                                                                            Maladie de la mosaîque (Mosaic Disease (CMD))
-                                                                        </h6>
-                                                                    </div>
-                                                                    <div class="hstack mt-4 text-muted">
-                                                                        <span class="me-auto"><b>180</b> Files</span>
-                                                                        <span><b>478.65</b>MB</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end col-->
                                                     </div>
                                                     <!--end row-->
                                                 </div>
@@ -472,8 +399,8 @@
                             <div class="tab-pane fade" id="ontology-analyse" role="tabpanel">
                                 <div class="container-fluid">
 
-                                 
-                
+
+
                                 </div>
                             </div>
                             <!-- end tab pane -->
@@ -893,7 +820,8 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="fw-medium">Status</td>
-                                                                        <td><span class="badge badge-soft-secondary">{{ $ontologie->status }}</span>
+                                                                        <td><span
+                                                                                class="badge badge-soft-secondary">{{ $ontologie->status }}</span>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -990,7 +918,8 @@
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
                                                                 <h5 class="fs-13 mb-1"><a href="javascript:void(0);"
-                                                                        class="text-body text-truncate d-block">{{$ontologie->nom}}_datasets.zip</a></h5>
+                                                                        class="text-body text-truncate d-block">{{ $ontologie->nom }}_datasets.zip</a>
+                                                                </h5>
                                                                 <div>150.4MB</div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
@@ -1014,7 +943,7 @@
                                             <div class="card-body">
                                                 <div class="text-muted">
                                                     <h6 class="mb-3 fw-semibold text-uppercase">Description</h6>
-                                                    <p>{{$ontologie->description}} </p>
+                                                    <p>{{ $ontologie->description }} </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1205,13 +1134,40 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form autocomplete="off" class="needs-validation createfolder-form" id="createfolder-form"
-                            novalidate>
+                        <form action="{{ route('classes.store', $ontologie->id) }}" method="POST" autocomplete="off"
+                            class="needs-validation createfolder-form" id="createfolder-form" novalidate>
+                            @csrf
                             <div class="mb-4">
-                                <label for="foldername-input" class="form-label">Nom du dossier</label>
-                                <input type="text" class="form-control" id="foldername-input" required>
-                                <div class="invalid-feedback">Veuillez definir le nom du dossier.</div>
-                                <input type="hidden" class="form-control" id="folderid-input" value="">
+                                <label for="has_name" class="form-label">Nom du dossier</label>
+                                <input type="text" name="has_name" class="form-control" id="has_name">
+                                @error('has_name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="mb-4">
+                                <label for="label" class="form-label">Label</label>
+                                <input type="text" name="label" class="form-control" id="label"
+                                    value="{{ $ontologieData['http://www.example.org/cassacadiseases.owl#Classe']['label'] }}"
+                                    disabled>
+                                @error('label')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="mb-4">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea name="description" class="form-control" id="description" rows="3" disabled>{{ $ontologieData['http://www.example.org/cassacadiseases.owl#Classe']['comment'] }}</textarea>
+                                @error('description')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="mb-4">
+                                <label for="dataset_id" class="form-label">Dataset</label>
+                                <select name="dataset_id" class="form-control" id="dataset_id" disabled required>
+                                    <option value="{{ $dataset->id }}">{{ $dataset->nom }}</option>
+                                </select>
+                                @error('dataset_id')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                             <div class="hstack gap-2 justify-content-end">
                                 <button type="button" class="btn btn-ghost-success" data-bs-dismiss="modal"><i
@@ -1342,7 +1298,8 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">Surface normalisee : </p> <strong> 0.3096847534179687</strong>
+                                    <p class="text-muted mb-0">Surface normalisee : </p> <strong>
+                                        0.3096847534179687</strong>
                                 </div>
                             </div>
                             <div class="d-flex mt-2">
@@ -1350,7 +1307,8 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">Perimetre normalise : </p> <strong> 1.6122771217487752</strong>
+                                    <p class="text-muted mb-0">Perimetre normalise : </p> <strong>
+                                        1.6122771217487752</strong>
                                 </div>
                             </div>
                             <div class="d-flex mt-2">
@@ -1411,7 +1369,8 @@
                         <br>
 
 
-                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des tiges</h6>
+                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des tiges
+                        </h6>
                         <div class="">
                             <div class="d-flex mt-2">
                                 <div class="flex-shrink-0">
@@ -1454,7 +1413,8 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Moyenne de la teinte : <strong> 35.54498291015625</strong></p>
+                                    <p class="text-muted mb-0">- Moyenne de la teinte : <strong> 35.54498291015625</strong>
+                                    </p>
                                 </div>
                             </div>
 
@@ -1463,7 +1423,8 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Moyenne de la saturation : <strong> 82.72439575195312</strong></p>
+                                    <p class="text-muted mb-0">- Moyenne de la saturation : <strong>
+                                            82.72439575195312</strong></p>
                                 </div>
                             </div>
 
@@ -1472,7 +1433,8 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Moyenne de la valeur : <strong> 61.60111999511719</strong></p>
+                                    <p class="text-muted mb-0">- Moyenne de la valeur : <strong> 61.60111999511719</strong>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1480,14 +1442,16 @@
 
 
 
-                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des racines</h6>
+                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des racines
+                        </h6>
                         <div class="">
                             <div class="d-flex mt-2">
                                 <div class="flex-shrink-0">
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Deformation racines :  <strong> 0.29203033447265625</strong></p>
+                                    <p class="text-muted mb-0">- Deformation racines : <strong>
+                                            0.29203033447265625</strong></p>
                                 </div>
                             </div>
 
@@ -1505,7 +1469,7 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Contraste :  <strong> 607.0579197304468</strong></p>
+                                    <p class="text-muted mb-0">- Contraste : <strong> 607.0579197304468</strong></p>
                                 </div>
                             </div>
 
@@ -1514,7 +1478,7 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">-Dissimilarite : <strong> 14.911473651958886</strong></p> 
+                                    <p class="text-muted mb-0">-Dissimilarite : <strong> 14.911473651958886</strong></p>
                                 </div>
                             </div>
 
@@ -1523,7 +1487,7 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Energie :  <strong> 0.010779307898478538</strong></p>
+                                    <p class="text-muted mb-0">- Energie : <strong> 0.010779307898478538</strong></p>
                                 </div>
                             </div>
 
@@ -1532,7 +1496,7 @@
                                     <i class="ri-checkbox-circle-fill text-success"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-2 d-flex justify-content-betwenn">
-                                    <p class="text-muted mb-0">- Homogeneite :  <strong>  0.11088725504503322</strong></p>
+                                    <p class="text-muted mb-0">- Homogeneite : <strong> 0.11088725504503322</strong></p>
                                 </div>
                             </div>
 
@@ -1549,7 +1513,8 @@
 
 
 
-                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des feuilles</h6>
+                        <h6 class="fs-14 " style="text-decoration: underline">Caractéristiques des symptômes des feuilles
+                        </h6>
                         <div class="">
                             <div class="d-flex mt-2">
                                 <div class="flex-shrink-0">

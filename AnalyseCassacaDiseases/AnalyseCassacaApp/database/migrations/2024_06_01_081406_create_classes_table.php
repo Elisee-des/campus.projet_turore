@@ -12,7 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('classes', function (Blueprint $table) {
-            $table->id();
+            $table->uuid("id")->primary();
+            $table->string('label')->nullable();
+            $table->string('description')->nullable();
+            $table->string('images_count')->nullable();
+            $table->string('size_in_mo')->nullable();
+            $table->string('has_name')->nullable();
+            $table->foreignUuid('dataset_id')->references('id')->on('datasets')->onDelete('cascade');
             $table->timestamps();
         });
     }

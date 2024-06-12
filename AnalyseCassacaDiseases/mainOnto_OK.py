@@ -2,7 +2,7 @@ from owlready2 import *
 import json
 
 # Load or create the ontology
-onto = get_ontology("http://www.example.org/maladiesmaniocs.owl")
+onto = get_ontology("http://www.example.org/cassacadiseases.owl")
 
 with onto:
     # Dataset
@@ -26,10 +26,19 @@ with onto:
         domain = [Dataset]
         range = [str]
 
+    # Classe
+    class Classe(Dataset):
+        label = "Classe"
+        comment = "Classe representing images."
+    
+    class has_name(DatatypeProperty):
+        domain = [Classe]
+        range = [str]
+
     # Image
-    class Image(Dataset):
+    class Image(Classe):
         label = "Image"
-        comment = "Class representing images."
+        comment = "Image representing images."
         
     class has_size(DatatypeProperty):
         domain = [Image]
@@ -126,89 +135,6 @@ with onto:
         domain = [Texture]
         range = [float]
 
-    #### Root Symptoms ####
-    class RootSymptoms(Image):
-        label = ["Root Symptoms"]
-        comment = ["The symptoms observed on the roots of a plant, such as deformations, discoloration, etc."]
-
-    class has_root_deformation(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_root_discoloration(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_contrast(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_dissimilarity(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_energy(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_homogeneity(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    class has_correlation(DatatypeProperty):
-        domain = [RootSymptoms]
-        range = [float]
-
-    #### Leaf Symptoms ####
-    class LeafSymptoms(Image):
-        label = ["Leaf Symptoms"]
-        comment = ["The symptoms observed on the leaves of a plant, such as spots, discoloration, etc."]
-
-    class has_spot_count(DatatypeProperty):
-        domain = [LeafSymptoms]
-        range = [float]
-
-    class has_spot_area(DatatypeProperty):
-        domain = [LeafSymptoms]
-        range = [float]
-
-    class has_spot_color(DatatypeProperty):
-        domain = [LeafSymptoms]
-        range = [float]
-
-    class has_spot_texture(DatatypeProperty):
-        domain = [LeafSymptoms]
-        range = [float]
-
-    #### Stem Symptoms ####
-    class StemSymptoms(Image):
-        label = ["Stem Symptoms"]
-        comment = ["The symptoms observed on the stems of a plant, such as lesions, deformation, etc."]
-            
-    class has_lesion_presence(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-            
-    class has_lesion_length(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-
-    class has_lesion_width(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-
-    class has_mean_hue(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-            
-    class has_mean_saturation(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-            
-    class has_mean_value(DatatypeProperty):
-        domain = [StemSymptoms]
-        range = [float]
-
 # Save the ontology
 onto.save(file="mainOnto_OK.owl")
 
@@ -238,23 +164,7 @@ with onto:
     image_instance.has_homogeneity.append(0.4)
     image_instance.has_correlation.append(0.6)
 
-    # Assign leaf symptoms to the image
-    image_instance.has_spot_count.append(10)
-    image_instance.has_spot_area.append(50.0)
-    image_instance.has_spot_color.append(90.0)
-    image_instance.has_spot_texture.append(0.25)
-
-    # Assign root symptoms to the image
-    image_instance.has_root_deformation.append(0.1)
-    image_instance.has_root_discoloration.append(0.2)
-
-    # Assign stem symptoms to the image
-    image_instance.has_lesion_presence.append(1)
-    image_instance.has_lesion_length.append(20.0)
-    image_instance.has_lesion_width.append(5.0)
-    image_instance.has_mean_hue.append(110.0)
-    image_instance.has_mean_saturation.append(0.7)
-    image_instance.has_mean_value.append(0.8)
+    
 
     # Save the ontology
 onto.save(file="mainOnto_OK.owl")
@@ -291,18 +201,6 @@ for image in onto.Image.instances():
     image_property['energy'] = image.has_energy[0] if image.has_energy else None
     image_property['homogeneity'] = image.has_homogeneity[0] if image.has_homogeneity else None
     image_property['correlation'] = image.has_correlation[0] if image.has_correlation else None
-    image_property['spot_count'] = image.has_spot_count[0] if image.has_spot_count else None
-    image_property['spot_area'] = image.has_spot_area[0] if image.has_spot_area else None
-    image_property['spot_color'] = image.has_spot_color[0] if image.has_spot_color else None
-    image_property['spot_texture'] = image.has_spot_texture[0] if image.has_spot_texture else None
-    image_property['root_deformation'] = image.has_root_deformation[0] if image.has_root_deformation else None
-    image_property['root_discoloration'] = image.has_root_discoloration[0] if image.has_root_discoloration else None
-    image_property['lesion_presence'] = image.has_lesion_presence[0] if image.has_lesion_presence else None
-    image_property['lesion_length'] = image.has_lesion_length[0] if image.has_lesion_length else None
-    image_property['lesion_width'] = image.has_lesion_width[0] if image.has_lesion_width else None
-    image_property['mean_hue'] = image.has_mean_hue[0] if image.has_mean_hue else None
-    image_property['mean_saturation'] = image.has_mean_saturation[0] if image.has_mean_saturation else None
-    image_property['mean_value'] = image.has_mean_value[0] if image.has_mean_value else None
     image_properties.append(image_property)
 
 # Print retrieved values for each Image property

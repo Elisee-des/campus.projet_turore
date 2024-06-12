@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('label')->nullable();
             $table->string('description')->nullable();
             $table->string('has_img_size')->nullable();
-            $table->foreignUuid('dataset_id')->references('id')->on('datasets')->onDelete('cascade');
+            $table->foreignUuid('classe_id')->references('id')->on('classes')->onDelete('cascade');
             $table->timestamps();
         });
     }

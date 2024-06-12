@@ -16,11 +16,10 @@ return new class extends Migration
             $table->string('nom')->nullable();
             $table->string('label')->nullable();
             $table->string('description')->nullable();
-            $table->string('has_creation_date')->nullable();
             $table->string('has_url')->nullable();
             $table->decimal('has_size', 8, 2)->nullable();
             $table->string('has_author')->nullable();
-            $table->foreignUuid('ontologie_id')->unique()->references('id')->on('ontologies')->onDelete('cascade');
+            $table->foreignUuid('ontologie_id')->unique()->constrained('ontologies')->onDelete('cascade');
             $table->timestamps();
         });
     }

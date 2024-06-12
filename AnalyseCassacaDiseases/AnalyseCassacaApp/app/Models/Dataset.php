@@ -24,11 +24,12 @@ class Dataset extends Model
 
     public function ontologie()
     {
-        return $this->belongsTo(Ontologie::class);
+        return $this->belongsTo(Ontologie::class, 'ontologie_id');
     }
 
-    public function images()
+    public function classes()
     {
-        return $this->hasMany(Image::class);
+        return $this->hasMany(Classe::class);
     }
+    
 }

@@ -11,7 +11,12 @@ class Classe extends Model
     use HasFactory, Uuids;
 
     protected $fillable = [
-        'nom',
+        'label',
+        'description',
+        'has_name',
+        'images_count',
+        'size_in_mo',
+        'dataset_id',
     ];
 
     public function images()

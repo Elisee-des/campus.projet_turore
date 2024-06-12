@@ -14,15 +14,10 @@ class Image extends Model
         'nom',
         'path',
         'has_img_size',
-        'dataset_id',
+        'classe_id',
         'label',
         'description',
     ];
-
-    public function dataset()
-    {
-        return $this->belongsTo(Dataset::class);
-    }
 
     public function classe()
     {

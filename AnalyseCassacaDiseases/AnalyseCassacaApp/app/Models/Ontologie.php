@@ -26,6 +26,6 @@ class Ontologie extends Model
 
     public function dataset()
     {
-        return $this->hasOne(Dataset::class);
+        return $this->hasOne(Dataset::class, 'ontologie_id');
     }
 }
