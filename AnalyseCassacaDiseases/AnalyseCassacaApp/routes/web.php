@@ -27,6 +27,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('classes', ClasseController::class);
     Route::resource('bankimages', BankImageController::class);
     Route::resource('users', UserController::class); 
+    Route::get('/classes/{idOntologie}/create', [ClasseController::class, 'indexCreate'])->name('classes-create');
+    Route::post('/classes/{idOntologie}/create/action', [ClasseController::class, 'indexCreateAction'])->name('classes-create-action');
     Route::get('/annotation-etape-1/{idOntologie}', [AnnotationController::class, 'index'])->name('annotation-index');
     Route::post('/annotation-etape-1/{idOntologie}/action', [AnnotationController::class, 'indexAction'])->name('annotation-index-action');
     Route::get('/annotation-etape-2/{idOntologie}/{idDataset}/{idClasse}', [AnnotationController::class, 'index2'])->name('annotation-index2');

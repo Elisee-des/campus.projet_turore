@@ -76,10 +76,15 @@
                                         </select>
                                     </div>
                                 </div>
-                                        <div class="d-flex align-items-start gap-3 mt-4">
-                                            <button type="submit" class="btn btn-success btn-label right ms-auto nexttab"
-                                                data-nexttab="#steparrow-description-info"><i
-                                                    class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Etape suivante</button>
+                                        
+                                        <div class="d-flex align-items-start justify-content-between gap-1 mt-4">
+                                            <a href="{{ route('ontologies.show', $ontologie->id) }}" type="button" class="btn btn-secondary btn-label left nexttab"
+                                                data-nexttab="#steparrow-description-info" wire:click="retour">
+                                                <i class="ri-arrow-left-line label-icon align-middle fs-16 ms-2"></i>Retour
+                                        </a>
+                                                <button type="submit" class="btn btn-success btn-label right ms-auto nexttab"
+                                                    data-nexttab="#steparrow-description-info"><i
+                                                        class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Etape suivante</button>
                                         </div>
                                </form>
                                 <!-- end tab content -->

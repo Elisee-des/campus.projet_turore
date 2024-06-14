@@ -30,6 +30,7 @@ class OntologieSeeder extends Seeder
             // Cassava Green Mottle (CGM)
             // Cassava Mosaic Disease (CMD)
             // Healthy
+            
             // [
             //     'nom' => 'Maladie de la tomate',
             //     'description' => 'Ensemble des maladies affectant la tomate.',
@@ -89,9 +90,9 @@ class OntologieSeeder extends Seeder
             // ],
         ];
 
-        foreach ($ontologies as $ontologyData) {
-            $ontologyData['id'] = Str::uuid(); // Générer un UUID pour chaque enregistrement
-            Ontologie::create($ontologyData);
-        }
+        // foreach ($ontologies as $ontologyData) {
+        //     $ontologyData['id'] = Str::uuid(); // Générer un UUID pour chaque enregistrement
+        //     Ontologie::create($ontologyData);
+        // }
     }
 }

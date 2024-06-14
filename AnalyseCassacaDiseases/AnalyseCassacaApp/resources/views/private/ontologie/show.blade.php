@@ -306,11 +306,9 @@
                                                                     <i class="ri-add-line align-bottom me-1"></i>
                                                                     Annoter</a>
 
-                                                                <button class="btn btn-success w-sm create-folder-modal"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#createFolderModal"><i
+                                                                <a href="{{ route('classes-create', $ontologie->id) }}" class="btn btn-success w-sm create-folder-modal"><i
                                                                         class="ri-add-line align-bottom me-1"></i> Nouvelle
-                                                                    Classe</button>
+                                                                    Classe</a>
                                                             </div>
                                                         </div>
                                                         <!--end col-->
@@ -1124,23 +1122,30 @@
         <!-- End Page-content -->
 
         <!-- START CREATE FOLDER MODAL -->
-        <div class="modal fade zoomIn" id="createFolderModal" tabindex="-1" aria-labelledby="createFolderModalLabel"
+        <div class="modal fade zoomIn" id="" tabindex="-1" aria-labelledby="createFolderModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content border-0">
                     <div class="modal-header p-3 bg-soft-success">
-                        <h5 class="modal-title" id="createFolderModalLabel">Nouveau dossier</h5>
+                        <h5 class="modal-title" id="createFolderModalLabel">Nouvelle classe</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" id="addFolderBtn-close"
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form action="{{ route('classes.store', $ontologie->id) }}" method="POST" autocomplete="off"
-                            class="needs-validation createfolder-form" id="createfolder-form" novalidate>
+                            class="needs-validation createfolder-form" id="createfolder-form" novalidate enctype="multipart/form-data">
                             @csrf
                             <div class="mb-4">
-                                <label for="has_name" class="form-label">Nom du dossier</label>
+                                <label for="has_name" class="form-label">Nom de la classe</label>
                                 <input type="text" name="has_name" class="form-control" id="has_name">
                                 @error('has_name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="mb-4">
+                                <label for="has_name" class="form-label">Associer une image</label>
+                                <input type="file" name="image" class="form-control" id="image">
+                                @error('image')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>

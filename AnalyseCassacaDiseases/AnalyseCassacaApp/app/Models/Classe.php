@@ -12,9 +12,14 @@ class Classe extends Model
 
     protected $fillable = [
         'label',
+        'sigle',
         'description',
+        'path',
         'has_name',
         'images_count',
+        'cause',
+        'symtome',
+        'traitement',
         'size_in_mo',
         'dataset_id',
     ];

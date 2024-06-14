@@ -1,3 +1,104 @@
+db_name : cassacadiseases      id22315982_cassacadiseases
+user_name : eliseedes          id22315982_eliseedes
+password : Elisee@0190 
+Host : localhost
+
+
+            ****Cassava Bacterial Blight (CBB) :
+            Description
+            CBB est une maladie bactérienne qui affecte le manioc, causée principalement par Xanthomonas axonopodis pv. manihotis. Elle se manifeste par des lésions en forme de V jaunâtres ou brunes sur les feuilles, entraînant une réduction significative du rendement lorsque les symptômes sont graves.
+            
+            Causes:
+            Causée par la bactérie Xanthomonas axonopodis pv. manihotis.
+            Symptômes:
+
+            Lésions en forme de V jaunâtres ou brunes sur les feuilles.
+            Chutes prématurées des feuilles.
+            Flétrissement et mort des branches.
+            Réduction significative du rendement lorsque les symptômes sont graves.
+            Traitements:
+
+            Utilisation de variétés résistantes.
+            Application de mesures d'hygiène agricole pour éviter la propagation.
+            Traitements à base de cuivre pour réduire les infections.
+            Rotation des cultures pour minimiser l'accumulation des agents pathogènes.
+
+            ****Cassava Brown Streak Disease (CBSD) :
+            Description
+            CBSD est une maladie virale du manioc causée par des virus du groupe des potyvirus, principalement Cassava brown streak virus (CBSV) et Ugandan cassava brown streak virus (UCBSV). Elle provoque des taches brunes sur les racines et les tubercules, réduisant la qualité et la quantité des récoltes.
+            
+            Causes:
+            Causée par des virus du groupe des potyvirus, principalement Cassava brown streak virus (CBSV) et Ugandan cassava brown streak virus (UCBSV).
+            Symptômes:
+
+            Taches brunes sur les racines et les tubercules.
+            Stries jaunes ou nécrotiques sur les feuilles.
+            Déformation et réduction de la taille des tubercules.
+            Réduction de la qualité et de la quantité des récoltes.
+            Traitements:
+
+            Utilisation de variétés résistantes.
+            Élimination des plants infectés pour prévenir la propagation.
+            Application stricte des mesures de quarantaine.
+            Surveillance continue des champs pour une détection précoce.
+
+            ****Cassava Green Mottle (CGM) :
+            CGM est une maladie virale du manioc provoquée par le Cassava green mottle virus (CGMV). Elle se caractérise par des taches vert clair irrégulières sur les feuilles, souvent accompagnées de déformations et de nécroses. Elle peut entraîner une diminution du rendement et affecter la qualité des racines.
+            
+            Causes:
+            Provoquée par le Cassava green mottle virus (CGMV).
+            Symptômes:
+
+            Taches vert clair irrégulières sur les feuilles.
+            Déformations des feuilles et parfois nécroses.
+            Réduction du rendement et affecte la qualité des racines.
+            Traitements:
+
+            Utilisation de variétés résistantes.
+            Contrôle des vecteurs (insectes transmetteurs du virus).
+            Pratiques agricoles saines pour minimiser la propagation.
+            Surveillance régulière des champs.
+
+            ****Cassava Mosaic Disease (CMD) :
+            Description
+            CMD est une maladie virale du manioc causée principalement par plusieurs espèces de begomovirus. Elle se manifeste par des mosaïques jaunes irrégulières sur les feuilles, réduisant la photosynthèse et donc le rendement. Les plantes affectées peuvent également présenter un retard de croissance et une mauvaise formation des tubercules.
+            
+            Causes:
+            Causée principalement par plusieurs espèces de begomovirus.
+            Symptômes:
+
+            Mosaïques jaunes irrégulières sur les feuilles.
+            Réduction de la photosynthèse et donc du rendement.
+            Retard de croissance des plantes.
+            Mauvaise formation des tubercules.
+            Traitements:
+
+            Utilisation de variétés résistantes.
+            Contrôle des vecteurs (notamment les aleurodes).
+            Pratiques agricoles intégrées pour gérer la maladie.
+            Rotation des cultures et élimination des plants infectés.
+
+
+            ****Healthy (Sain) :
+            Description
+            Un plant de manioc est considéré comme sain lorsqu'il ne montre aucun signe évident de maladie ou de stress. Les feuilles sont vertes et non déformées, avec une croissance vigoureuse. Les racines sont généralement fermes, sans taches ni symptômes de maladies comme le mosaïque, les taches brunes ou les lésions caractéristiques des maladies virales et bactériennes du manioc.
+            
+            Causes:
+            Bonne gestion agricole.
+            Absence d'agents pathogènes.
+            Conditions environnementales favorables.
+            Symptômes:
+
+            Feuilles vertes et non déformées.
+            Croissance vigoureuse.
+            Racines fermes sans taches ni symptômes de maladies comme le mosaïque, les taches brunes ou les lésions caractéristiques des maladies virales et bactériennes du manioc.
+            Traitements:
+
+            Maintien de bonnes pratiques agricoles.
+            Surveillance régulière pour une détection précoce des maladies.
+            Utilisation de variétés résistantes.
+            Application de mesures prophylactiques pour prévenir les infections.
+    
     Nom: Maladie du Manioc
         Description: Analyse des symptômes des différentes maladies affectant le manioc.
         Catégorie: Diverses

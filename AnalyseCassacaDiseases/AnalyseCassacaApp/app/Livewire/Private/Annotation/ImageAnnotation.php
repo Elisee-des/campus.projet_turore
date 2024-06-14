@@ -17,11 +17,17 @@ class ImageAnnotation extends Component
     public $uploadedImages = [];
     public $ontologie;
     public $classe;
+    public $label;
+    public $description;
+    public $sigle;
 
     public function mount($ontologie, $classe)
     {
         $this->ontologie = $ontologie;
         $this->classe = $classe;
+        $this->label = $classe->has_name;
+        $this->description = '';
+        $this->sigle = '';
     }
 
     public function updatedImages()
@@ -35,17 +41,21 @@ class ImageAnnotation extends Component
 
         // Ajouter les nouvelles images chargées et les stocker en base de données
         foreach ($this->images as $image) {
-            $path = $image->store('uploads', 'public');
+            $path = $image->store("ontologie/{$this->ontologie->nom}/{$this->classe->has_name}", 'public');
             $size = $image->getSize() / (1024 * 1024); // Taille en Mo
-
-            // Stocker l'image en base de données
+            $size_formatted = number_format($size, 2); // Formater à deux décimales
+        
+            // Stocker l'image en base de données avec la taille formatée
             $uploadedImage = Image::create([
                 'nom' => $image->getClientOriginalName(),
                 'path' => $path,
-                'has_img_size' => $size,
+                'has_img_size' => $size_formatted, // Utilisation de la taille formatée
+                'label' => $this->label,
+                'description' => $this->description,
+                'sigle' => $this->sigle,
                 'classe_id' => $this->classe->id,
             ]);
-
+        
             $this->uploadedImages[] = $uploadedImage;
         }
 

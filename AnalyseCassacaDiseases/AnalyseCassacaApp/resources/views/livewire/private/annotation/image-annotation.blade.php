@@ -6,12 +6,31 @@
             </div>
             <div class="card-header">
                 <h4 class="card-title mb-0"></h4>
+
                 <div class="alert alert-warning alert-dismissible alert-label-icon label-arrow fade show" role="alert">
                     <i class="ri-check-double-line label-icon"></i><strong>Images</strong> -
                     (2ème étape)
                 </div>
             </div>
             <div class="card-body form-steps">
+                <div class="mb-3">
+                    <label class="form-label"
+                        for="steparrow-gen-info-email-input">Label</label>
+                    <input type="text" class="form-control" wire:model="label"
+                        value="{{ $classe->has_name }}"
+                        id="steparrow-gen-info-email-input">
+                    <label class="form-label"
+                        for="steparrow-gen-info-email-input">Sigle</label>
+                    <input type="text" class="form-control" wire:model="sigle"
+                        value=""
+                        id="steparrow-gen-info-email-input">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"
+                        for="steparrow-gen-info-email-input">Description</label>
+                    <textarea class="form-control" wire:model="description" placeholder="Maximum 200 caractères" rows="2"></textarea>
+
+                </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Charger les images</label>
                     <input type="file" class="form-control" id="formFile" wire:model="images" multiple>

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nom')->nullable();
             $table->string('path')->nullable();
             $table->string('label')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('has_img_size')->nullable();
             $table->foreignUuid('classe_id')->references('id')->on('classes')->onDelete('cascade');
             $table->timestamps();
