@@ -2,7 +2,20 @@ db_name : cassacadiseases      id22315982_cassacadiseases
 user_name : eliseedes          id22315982_eliseedes
 password : Elisee@0190 
 Host : localhost
-
+            [
+                'nom' => 'Maladie du manioc',
+                'description' => 'Ensemble des maladies affectant le manioc.',
+                'categorie' => 'Plante',
+                'photo' => 'cassava_disease.jpg',
+                'status' => 'complet',
+                'fichier_owl' => 'cassava_disease.owl',
+                'auteur_nom_prenom' => 'Dr. Jane Doe',
+                'auteur_email' => 'janedoe@example.com',
+                'auteur_telephone' => '+1234567890',
+                'auteur_photo' => 'jane_doe.jpg',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
 
             ****Cassava Bacterial Blight (CBB) :
             Description
@@ -16,8 +29,8 @@ Host : localhost
             Chutes prématurées des feuilles.
             Flétrissement et mort des branches.
             Réduction significative du rendement lorsque les symptômes sont graves.
+            
             Traitements:
-
             Utilisation de variétés résistantes.
             Application de mesures d'hygiène agricole pour éviter la propagation.
             Traitements à base de cuivre pour réduire les infections.
@@ -29,14 +42,14 @@ Host : localhost
             
             Causes:
             Causée par des virus du groupe des potyvirus, principalement Cassava brown streak virus (CBSV) et Ugandan cassava brown streak virus (UCBSV).
+            
             Symptômes:
-
             Taches brunes sur les racines et les tubercules.
             Stries jaunes ou nécrotiques sur les feuilles.
             Déformation et réduction de la taille des tubercules.
             Réduction de la qualité et de la quantité des récoltes.
+            
             Traitements:
-
             Utilisation de variétés résistantes.
             Élimination des plants infectés pour prévenir la propagation.
             Application stricte des mesures de quarantaine.
@@ -47,13 +60,13 @@ Host : localhost
             
             Causes:
             Provoquée par le Cassava green mottle virus (CGMV).
+            
             Symptômes:
-
             Taches vert clair irrégulières sur les feuilles.
             Déformations des feuilles et parfois nécroses.
             Réduction du rendement et affecte la qualité des racines.
+            
             Traitements:
-
             Utilisation de variétés résistantes.
             Contrôle des vecteurs (insectes transmetteurs du virus).
             Pratiques agricoles saines pour minimiser la propagation.
@@ -65,8 +78,8 @@ Host : localhost
             
             Causes:
             Causée principalement par plusieurs espèces de begomovirus.
+            
             Symptômes:
-
             Mosaïques jaunes irrégulières sur les feuilles.
             Réduction de la photosynthèse et donc du rendement.
             Retard de croissance des plantes.
@@ -87,13 +100,13 @@ Host : localhost
             Bonne gestion agricole.
             Absence d'agents pathogènes.
             Conditions environnementales favorables.
+            
             Symptômes:
-
             Feuilles vertes et non déformées.
             Croissance vigoureuse.
             Racines fermes sans taches ni symptômes de maladies comme le mosaïque, les taches brunes ou les lésions caractéristiques des maladies virales et bactériennes du manioc.
+            
             Traitements:
-
             Maintien de bonnes pratiques agricoles.
             Surveillance régulière pour une détection précoce des maladies.
             Utilisation de variétés résistantes.

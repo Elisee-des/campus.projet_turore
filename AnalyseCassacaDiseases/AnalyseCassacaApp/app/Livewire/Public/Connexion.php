@@ -37,7 +37,7 @@ class Connexion extends Component
         session()->regenerate();        
         session()->flash('success', 'Connexion réussie !');
 
-        return redirect()->route('tableaudebord');
+        return redirect()->route('ontologies.index');
     }
 
 

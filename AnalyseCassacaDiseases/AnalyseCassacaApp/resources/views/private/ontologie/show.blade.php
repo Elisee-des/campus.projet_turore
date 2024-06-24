@@ -301,8 +301,15 @@
                                                                 {{-- <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="file-type">
                                                                     <option value="All" selected>Tous</option>
                                                                 </select> --}}
+                                                                
+                                                                {{-- @if ($ontologie->dataset->classes)
                                                                 <a href="{{ route('annotation-index', $ontologie->id) }}"
-                                                                    class="btn btn-success w-sm create-folder-modal">
+                                                                    class="btn btn-danger w-sm create-folder-modal">
+                                                                    <i class="ri-add-line align-bottom me-1"></i>
+                                                                    Annoter</a>
+                                                                @endif --}}
+                                                                <a href="{{ route('annotation-index', $ontologie->id) }}"
+                                                                    class="btn btn-danger w-sm create-folder-modal">
                                                                     <i class="ri-add-line align-bottom me-1"></i>
                                                                     Annoter</a>
 
@@ -581,7 +588,7 @@
                                                                                 href="{{ asset('assets/images/small/6.jpg') }}"
                                                                                 title="">
                                                                                 <img class="gallery-img img-fluid mx-auto"
-                                                                                    src="{{ asset('assets/images/small/6.jpg') }}"
+                                                                                    src="{{ asset('assets/images/small/11.jpg') }}"
                                                                                     alt="" />
                                                                                 <div class="gallery-overlay">
                                                                                     <h5 class="overlay-caption">Brown

@@ -19,17 +19,6 @@
                     <input type="text" class="form-control" wire:model="label"
                         value="{{ $classe->has_name }}"
                         id="steparrow-gen-info-email-input">
-                    <label class="form-label"
-                        for="steparrow-gen-info-email-input">Sigle</label>
-                    <input type="text" class="form-control" wire:model="sigle"
-                        value=""
-                        id="steparrow-gen-info-email-input">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label"
-                        for="steparrow-gen-info-email-input">Description</label>
-                    <textarea class="form-control" wire:model="description" placeholder="Maximum 200 caractères" rows="2"></textarea>
-
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Charger les images</label>

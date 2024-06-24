@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Gestion des classes</h4>
+                            <h4 class="mb-sm-0">Nouvelle des classes</h4>
 
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
@@ -43,7 +43,7 @@
 
                 <form action="{{ route('classes-create-action', $ontologie->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    <div class="row d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center mb-4">
                         <div class="col-lg-8">
                             <div class="card">
                                 <div class="card-header">

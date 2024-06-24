@@ -24,4 +24,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/detect', [DetectionController::class, 'detect']);
 Route::get('/categories', [CategoryController::class, 'getCategories']);
 Route::get('/categories/{name}/images', [CategoryController::class, 'getCategoryImagesByName']);
-Route::get('/images/{id}', [ImageController::class, 'getImageDetails']);
+Route::get('/image/detail/{id}', [ImageController::class, 'getImageDetails']);

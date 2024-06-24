@@ -29,25 +29,15 @@
             <span data-key="t-cog">Détection</span>
         </a>
     </li>
-    {{-- <li class="nav-item">
-        <a class="nav-link menu-link" href="{{ route('analyses.index') }}">
-            <i class="bx bx-slider-alt"></i>
-            <span data-key="t-slider-alt">Analyses</span>
-        </a>
-    </li> --}}
-    {{-- <li class="nav-item">
+    
+    <li class="nav-item">
         <a class="nav-link menu-link {{ request()->routeIs('bankimages.index') ? 'active' : '' }}" href="{{ route('bankimages.index') }}">
             <i class="bx bx-coin-stack"></i>
             <span data-key="t-coin-stack">Banque d'images</span>
         </a>
     </li>
+
     <li class="nav-item">
-        <a class="nav-link menu-link {{ request()->routeIs('parametre-index') ? 'active' : '' }}" href="{{ route('parametre-index') }}">
-            <i class="bx bxs-cog"></i>
-            <span data-key="t-cog">Paramètre</span>
-        </a>
-    </li> --}}
-    {{-- <li class="nav-item">
         <a href="#sidebarUsers" class="nav-link {{ request()->routeIs('users.index') ? 'active' : ''}} ||  {{ request()->routeIs('users.create') ? 'active' : '' }} }}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUsers" data-key="t-projects">
             <i class="ri-team-fill"></i>
             <span data-key="t-layer">Utilisateurs</span>
@@ -63,7 +53,13 @@
                 </li>
             </ul>
         </div>
-    </li> --}}
+    </li>
+    <li class="nav-item">
+        <a class="nav-link menu-link {{ request()->routeIs('parametre-index') ? 'active' : '' }}" href="{{ route('parametre-index') }}">
+            <i class="bx bxs-cog"></i>
+            <span data-key="t-cog">Paramètre</span>
+        </a>
+    </li>
     <li class="nav-item">
         <a class="nav-link menu-link" href="{{ route('parametre-index') }}">
             <i class="bx bxs-cog"></i>

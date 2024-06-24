@@ -26,16 +26,21 @@ with onto:
         domain = [Dataset]
         range = [str]
 
-    # Image
-    class Image(Dataset):
-        label = "Image"
-        comment = "Class representing images."
-        
-    class has_img_size(DatatypeProperty):
-        domain = [Image]
-        range = [float]
+    # Classe
+    class Classe(Dataset):
+        label = "Classe"
+        comment = "Classe representing images."
     
     class has_name(DatatypeProperty):
+        domain = [Classe]
+        range = [str]
+
+    # Image
+    class Image(Classe):
+        label = "Image"
+        comment = "Image representing images."
+        
+    class has_size(DatatypeProperty):
         domain = [Image]
         range = [float]
 
@@ -129,7 +134,6 @@ with onto:
     class has_correlation(DatatypeProperty):
         domain = [Texture]
         range = [float]
-
 
 # Save the ontology
 onto.save(file="mainOntologie.owl")

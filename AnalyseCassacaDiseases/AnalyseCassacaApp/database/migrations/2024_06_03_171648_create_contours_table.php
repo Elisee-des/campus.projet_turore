@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('label')->nullable();
             $table->string('description')->nullable();
             $table->decimal('has_area', 8, 2)->nullable();
+            $table->decimal('has_perimeter', 8, 2)->nullable();
+            $table->decimal('has_width', 8, 2)->nullable();
             $table->decimal('has_height', 8, 2)->nullable();
             $table->decimal('has_normalized_area', 8, 2)->nullable();
             $table->decimal('has_normalized_perimeter', 8, 2)->nullable();
