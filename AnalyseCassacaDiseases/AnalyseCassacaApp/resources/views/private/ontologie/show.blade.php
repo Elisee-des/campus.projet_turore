@@ -67,14 +67,9 @@
                                     </div>
 
                                     <ul class="nav nav-tabs-custom border-bottom-0" role="tablist">
+                                        
                                         <li class="nav-item">
-                                            <a class="nav-link active fw-semibold" data-bs-toggle="tab"
-                                                href="#ontology-accueil" role="tab">
-                                                Accueil
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link fw-semibold" data-bs-toggle="tab" href="#ontology-annotation"
+                                            <a class="nav-link active fw-semibold" data-bs-toggle="tab" href="#ontology-annotation"
                                                 role="tab">
                                                 Annotations
                                             </a>
@@ -126,155 +121,7 @@
                     <div class="col-lg-12">
                         <div class="tab-content text-muted">
 
-                            <div class="tab-pane fade show active" id="ontology-accueil" role="tabpanel">
-                                <div class="container-fluid">
-
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title mb-0">Arborescence de l'ontologie</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="sitemap-content">
-                                                <figure class="sitemap-horizontal">
-                                                    <ul class="administration">
-                                                        <li>
-                                                            <ul class="director">
-                                                                <li>
-                                                                    <a href="javascript:void(0);"
-                                                                        class="fw-semibold"><span>Ontologie({{ $ontologie->nom }})</span></a>
-                                                                    <ul class="subdirector">
-                                                                        <li><a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Contact
-                                                                                    Us</span></a></li>
-                                                                    </ul>
-                                                                    <ul class="departments">
-                                                                        <li><a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Main
-                                                                                    Pages</span></a></li>
-
-                                                                        <li class="department">
-                                                                            <a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Account
-                                                                                    Management</span></a>
-                                                                            <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Sign
-                                                                                            Up</span></a></li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Login</span></a>
-                                                                                </li>
-                                                                                <li><a href="javascript:void(0);"><span>Profile
-                                                                                            Settings</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Modify
-                                                                                            Reservation</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Cancel
-                                                                                            Reservation</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Write
-                                                                                            Reviews</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <li class="department">
-                                                                            <a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>About
-                                                                                    Us</span></a>
-                                                                            <ul>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Overview</span></a>
-                                                                                </li>
-                                                                                <li><a href="javascript:void(0);"><span>Connect
-                                                                                            Via Social Media</span></a></li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Careers</span></a>
-                                                                                </li>
-                                                                                <li><a href="javascript:void(0);"><span>Team
-                                                                                            Members</span></a></li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Policies</span></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <li class="department">
-                                                                            <a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Book a
-                                                                                    Trip</span></a>
-                                                                            <ul>
-                                                                                <li><a href="javascript:void(0);"><span>Travel
-                                                                                            Details</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Reservation
-                                                                                            Process</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Payment
-                                                                                            Option</span></a></li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Comfirmation</span></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <li class="department">
-                                                                            <a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Destination</span></a>
-                                                                            <ul>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Architecture</span></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Art</span></a>
-                                                                                </li>
-                                                                                <li><a
-                                                                                        href="javascript:void(0);"><span>Entertainment</span></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a
-                                                                                        href="javascript:void(0);"><span>History</span></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a
-                                                                                        href="javascript:void(0);"><span>Science</span></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a
-                                                                                        href="javascript:void(0);"><span>Sports</span></a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a
-                                                                                        href="javascript:void(0);"><span>Music</span></a>
-                                                                                </li>
-                                                                                <li><a href="javascript:void(0);"><span>Tracking
-                                                                                            Camp</span></a></li>
-                                                                            </ul>
-                                                                        </li>
-                                                                        <li class="department">
-                                                                            <a href="javascript:void(0);"
-                                                                                class="fw-semibold"><span>Travel
-                                                                                    Tips</span></a>
-                                                                            <ul>
-                                                                                <li><a href="javascript:void(0);"><span>General
-                                                                                            Travel</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Helpth
-                                                                                            Concerns</span></a></li>
-                                                                                <li><a href="javascript:void(0);"><span>Safety
-                                                                                            Measures</span></a></li>
-                                                                                <li>
-                                                                                    <a
-                                                                                        href="javascript:void(0);"><span>FAQ's</span></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </figure>
-                                            </div>
-                                            <!--end sitemap-content-->
-                                        </div>
-                                        <!--end card-body-->
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade p-4" id="ontology-annotation" role="tabpanel">
+                            <div class="tab-pane fade show active p-4" id="ontology-annotation" role="tabpanel">
                                 <div class="row">
                                     <div class="card p-2">
                                         <div class="file-manager-content w-100 p-3 py-0">
@@ -291,7 +138,7 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="flex-grow-1">
-                                                                    <h5 class="fs-16 mb-0">Gestion des ontologies</h5>
+                                                                    <h5 class="fs-16 mb-0">Gestion des classes</h5>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -308,9 +155,13 @@
                                                                     <i class="ri-add-line align-bottom me-1"></i>
                                                                     Annoter</a>
                                                                 @endif --}}
+                                                                <a href="{{ route('download-ontologie') }}"
+                                                                        class="btn btn-dark w-sm create-folder-modal">
+                                                                        <i class="ri-download-fill align-bottom me-1"></i>
+                                                                        Telecharger le dataset</a>
                                                                 <a href="{{ route('annotation-index', $ontologie->id) }}"
                                                                     class="btn btn-danger w-sm create-folder-modal">
-                                                                    <i class="ri-add-line align-bottom me-1"></i>
+                                                                    <i class="ri-inbox-archive-fill align-bottom me-1"></i>
                                                                     Annoter</a>
 
                                                                 <a href="{{ route('classes-create', $ontologie->id) }}" class="btn btn-success w-sm create-folder-modal"><i

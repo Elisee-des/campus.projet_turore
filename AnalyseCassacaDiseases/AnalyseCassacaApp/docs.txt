@@ -84,8 +84,8 @@ Host : localhost
             Réduction de la photosynthèse et donc du rendement.
             Retard de croissance des plantes.
             Mauvaise formation des tubercules.
-            Traitements:
 
+            Traitements:
             Utilisation de variétés résistantes.
             Contrôle des vecteurs (notamment les aleurodes).
             Pratiques agricoles intégrées pour gérer la maladie.
