@@ -24,18 +24,18 @@ class Image extends Model
         return $this->belongsTo(Classe::class);
     }
 
-    public function contours()
+    public function contour()
     {
-        return $this->hasMany(Contour::class);
+        return $this->hasOne(Contour::class);
     }
 
-    public function couleurs()
+    public function couleur()
     {
-        return $this->hasMany(Couleur::class);
+        return $this->hasOne(Couleur::class);
     }
 
-    public function textures()
+    public function texture()
     {
-        return $this->hasMany(Texture::class);
+        return $this->hasOne(Texture::class);
     }
 }

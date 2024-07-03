@@ -28,4 +28,9 @@ class Classe extends Model
     {
         return $this->hasMany(Image::class);
     }
+
+    public function dataset()
+    {
+        return $this->belongsTo(Dataset::class);
+    }
 }

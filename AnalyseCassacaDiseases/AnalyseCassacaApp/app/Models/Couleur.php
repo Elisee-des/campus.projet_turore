@@ -17,9 +17,9 @@ class Couleur extends Model
         'has_hue_std',
         'has_saturation_mean',
         'has_saturation_std',
+        'has_value_mean',
         'has_value_std',
-        'couleur_id',
-        'image_id'
+        'image_id',
     ];
 
     public function image()

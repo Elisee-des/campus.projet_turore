@@ -32,7 +32,8 @@
                                                 <div class="col-md">
                                                     <div>
                                                         <h4 class="fw-bold">Gestion de l'ontologie :
-                                                            <strong>{{ $ontologie->nom }}</strong></h4>
+                                                            <strong>{{ $ontologie->nom }}</strong>
+                                                        </h4>
                                                         <div class="hstack gap-3 flex-wrap">
                                                             <div><i class="ri-building-line align-bottom me-1"></i>
                                                                 Themesbrand</div>
@@ -67,10 +68,10 @@
                                     </div>
 
                                     <ul class="nav nav-tabs-custom border-bottom-0" role="tablist">
-                                        
+
                                         <li class="nav-item">
-                                            <a class="nav-link active fw-semibold" data-bs-toggle="tab" href="#ontology-annotation"
-                                                role="tab">
+                                            <a class="nav-link active fw-semibold" data-bs-toggle="tab"
+                                                href="#ontology-annotation" role="tab">
                                                 Annotations
                                             </a>
                                         </li>
@@ -148,99 +149,99 @@
                                                                 {{-- <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="file-type">
                                                                     <option value="All" selected>Tous</option>
                                                                 </select> --}}
-                                                                
+
                                                                 {{-- @if ($ontologie->dataset->classes)
                                                                 <a href="{{ route('annotation-index', $ontologie->id) }}"
                                                                     class="btn btn-danger w-sm create-folder-modal">
                                                                     <i class="ri-add-line align-bottom me-1"></i>
                                                                     Annoter</a>
                                                                 @endif --}}
+                                                                @if ($dataset->classes()->exists())
                                                                 <a href="{{ route('download-ontologie') }}"
-                                                                        class="btn btn-dark w-sm create-folder-modal">
-                                                                        <i class="ri-download-fill align-bottom me-1"></i>
-                                                                        Telecharger le dataset</a>
+                                                                    class="btn btn-dark w-sm create-folder-modal">
+                                                                    <i class="ri-download-fill align-bottom me-1"></i>
+                                                                    Telecharger le dataset</a>
                                                                 <a href="{{ route('annotation-index', $ontologie->id) }}"
                                                                     class="btn btn-danger w-sm create-folder-modal">
                                                                     <i class="ri-inbox-archive-fill align-bottom me-1"></i>
                                                                     Annoter</a>
-
-                                                                <a href="{{ route('classes-create', $ontologie->id) }}" class="btn btn-success w-sm create-folder-modal"><i
+                                                                    <a href="{{ route('classes-create', $ontologie->id) }}"
+                                                                        class="btn btn-success w-sm create-folder-modal"><i
+                                                                            class="ri-add-line align-bottom me-1"></i> Nouvelle Classe
+                                                                    </a>
+                                                                @else
+                                                                <a href="{{ route('classes-create', $ontologie->id) }}"
+                                                                    class="btn btn-success w-sm create-folder-modal"><i
                                                                         class="ri-add-line align-bottom me-1"></i> Nouvelle
                                                                     Classe</a>
+                                                                @endif
+
                                                             </div>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
                                                     <!--end row-->
                                                     <div class="row" id="folderlist-data">
-
+                                                        @if ($dataset->classes()->exists())
                                                         @foreach ($classes as $classe)
                                                             <div class="col-xxl-3 col-6 folder-card">
-                                                                <div class="card bg-light shadow-none"
-                                                                    id="folder-{{ $loop->index + 1 }}">
+                                                                <div class="card bg-light shadow-none" id="folder-{{ $loop->index + 1 }}">
                                                                     <div class="card-body">
                                                                         <div class="d-flex mb-1">
-                                                                            <div
-                                                                                class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
-                                                                                <input class="form-check-input"
-                                                                                    type="checkbox" value=""
-                                                                                    id="folderlistCheckbox_{{ $loop->index + 1 }}"
-                                                                                    checked>
-                                                                                <label class="form-check-label"
-                                                                                    for="folderlistCheckbox_{{ $loop->index + 1 }}"></label>
+                                                                            <div class="form-check form-check-danger mb-3 fs-15 flex-grow-1">
+                                                                                <input class="form-check-input" type="checkbox" value="" id="folderlistCheckbox_{{ $loop->index + 1 }}" checked>
+                                                                                <label class="form-check-label" for="folderlistCheckbox_{{ $loop->index + 1 }}"></label>
                                                                             </div>
                                                                             <div class="dropdown">
-                                                                                <button
-                                                                                    class="btn btn-ghost-primary btn-icon btn-sm dropdown"
-                                                                                    type="button"
-                                                                                    data-bs-toggle="dropdown"
-                                                                                    aria-expanded="false">
-                                                                                    <i
-                                                                                        class="ri-more-2-fill fs-16 align-bottom"></i>
+                                                                                <button class="btn btn-ghost-primary btn-icon btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <i class="ri-more-2-fill fs-16 align-bottom"></i>
                                                                                 </button>
-                                                                                <ul
-                                                                                    class="dropdown-menu dropdown-menu-end">
-                                                                                    <li><a class="dropdown-item view-item-btn"
-                                                                                            href="javascript:void(0);">Ouvrir</a>
-                                                                                    </li>
-                                                                                    <li><a class="dropdown-item edit-folder-list"
-                                                                                            href="#createFolderModal"
-                                                                                            data-bs-toggle="modal"
-                                                                                            role="button">Renommer</a>
-                                                                                    </li>
-                                                                                    <li><a class="dropdown-item"
-                                                                                            href="#removeFolderModal"
-                                                                                            data-bs-toggle="modal"
-                                                                                            role="button">Supprimer</a>
+                                                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                                                    <li><a class="dropdown-item view-item-btn" href="{{ route('classes.show-index', [$ontologie->id, $classe->id]) }}">Ouvrir</a></li>
+                                                                                    <li><a class="dropdown-item edit-folder-list" href="javascript:void(0);" data-bs-toggle="modal" 
+                                                                                        data-bs-target="#createFolderModal" 
+                                                                                        data-classe-id="{{ $classe->id }}" 
+                                                                                        data-classe-name="{{ $classe->has_name }}" 
+                                                                                        onclick="openEditModal(this)">Renommer</a></li>
+                                                                                    <li>
+                                                                                    <li>
+                                                                                        <a class="dropdown-item" href="javascript:void(0);" 
+                                                                                        data-bs-toggle="modal" 
+                                                                                        data-bs-target="#globalRemoveFolderModal"
+                                                                                        data-class-name="{{ $classe->has_name }}"
+                                                                                        data-delete-url="{{ route('classes.destroy', $classe->id) }}"
+                                                                                        onclick="openDeleteModal(this)">
+                                                                                        Supprimer
+                                                                                        </a>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
                                                                         </div>
-
+                                                    
                                                                         <div class="text-center">
                                                                             <div class="mb-2">
-                                                                                <i
-                                                                                    class="ri-folder-2-fill align-bottom text-warning display-5"></i>
+                                                                                <i class="ri-folder-2-fill align-bottom text-warning display-5"></i>
                                                                             </div>
-                                                                            <h6
-                                                                                class="fs-15 folder-nam text-truncate-two-line">
-                                                                                {{ $classe->has_name }}
-                                                                            </h6>
+                                                                            <h6 class="fs-15 folder-nam text-truncate-two-line">{{ $classe->has_name }}</h6>
                                                                         </div>
                                                                         <div class="hstack mt-4 text-muted">
-                                                                            <span
-                                                                                class="me-auto"><b>{{ $classe->images_count }}</b>
-                                                                                Images</span>
-                                                                            <!-- Assuming you have an 'images_count' attribute -->
+                                                                            <span class="me-auto"><b>{{ $classe->images_count }}</b> Images</span>
                                                                             <span><b>{{ $classe->size_in_mo }}</b>Mo</span>
-                                                                            <!-- Assuming you have a 'size_in_gb' attribute -->
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        @endforeach
-
+                                                            @endforeach
+                                                        @else
+                                                        <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+                                                            <p class="fs-16">Aucune classe</p>
+                                                            <a href="{{ route('classes-create', $ontologie->id) }}" class="btn btn-success mt-2">
+                                                                <i class="ri-add-line align-bottom me-1"></i> Créer une Classe
+                                                            </a>
+                                                        </div>
+                                                        @endif
                                                     </div>
+                                                    
                                                     <!--end row-->
                                                 </div>
 
@@ -991,7 +992,8 @@
                     </div>
                     <div class="modal-body">
                         <form action="{{ route('classes.store', $ontologie->id) }}" method="POST" autocomplete="off"
-                            class="needs-validation createfolder-form" id="createfolder-form" novalidate enctype="multipart/form-data">
+                            class="needs-validation createfolder-form" id="createfolder-form" novalidate
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="mb-4">
                                 <label for="has_name" class="form-label">Nom de la classe</label>
@@ -1425,4 +1427,93 @@
             </div>
         </footer>
     </div>
+
+    <div class="modal fade zoomIn" id="createFolderModal" tabindex="-1" aria-labelledby="createFolderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header p-3 bg-soft-success">
+                    <h5 class="modal-title" id="createFolderModalLabel">Renommer le nom</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="addFolderBtn-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+    
+                    @if($errors->any())
+                        <div class="alert alert-danger">
+                            @foreach($errors->all() as $error)
+                                <div>{{ $error }}</div>
+                            @endforeach
+                        </div>
+                    @endif
+    
+                    <form autocomplete="off" class="needs-validation createfolder-form" id="createfolder-form" novalidate method="POST" action="{{ route('classes.updateName') }}">
+                        @csrf
+                        @method('PUT')
+                        <input type="hidden" name="classe_id" id="edit-classe-id">
+                        <div class="mb-4">
+                            <label for="foldername-input" class="form-label">Entrer le nom</label>
+                            <input type="text" class="form-control" id="edit-foldername-input" name="has_name" required>
+                        </div>
+                        <div class="hstack gap-2 justify-content-end">
+                            <button type="button" class="btn btn-ghost-success" data-bs-dismiss="modal"><i class="ri-close-line align-bottom"></i> Fermer</button>
+                            <button type="submit" class="btn btn-primary" id="addNewFolder">Modifier</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <div class="modal fade" id="globalRemoveFolderModal" tabindex="-1" role="dialog" aria-labelledby="globalRemoveFolderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <lord-icon src="https://cdn.lordicon.com/hrqwmuhr.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:120px;height:120px"></lord-icon>
+                    <div class="mt-4">
+                        <h4 class="mb-3" id="modalClassTitle">Suppression de la classe !!!</h4>
+                        <p class="text-muted mb-4">Cette action est irréversible. Vous perdrez tous vos images, vos caractéristiques liées à cette classe. Êtes-vous toujours sûr ?</p>
+                        <div class="hstack gap-2 justify-content-center">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Fermer</button>
+                            <form id="deleteClassForm" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Oui! Supprimer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+@endsection
+
+@section('scripts')
+<script>
+    function openDeleteModal(element) {
+        var className = element.getAttribute('data-class-name');
+        var deleteUrl = element.getAttribute('data-delete-url');
+        
+        document.getElementById('modalClassTitle').textContent = 'Suppression de la classe ' + className + ' !!!';
+        document.getElementById('deleteClassForm').setAttribute('action', deleteUrl);
+    }
+</script>
+
+<script>
+    function openEditModal(button) {
+        var classeId = button.getAttribute('data-classe-id');
+        var classeName = button.getAttribute('data-classe-name');
+
+        var modal = document.querySelector('#createFolderModal');
+        modal.querySelector('#edit-classe-id').value = classeId;
+        modal.querySelector('#edit-foldername-input').value = classeName;
+    }
+</script>
 @endsection

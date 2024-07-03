@@ -69,7 +69,7 @@ class ImageAnnotation extends Component
                 $data = json_decode($response->getBody(), true);
 
                 // Enregistrer les caractéristiques dans les entités Contour, Couleur et Texture
-                Contour::create([
+                $uploadedImage->contour()->create([
                     'label' => $this->label,
                     'description' => 'Description du contour', // Remplacez par la description réelle si disponible
                     'has_area' => $data['caracteristiques_contour']['area'],
@@ -82,7 +82,7 @@ class ImageAnnotation extends Component
                     'image_id' => $uploadedImage->id,
                 ]);
 
-                Couleur::create([
+                $uploadedImage->couleur()->create([
                     'label' => $this->label,
                     'description' => 'Description de la couleur', // Remplacez par la description réelle si disponible
                     'has_hue_mean' => $data['caracteristiques_couleur']['hue_mean'],
@@ -94,7 +94,7 @@ class ImageAnnotation extends Component
                     'image_id' => $uploadedImage->id,
                 ]);
 
-                Texture::create([
+                $uploadedImage->texture()->create([
                     'label' => $this->label,
                     'description' => 'Description de la texture', // Remplacez par la description réelle si disponible
                     'has_contrast' => $data['caracteristiques_texture']['contrast'],

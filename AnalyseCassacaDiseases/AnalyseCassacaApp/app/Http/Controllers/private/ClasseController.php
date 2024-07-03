@@ -5,6 +5,7 @@ namespace App\Http\Controllers\private;
 use App\Http\Controllers\Controller;
 use App\Models\Classe;
 use App\Models\Dataset;
+use App\Models\Image;
 use App\Models\Ontologie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -100,9 +101,18 @@ class ClasseController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function showClasse(string $idOntologie, string $idClasse)
     {
-        //
+        $ontologie = Ontologie::find($idOntologie);
+        $classe = Classe::find($idClasse);
+        $dataset = Dataset::where('ontologie_id', $ontologie->id)->first();
+    
+        $images = Image::with(['classe', 'contour', 'couleur', 'texture'])
+        ->where('classe_id', $idClasse)
+        ->orderBy('created_at', 'desc')
+        ->get();
+    
+        return view('private.classe.show', compact('ontologie', 'dataset', 'classe', 'images'));
     }
 
     /**
@@ -111,6 +121,90 @@ class ClasseController extends Controller
     public function edit(string $id)
     {
         //
+    }
+
+    public function updateName(Request $request)
+    {
+        dd($request->all());
+        $request->validate([
+            'classe_id' => 'required|uuid|exists:classes,id',
+            'has_name' => 'required|string|max:255',
+        ]);
+    
+        $classe = Classe::findOrFail($request->classe_id);
+        $classe->has_name = $request->has_name;
+        $classe->save();
+    
+        return redirect()->back()->with('success', 'Nom de la classe mis à jour avec succès.');
+    }
+
+    public function updateClasse(string $idOntologie, string $idClasse, Request $request)
+    {
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'has_name' => 'required',
+                'image' => 'nullable|image|max:2024',
+                'label' => 'required|max:100',
+                'sigle' => 'required|max:100',
+                'description' => 'required|max:500',
+                'cause' => 'required|max:500',
+                'symptome' => 'required|max:500',
+                'traitement' => 'required|max:500',
+            ],
+            [
+                'has_name.required' => 'Le champ nom est requis.',
+                'label.required' => 'Le champ label est requis.',
+                'sigle.required' => 'Le champ sigle est requis.',
+                'image.image' => 'Seule les fichiers image sont autorisés.',
+                'image.max' => 'L\'image ne doit pas dépasser 1 Mo.',
+                'description.required' => 'Le champ description est requis.',
+                'description.max' => 'La description ne doit pas dépasser 500 caractères.',
+                'cause.required' => 'Le champ cause est requis.',
+                'cause.max' => 'Les cause ne doivent pas dépasser 500 caractères.',
+                'symptome.required' => 'Le champ symptome est requis.',
+                'symptome.max' => 'Les symptomes ne doivent pas dépasser 500 caractères.',
+                'traitement.required' => 'Le champ traitement est requis.',
+                'traitement.max' => 'Les traitement ne doivent pas dépasser 500 caractères.',
+            ]
+        );
+
+        //On retourn tout les erreurs
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $ontologie = Ontologie::find($idOntologie);
+        $classe = Classe::find($idClasse);
+        $dataset = Dataset::where('ontologie_id', $ontologie->id)->first();
+    
+        // dd($request->all());
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $path = $file->store('images', 'public');
+
+            // Suppression de l'ancienne image si elle existe
+            if ($ontologie->photo) {
+                Storage::disk('public')->delete($ontologie->photo);
+            }
+
+            $classe->path = $path;
+        }
+
+        $classe->has_name = $request->has_name;
+        $classe->label = $request->label;
+        $classe->sigle = $request->sigle;
+        $classe->description = $request->description;
+        $classe->cause = $request->cause;
+        $classe->symtome = $request->symptome;
+        $classe->traitement = $request->traitement;
+
+        $classe->save();
+    
+        return redirect()->back()->with('success', 'Classe mis à jour avec succès.');
     }
 
     /**
@@ -126,6 +220,39 @@ class ClasseController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        // Récupérer la classe par son ID
+        $classe = Classe::find($id);
+        $ontologie = $classe->dataset->ontologie;
+
+        // Vérifier si la classe existe
+        if (!$classe) {
+            return redirect()->back()->with('error', 'Classe non trouvée.');
+        }
+    
+        // Récupérer le chemin du dossier de la classe
+        $classePath = "ontologie/{$ontologie->nom}/{$classe->has_name}";
+    
+        // Récupérer toutes les images associées à cette classe
+        $images = Image::where('classe_id', $classe->id)->get();
+    
+        // Supprimer les fichiers d'images du storage
+        foreach ($images as $image) {
+            if (Storage::disk('public')->exists($image->path)) {
+                Storage::disk('public')->delete($image->path);
+            }
+        }
+    
+        // Supprimer le dossier de la classe du storage
+        if (Storage::disk('public')->exists($classePath)) {
+            Storage::disk('public')->deleteDirectory($classePath);
+        }
+    
+        // Supprimer les enregistrements d'images de la base de données
+        Image::where('classe_id', $classe->id)->delete();
+    
+        // Supprimer la classe
+        $classe->delete();
+    
+        return redirect()->back()->with('success', 'Classe et images supprimées avec succès.');
     }
 }
