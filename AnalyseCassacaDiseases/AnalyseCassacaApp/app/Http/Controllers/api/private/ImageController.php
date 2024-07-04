@@ -11,7 +11,7 @@ class ImageController extends Controller
     public function getImageDetails($id)
     {
         try {
-            $image = Image::with(['classe', 'contours', 'couleurs', 'textures'])->find($id);
+            $image = Image::with('classe', 'contour', 'couleur', 'texture')->find($id);
 
         if (!$image) {
             return response()->json(['error' => 'Image not found'], 404);

@@ -33,6 +33,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/classes/{idOntologie}/create/action', [ClasseController::class, 'indexCreateAction'])->name('classes-create-action');
     Route::get('/classes/{idOntologie}/{idClasse}/show', [ClasseController::class, 'showClasse'])->name('classes.show-index');
     Route::put('/classes/update-classe/{idOntologie}/{idClasse}/action', [ClasseController::class, 'updateClasse'])->name('classes.update-classe');
+    Route::get('/classes/annotation/{idOntologie}/{idClasse}', [ClasseController::class, 'annotationClasse'])->name('annotation-classe-index');
     Route::get('/annotation-etape-1/{idOntologie}', [AnnotationController::class, 'index'])->name('annotation-index');
     Route::post('/annotation-etape-1/{idOntologie}/action', [AnnotationController::class, 'indexAction'])->name('annotation-index-action');
     Route::get('/annotation-etape-2/{idOntologie}/{idDataset}/{idClasse}', [AnnotationController::class, 'index2'])->name('annotation-index2');
@@ -42,6 +43,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/detection-1', [DetectionController::class, 'index1'])->name('detection.index1');
     Route::get('/detection-2', [DetectionController::class, 'index2'])->name('detection.index2');
     Route::get('/download-ontologie', [DownloadController::class, 'downloadOntologie'])->name('download-ontologie');
+    Route::get('/download-classe/{classeId}', [DownloadController::class, 'downloadClasse'])->name('download-classe');
 
     Route::post('/deconnecion', [Logout::class, 'logout'])->name('logout');
 });

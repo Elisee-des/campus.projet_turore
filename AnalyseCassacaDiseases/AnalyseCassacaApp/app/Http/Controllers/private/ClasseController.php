@@ -207,6 +207,15 @@ class ClasseController extends Controller
         return redirect()->back()->with('success', 'Classe mis à jour avec succès.');
     }
 
+    public function annotationClasse(string $idOntologie, string $idClasse, Request $request)
+    {
+        $ontologie = Ontologie::find($idOntologie);
+        $classe = Classe::find($idClasse);
+        $dataset = Dataset::where('ontologie_id', $ontologie->id)->first();
+
+        return redirect()->back()->with('success', 'Image(s) annotée(s) avec succès.');
+    }
+
     /**
      * Update the specified resource in storage.
      */

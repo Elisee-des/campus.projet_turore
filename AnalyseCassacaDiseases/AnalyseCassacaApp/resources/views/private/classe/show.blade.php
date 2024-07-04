@@ -60,10 +60,10 @@
                     <!--end col-->
                     <div class="col-auto">
                         <div class="d-flex gap-2 align-items-start mb-3">
-                                <a href="{{ route('download-ontologie') }}" class="btn btn-dark w-sm create-folder-modal">
+                                <a href="{{ route('download-classe', $classe->id) }}" class="btn btn-dark w-sm create-folder-modal">
                                     <i class="ri-download-fill align-bottom me-1"></i>
                                     Telecharger le dataset</a>
-                                <a href="{{ route('annotation-index', $ontologie->id) }}"
+                                <a href="{{ route('annotation-index2', [$ontologie->id, $dataset->id, $classe->id]) }}"
                                     class="btn btn-danger w-sm create-folder-modal">
                                     <i class="ri-inbox-archive-fill align-bottom me-1"></i>
                                     Annoter</a>
